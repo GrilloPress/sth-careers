@@ -1,0 +1,49 @@
+#prices {
+  
+  margin-top: 15px;
+  
+}
+
+.well {
+  
+  border: 1px solid #efefef;
+  
+}
+
+#main {
+  
+
+  
+}
+
+/* Selling Points Section */
+
+#selling-points {
+  
+  margin-top: 25px;
+  text-align: center;
+  
+  h4 {
+  
+  color: #17479E;
+  font-size: 31px;
+  
+  }
+
+  .well {
+  
+  height: 300px
+   
+  
+  }
+  
+  @media screen and (max-width: 700px){
+      
+      .well {
+        height: 240px;
+        
+      }
+      
+      }
+  
+}

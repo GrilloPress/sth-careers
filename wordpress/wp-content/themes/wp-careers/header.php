@@ -36,6 +36,18 @@
 	<body <?php body_class(); ?>>
 				
 <header role="banner">
+  
+  
+      <div id="logos">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <a class="navbar-brand" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
 				
 			<div class="navbar navbar-default">
 				<div class="container">

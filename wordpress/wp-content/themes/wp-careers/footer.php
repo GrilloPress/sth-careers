@@ -1,6 +1,6 @@
 </div> <!-- end #container -->			
 		
-		<div class="site-footer">
+		<div id="main-footer">
       <div class="container">
         <div class="row">
           		<div id="widget-footer">

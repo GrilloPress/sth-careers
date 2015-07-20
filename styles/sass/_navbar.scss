@@ -1,3 +1,5 @@
+
+
 .nav-tabs {
   & > li > a {
     border: none;
@@ -46,4 +48,17 @@
 .dropdown-menu {
   border: none;
   @include box-shadow(0 1px 4px rgba(0,0,0,.3));
+}
+
+.navbar-nav > li > a {
+  
+    padding-top: 10.5px;
+    padding-bottom: 10.5px;
+  
+}
+
+.navbar-collapse {
+  
+  padding-left: 0px;
+  
 }

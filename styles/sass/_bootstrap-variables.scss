@@ -343,23 +343,23 @@ $container-lg:                 $container-large-desktop;
 //##
 
 // Basics of a navbar
-$navbar-height:                    64px;
+$navbar-height:                    34px;
 $navbar-margin-bottom:             $line-height-computed;
 $navbar-border-radius:             $border-radius-base;
 $navbar-padding-horizontal:        floor(($grid-gutter-width / 2));
 $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2);
 $navbar-collapse-max-height:       340px;
 
-$navbar-default-color:             $gray-light;
-$navbar-default-bg:                #fff;
+$navbar-default-color:             #ffffff;
+$navbar-default-bg:                $brand-primary;
 $navbar-default-border:            transparent;
 
 // Navbar links
-$navbar-default-link-color:                $gray;
-$navbar-default-link-hover-color:          $gray-dark;
-$navbar-default-link-hover-bg:             transparent;
-$navbar-default-link-active-color:         $gray-dark;
-$navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%);
+$navbar-default-link-color:                #ffffff;
+$navbar-default-link-hover-color:          $brand-primary;
+$navbar-default-link-hover-bg:             #ffffff;
+$navbar-default-link-active-color:         #ffffff;
+$navbar-default-link-active-bg:            $brand-primary;
 $navbar-default-link-disabled-color:       #ccc;
 $navbar-default-link-disabled-bg:          transparent;
 

@@ -359,7 +359,7 @@ $navbar-default-link-color:                #ffffff;
 $navbar-default-link-hover-color:          $brand-primary;
 $navbar-default-link-hover-bg:             #ffffff;
 $navbar-default-link-active-color:         #ffffff;
-$navbar-default-link-active-bg:            $brand-primary;
+$navbar-default-link-active-bg:            darken($brand-primary, 8%);
 $navbar-default-link-disabled-color:       #ccc;
 $navbar-default-link-disabled-bg:          transparent;
 

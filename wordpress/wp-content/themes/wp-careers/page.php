@@ -12,7 +12,7 @@
       
       <div class="row clearfix">
         <div id="main" class="col-sm-8" role="main">
-          <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix well'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+          <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 				
             <header class="section-header">
               <h1 itemprop="headline"><?php the_title(); ?></h1>

@@ -367,8 +367,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url(/fonts/../library/fonts/bootstrap/glyphicons-halflings-regular.eot);
-  src: url(/fonts/../library/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix) format("embedded-opentype"), url(/fonts/../library/fonts/bootstrap/glyphicons-halflings-regular.woff2) format("woff2"), url(/fonts/../library/fonts/bootstrap/glyphicons-halflings-regular.woff) format("woff"), url(/fonts/../library/fonts/bootstrap/glyphicons-halflings-regular.ttf) format("truetype"), url(/fonts/../library/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format("svg");
+  src: url(url(/wp-content/themes/wp-careers/library/fonts/bootstrap/glyphicons-halflings-regular.eot));
+  src: url(url(/wp-content/themes/wp-careers/library/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix)) format("embedded-opentype"), url(url(/wp-content/themes/wp-careers/library/fonts/bootstrap/glyphicons-halflings-regular.woff2)) format("woff2"), url(url(/wp-content/themes/wp-careers/library/fonts/bootstrap/glyphicons-halflings-regular.woff)) format("woff"), url(url(/wp-content/themes/wp-careers/library/fonts/bootstrap/glyphicons-halflings-regular.ttf)) format("truetype"), url(url(/wp-content/themes/wp-careers/library/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular)) format("svg");
 }
 /* line 24, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_glyphicons.scss */
 .glyphicon {

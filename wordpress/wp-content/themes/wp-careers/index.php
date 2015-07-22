@@ -1,6 +1,16 @@
 <?php get_header(); ?>
+  <div id="content" class="clearfix">
+		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+    
+      <div class="row">
+
+        <?php if ( function_exists('yoast_breadcrumb') ) {
+        yoast_breadcrumb();
+        } ?>
+        
+      </div>
 			
-			<div id="content" class="clearfix row">
+			<div class="row">
 			
 				<div id="main" class="col-sm-8 clearfix" role="main">
 
@@ -29,6 +39,7 @@
 						</footer> <!-- end article footer -->
 					
 					</article> <!-- end article -->
+        </div>
 					
 					<?php endwhile; ?>	
 					

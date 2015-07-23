@@ -13,6 +13,62 @@ Template Name: Homepage
           
           <?php get_template_part( 'partials/content', 'slider' ); ?>
           
+          <div class="home-intro">
+             <div class="row">
+              <div class="col-md-5">
+                <h2 class="well-heading">Join the Team!</h2>
+                <div class="well">
+                  <p>The affix plugin toggles between three classes, each representing a particular state: .affix, .affix-top, and .affix-bottom. You must provide the styles, with the exception of position: fixed; on .affix, for these classes yourself (independent of this plugin) to handle the actual positions.</p>
+                  <p><strong>Sir Andrew Cash, OBE</strong></p>
+                  <div class="text-center">
+                     <a href="<?php echo get_home_url() . "/current-vacancies/" ;?>" class="btn btn-primary">Current Vacancies</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-7">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/gg-8c9MBrjo?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          
+          <a href="#" class="btn btn-block btn-primary btn-lg">Something something something</a>
+
+          <div class="home-boxes">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="home-boxes-unit">
+                  <img src="http://placehold.it/350x250" width="100%">
+                  <div class="well">
+                    <p class="lead">One-liner to start</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-4">
+                <div class="home-boxes-unit">
+                  <img src="http://placehold.it/350x250" width="100%">
+                  <div class="well">
+                    <p class="lead">One-liner to start</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-4">
+                <div class="home-boxes-unit">
+                  <img src="http://placehold.it/350x250" width="100%">
+                  <div class="well">
+                    <p class="lead">One-liner to start</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+          
+          
           
           
           <?php

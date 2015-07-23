@@ -18,3 +18,9 @@ button {
 a {
   @include transition(all 0.2s);
 }
+
+.btn {
+  
+  border-radius: 0px;
+  
+}

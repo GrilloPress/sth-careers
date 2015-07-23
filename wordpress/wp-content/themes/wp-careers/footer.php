@@ -3,18 +3,20 @@
 		<div id="main-footer">
       <div class="container">
         <div class="row">
-          		<div id="widget-footer">
-		            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer1') ) : ?>
-		            <?php endif; ?>
-		            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer2') ) : ?>
-		            <?php endif; ?>
-		            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer3') ) : ?>
-		            <?php endif; ?>
-		          </div>
+          <div id="widget-footer">
+		        <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer1') ) : ?>
+		        <?php endif; ?>
+		        <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer2') ) : ?>
+		        <?php endif; ?>
+		        <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer3') ) : ?>
+		        <?php endif; ?>
+            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer4') ) : ?>
+		        <?php endif; ?>
+		      </div>
         </div>
         
         <div class="row">
-          <p class="attribution">&copy; <?php bloginfo('name'); ?></p>
+          <p class="attribution">&copy; Sheffield Teaching Hospitals NHS Foundation Trust</p>
         </div>
       </div>
     </div>

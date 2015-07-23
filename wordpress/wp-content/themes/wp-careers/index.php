@@ -14,8 +14,6 @@
 			
 				<div id="main" class="col-sm-8 clearfix" role="main">
 
-					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-					
 					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">            
 						<header>
 						
@@ -70,11 +68,10 @@
 					</article>
 					
 					<?php endif; ?>
+        
+        <?php get_sidebar(); // sidebar 1 ?>
 			
-				</div> <!-- end #main -->
-    
-				<?php get_sidebar(); // sidebar 1 ?>
-    
+				</div> <!-- end #row -->
 			</div> <!-- end #content -->
 
 <?php get_footer(); ?>

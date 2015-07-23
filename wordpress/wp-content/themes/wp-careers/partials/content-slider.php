@@ -1,4 +1,5 @@
 <div class="row">
+  <div class="col-md-12">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -58,4 +59,5 @@
 
 
     </div><!-- End Carousel -->
+  </div>
 </div>

@@ -74,7 +74,7 @@ jQuery(document).ready(function($) {
 	$('.dropdown-toggle').dropdown();
   
   $('#myCarousel').carousel({
-		interval:   4000
+		interval:   8000
 	});
  
 });

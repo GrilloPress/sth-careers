@@ -591,7 +591,7 @@ if( !function_exists( "wp_bootstrap_theme_js" ) ) {
       '1.2' );
 
     wp_register_script( 'wpbs-js', 
-      get_template_directory_uri() . '/library/dist/js/scripts.d1e3d952.min.js',
+      get_template_directory_uri() . '/library/js/scripts.js',
       array('bootstrap'), 
       '1.2' );
   

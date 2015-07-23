@@ -72,5 +72,9 @@ jQuery(document).ready(function($) {
 	$('.alert-message').alert();
 	
 	$('.dropdown-toggle').dropdown();
+  
+  $('#myCarousel').carousel({
+		interval:   4000
+	});
  
 });

@@ -9,7 +9,11 @@ Template Name: Homepage
 		
 			<div id="content" class="clearfix row">
 			
-				<div id="main" class="col-sm-12 col-xs-12 clearfix" role="main">  
+				<div id="main" class="col-sm-12 col-xs-12 clearfix" role="main">
+          
+          <?php get_template_part( 'partials/content', 'slider' ); ?>
+          
+          
           
           <?php
            global $post;

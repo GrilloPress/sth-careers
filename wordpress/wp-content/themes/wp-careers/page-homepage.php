@@ -52,7 +52,7 @@ Template Name: Homepage
                   <a href="<?php echo get_home_url() . "/current-vacancies/" ;?>">
                     <img src="http://placehold.it/350x250" width="100%">
                     <div class="well">
-                      <p class="lead">News &amp; Events</p>
+                      <p class="lead">Nursing at Sheffield</p>
                     </div>
                   </a>
                 </div>
@@ -71,26 +71,50 @@ Template Name: Homepage
             </div>
           </div>
           
-          
+          <div class="row">
+            
+            <div class="col-md-6 col-sm-6">
+              <?php
+               global $post;
+               $args = array('posts_per_page' => 5);
+               $myposts = get_posts($args);
+               foreach($myposts as $post) :
+               ?>
 
-          <?php
-           global $post;
-           $args = array('posts_per_page' => -1);
-           $myposts = get_posts($args);
-           foreach($myposts as $post) :
-           ?>
-          
-          <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
-              <section class="post_content clearfix">
-                <h2 class="post-header"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-                <p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php echo get_the_date('F jS, Y', '','', FALSE); ?></time></p>
-                <?php the_content(); ?>
-              </section>
+              <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
+                  <section class="post_content clearfix">
+                    <h3 class="post-header"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+                    <p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php echo get_the_date('F jS, Y', '','', FALSE); ?></time></p>
+                    <?php the_content(); ?>
+                  </section>
 
-          </article>
-          <hr>
-          
-         <?php endforeach; ?>
+              </article>
+              <hr>
+
+             <?php endforeach; ?>
+            </div>
+            
+            <div class="col-md-6 col-sm-6">
+              <?php
+               global $post;
+               $args = array('posts_per_page' => 5);
+               $myposts = get_posts($args);
+               foreach($myposts as $post) :
+               ?>
+
+              <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
+                  <section class="post_content clearfix">
+                    <h3 class="post-header"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+                    <p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php echo get_the_date('F jS, Y', '','', FALSE); ?></time></p>
+                    <?php the_content(); ?>
+                  </section>
+
+              </article>
+              <hr>
+
+             <?php endforeach; ?>
+            </div>
+          </div>
 			
 				</div> <!-- end #main -->
     

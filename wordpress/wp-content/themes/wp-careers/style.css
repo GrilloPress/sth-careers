@@ -9166,7 +9166,13 @@ a {
 
 /* line 13, ../sass/_sections.scss */
 .home-boxes {
-  margin-top: 30px;
+  margin-top: 15px;
+}
+
+/* line 19, ../sass/_sections.scss */
+.social-media {
+  text-align: center;
+  padding-top: 15px;
 }
 
 /* line 1, ../sass/_slider.scss */

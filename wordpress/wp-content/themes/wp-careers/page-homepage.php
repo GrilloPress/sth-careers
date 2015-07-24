@@ -71,24 +71,8 @@ Template Name: Homepage
             </div>
           </div>
           
-          <div class="social-media">
-            <div class="row">
-              <div class="col-sm-12">
-                <ul class="list-inline">
-                  <li>Twitter</li>
-                  <li>Facebook</li>
-                  <li>LinkedIn</li>
-                </ul>
-              </div>
-            </div>
-          </div>
           
-          
-          
-          
-          
-          
-          
+
           <?php
            global $post;
            $args = array('posts_per_page' => -1);

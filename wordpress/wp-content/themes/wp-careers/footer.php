@@ -1,5 +1,10 @@
-</div> <!-- end #container -->			
-		
+</div> <!-- end #container -->			 
+      
+      <?php if ( is_home() || is_front_page() ) : ?>
+          <?php get_template_part( 'partials/content', 'social' ); ?>
+      <?php endif; ?>
+
+
 		<div id="main-footer">
       <div class="container">
         <div class="row">

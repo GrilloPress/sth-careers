@@ -36,31 +36,49 @@ Template Name: Homepage
 
           <div class="home-boxes">
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-4 col-sm-4">
                 <div class="home-boxes-unit">
-                  <img src="http://placehold.it/350x250" width="100%">
-                  <div class="well">
-                    <p class="lead">One-liner to start</p>
-                  </div>
+                  <a href="<?php echo get_home_url() . "/current-vacancies/" ;?>">
+                    <img src="http://placehold.it/350x250" width="100%">
+                    <div class="well">
+                      <p class="lead">Current Vacancies</p>
+                    </div>
+                  </a>
                 </div>
               </div>
               
-              <div class="col-md-4">
+              <div class="col-md-4 col-sm-4">
                 <div class="home-boxes-unit">
-                  <img src="http://placehold.it/350x250" width="100%">
-                  <div class="well">
-                    <p class="lead">One-liner to start</p>
-                  </div>
+                  <a href="<?php echo get_home_url() . "/current-vacancies/" ;?>">
+                    <img src="http://placehold.it/350x250" width="100%">
+                    <div class="well">
+                      <p class="lead">News &amp; Events</p>
+                    </div>
+                  </a>
                 </div>
               </div>
               
-              <div class="col-md-4">
+              <div class="col-md-4 col-sm-4">
                 <div class="home-boxes-unit">
-                  <img src="http://placehold.it/350x250" width="100%">
-                  <div class="well">
-                    <p class="lead">One-liner to start</p>
-                  </div>
+                  <a href="<?php echo get_home_url() . "/current-vacancies/" ;?>">
+                    <img src="http://placehold.it/350x250" width="100%">
+                    <div class="well">
+                      <p class="lead">Meet our Staff</p>
+                    </div>
+                  </a>
                 </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="social-media">
+            <div class="row">
+              <div class="col-sm-12">
+                <ul class="list-inline">
+                  <li>Twitter</li>
+                  <li>Facebook</li>
+                  <li>LinkedIn</li>
+                </ul>
               </div>
             </div>
           </div>

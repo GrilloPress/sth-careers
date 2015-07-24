@@ -9065,6 +9065,11 @@ a {
   transition: all 0.2s;
 }
 
+/* line 22, ../sass/_buttons.scss */
+.btn {
+  border-radius: 0px;
+}
+
 /* line 4, ../sass/_alerts.scss */
 .alert {
   border: none;
@@ -9154,6 +9159,16 @@ a {
   background-color: #ffffff;
 }
 
+/* line 7, ../sass/_sections.scss */
+.home-intro {
+  margin-top: 30px;
+}
+
+/* line 13, ../sass/_sections.scss */
+.home-boxes {
+  margin-top: 30px;
+}
+
 /* line 1, ../sass/_slider.scss */
 #myCarousel .nav a {
   border-radius: 0px;
@@ -9171,4 +9186,23 @@ a {
   background-image: none;
   margin-right: -125px;
   padding-top: 150px;
+}
+
+/* line 23, ../sass/_slider.scss */
+.main-slider-tab {
+  background-color: white;
+}
+
+/* line 29, ../sass/_slider.scss */
+.carousel-caption {
+  text-align: inherit;
+}
+
+/* line 1, ../sass/_typography.scss */
+.well-heading {
+  background-color: #006DB8;
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 5px 0px 5px 15px;
 }

@@ -39,7 +39,7 @@ Template Name: Homepage
               <div class="col-md-4 col-sm-4">
                 <div class="home-boxes-unit">
                   <a href="<?php echo get_home_url() . "/current-vacancies/" ;?>">
-                    <img src="http://placehold.it/350x250" width="100%">
+                    <img alt="" src="<?php echo get_template_directory_uri() . "/images/nurses-with-computers.jpg" ; ?>" width="100%">
                     <div class="well">
                       <p class="lead">Current Vacancies</p>
                     </div>
@@ -49,8 +49,8 @@ Template Name: Homepage
               
               <div class="col-md-4 col-sm-4">
                 <div class="home-boxes-unit">
-                  <a href="<?php echo get_home_url() . "/current-vacancies/" ;?>">
-                    <img src="http://placehold.it/350x250" width="100%">
+                  <a href="<?php echo get_home_url() . "/nursing-midwifery/nursing-at-sheffield-teaching-hospitals/" ;?>">
+                    <img alt="" src="<?php echo get_template_directory_uri() . "/images/box_images_nurses.jpg" ; ?>" width="100%">
                     <div class="well">
                       <p class="lead">Nursing at Sheffield</p>
                     </div>
@@ -61,7 +61,7 @@ Template Name: Homepage
               <div class="col-md-4 col-sm-4">
                 <div class="home-boxes-unit">
                   <a href="<?php echo get_home_url() . "/current-vacancies/" ;?>">
-                    <img src="http://placehold.it/350x250" width="100%">
+                    <img alt="" src="<?php echo get_template_directory_uri() . "/images/hilary.jpg" ; ?>" width="100%">
                     <div class="well">
                       <p class="lead">Meet our Staff</p>
                     </div>

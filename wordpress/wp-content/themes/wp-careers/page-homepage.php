@@ -84,7 +84,7 @@ Template Name: Homepage
               <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
                   <section class="post_content clearfix">
                     <h3 class="post-header"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-                    <p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php echo get_the_date('F jS, Y', '','', FALSE); ?></time></p>
+                    <p class="meta"><time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php echo get_the_date('F jS, Y', '','', FALSE); ?></time> - News &amp; Events </p>
                     <?php the_content(); ?>
                   </section>
 

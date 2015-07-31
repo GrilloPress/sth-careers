@@ -11,6 +11,10 @@
 
     </div><!-- #content -->
 
+      <?php // if ( is_home() || is_front_page() ) : ?>
+          <?php get_template_part( 'partials/content', 'social' ); ?>
+      <?php // endif; ?>
+
     <footer id="colophon" class="site-footer" role="contentinfo">
       <div class="site-info container">
         <div class="row">

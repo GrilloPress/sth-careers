@@ -15,7 +15,7 @@
           <?php get_template_part( 'partials/content', 'social' ); ?>
       <?php // endif; ?>
 
-    <footer id="colophon" class="site-footer" role="contentinfo">
+    <footer id="main-footer" class="site-footer" role="contentinfo">
       <div class="site-info container">
         <div class="row">
           <div id="widget-footer">

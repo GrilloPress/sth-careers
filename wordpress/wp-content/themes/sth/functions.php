@@ -229,6 +229,11 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/bootstrap_nav.php';
 
 /**
+ * Breadcrumb functions
+ */
+require get_template_directory() . '/inc/sth_breadcrumbs.php';
+
+/**
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';

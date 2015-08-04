@@ -13,9 +13,12 @@
 get_header(); ?>
 
 	 <div id="primary" class="container">
-     <div>
-       <?php sth_breadcrumbs(); ?>
+     <div class="row">
+      <div class="col-md-8">
+        <?php sth_breadcrumbs(); ?>
+      </div>
      </div>
+     
     <div class="row">
       <main id="main" class="col-md-8" role="main">
 

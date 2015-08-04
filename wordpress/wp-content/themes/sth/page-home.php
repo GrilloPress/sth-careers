@@ -34,7 +34,7 @@
             </div>
           </div>
 
-          <div class="home-boxes">
+          <section class="home-boxes">
             <div class="row">
               <div class="col-md-4 col-sm-4">
                 <div class="home-boxes-unit">
@@ -69,7 +69,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </section>
           
           <div class="row">
             

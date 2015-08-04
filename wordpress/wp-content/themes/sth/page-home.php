@@ -29,11 +29,10 @@
 
               <div class="col-md-7">
                 <iframe width="100%" height="315" src="https://www.youtube.com/embed/gg-8c9MBrjo?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
-              </div>
+                <a href="#" class="btn btn-block btn-primary btn-lg">Something something something</a>
+               </div>
             </div>
           </div>
-        
-        <a href="#" class="btn btn-block btn-primary btn-lg">Something something something</a>
 
           <div class="home-boxes">
             <div class="row">

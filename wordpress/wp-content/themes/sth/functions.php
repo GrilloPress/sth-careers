@@ -127,9 +127,6 @@ function sth_scripts() {
 add_action( 'wp_enqueue_scripts', 'sth_scripts' );
 
 
-
-
-
 // Sidebars & Widgetizes Areas
 function sth_register_footer() {
     
@@ -183,10 +180,6 @@ function sth_register_footer() {
   */
 } // don't remove this bracket!
 add_action( 'widgets_init', 'sth_register_footer' );
-
-
-
-
 
 // enqueue javascript
 if( !function_exists( "sth_theme_js" ) ) {  

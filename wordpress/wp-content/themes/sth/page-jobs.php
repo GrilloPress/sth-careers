@@ -17,7 +17,7 @@ get_header(); ?>
      </div>
      
     <div class="row">
-      <main id="main" class="col-md-8" role="main">
+      <main id="main" class="col-md-9" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
         
@@ -28,6 +28,7 @@ get_header(); ?>
         <div id="results">
           <div class="row">
             <?php sth_job_feed(); ?>
+            
           </div>
         </div>
         
@@ -35,6 +36,12 @@ get_header(); ?>
 			<?php endwhile; // End of the loop. ?>
 
 		  </main><!-- #main -->
+      
+      <div class="col-md-3">
+        <div class="well">
+          
+        </div>
+      </div>
       
 	  </div><!-- #primary -->
   </div>

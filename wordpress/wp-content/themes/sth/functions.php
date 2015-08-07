@@ -217,6 +217,11 @@ add_action( 'wp_enqueue_scripts', 'sth_theme_js' );
 require get_template_directory() . '/inc/template-tags.php';
 
 /**
+ * Custom template tags for this theme.
+ */
+require get_template_directory() . '/inc/sth_job_feed.php';
+
+/**
  * Bootstrap Walker and Nav Customization 
  */
 require get_template_directory() . '/inc/bootstrap_nav.php';

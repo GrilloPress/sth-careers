@@ -17,17 +17,18 @@ get_header(); ?>
      </div>
      
     <div class="row">
-      <main id="main" class="col-md-12" role="main">
+      <main id="main" class="col-md-8" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
         
-        <div id="jobs">
-          hi
+        <div id="controls">
+
         </div>
         
         <div id="results">
-          <iframe frameborder="0" allowfullscreen="" width="100%" height="8500" src="http://www.jobs.nhs.uk/extsearch?client_id=121486&resonly=1&max_result=100">
-          </iframe>
+          <div class="row">
+            <?php sth_job_feed(); ?>
+          </div>
         </div>
         
           

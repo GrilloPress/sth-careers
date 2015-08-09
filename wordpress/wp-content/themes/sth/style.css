@@ -9182,6 +9182,28 @@ a {
   border: 1px solid #efefef;
 }
 
+/* line 34, ../sass/_sections.scss */
+#results dl {
+  margin-bottom: 0px;
+}
+/* line 40, ../sass/_sections.scss */
+#results dt {
+  display: inline;
+  color: #01579B;
+}
+/* line 47, ../sass/_sections.scss */
+#results dd {
+  display: inline;
+}
+/* line 53, ../sass/_sections.scss */
+#results h2 {
+  margin-top: 0px;
+}
+/* line 59, ../sass/_sections.scss */
+#results h3 {
+  font-size: 16px;
+}
+
 /* line 1, ../sass/_slider.scss */
 #myCarousel .nav a {
   border-radius: 0px;

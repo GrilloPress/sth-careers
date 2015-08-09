@@ -28,3 +28,38 @@
   border: 1px solid #efefef;
   
 }
+
+#results {
+ 
+  dl {
+    
+    margin-bottom: 0px;
+    
+  }
+  
+  dt {
+    
+    display: inline;
+    color: $brand-info;
+    
+  }
+  
+  dd {
+    
+    display: inline;
+    
+  }
+  
+  h2 {
+    
+    margin-top: 0px;
+    
+  }
+  
+  h3 {
+    
+    font-size: 16px;
+    
+  }
+  
+}

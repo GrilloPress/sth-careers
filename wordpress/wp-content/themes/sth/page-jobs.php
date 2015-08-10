@@ -56,16 +56,31 @@ get_header(); ?>
             
             jQuery(document).ready(function() {
               
+              onStart = true;
+              
+              if (onStart){
+                
+                initalCount = jQuery('.vacancy:visible').length;
+                jQuery( "span.job-count" ).text( initalCount );
+                
+                onStart = false;
+              }
+              
+             
+                        
+              thingy = jQuery('.vacancy:visible').length;
+              
+              
               jQuery(document).on('change keyup keypress', 'input#sieve', function(e){
+                
+                jobCount = jQuery('.vacancy:visible').length;
+                
+                jQuery( "span.job-count" ).text( jobCount );
+                
                 console.log(jQuery('.vacancy:visible').length);
               }); 
               
             });
-           
-            
-            
-            
-
 
             
           </script>

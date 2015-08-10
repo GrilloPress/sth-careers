@@ -31,6 +31,7 @@ get_header(); ?>
         
         <div id="results">
           <div class="row">
+            
             <?php sth_job_feed(); ?>
             
           </div>
@@ -45,16 +46,24 @@ get_header(); ?>
         <div class="well">
           <script>
             
-            // disable enter in search field
-            jQuery('input#sieve').keypress(function(e){
-                if ( e.which == 13 ) return false;
-                if ( e.which == 13 ) e.preventDefault();
+            jQuery(document).ready(function() {
+               // disable enter in search field
+              jQuery('input#sieve').keypress(function(e){
+                  if ( e.which == 13 ) return false;
+                  if ( e.which == 13 ) e.preventDefault();
+              });
             });
             
-            // watch input field and log number of fields.
-            jQuery("input#sieve").live('change', function(){
-              console.log(jQuery('.vacancy:visible').length);
-            }); 
+            jQuery(document).ready(function() {
+              
+              jQuery(document).on('change keyup keypress', 'input#sieve', function(e){
+                console.log(jQuery('.vacancy:visible').length);
+              }); 
+              
+            });
+           
+            
+            
             
 
 

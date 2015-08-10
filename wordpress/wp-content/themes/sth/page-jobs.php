@@ -47,41 +47,38 @@ get_header(); ?>
           <script>
             
             jQuery(document).ready(function() {
-               // disable enter in search field
+              
+              // disable enter in search field
               jQuery('input#sieve').keypress(function(e){
                   if ( e.which == 13 ) return false;
                   if ( e.which == 13 ) e.preventDefault();
+                
               });
+              
             });
             
+            // job count function
             jQuery(document).ready(function() {
               
               onStart = true;
               
               if (onStart){
                 
+                // On page load this counts the available job posts and injects the count in the job count span
                 initalCount = jQuery('.vacancy:visible').length;
                 jQuery( "span.job-count" ).text( initalCount );
-                
                 onStart = false;
               }
-              
-             
-                        
-              thingy = jQuery('.vacancy:visible').length;
-              
-              
+
               jQuery(document).on('change keyup keypress', 'input#sieve', function(e){
                 
+                // Handles any changes to the job search and recounts the visible job posts & injects the count in the job count span
                 jobCount = jQuery('.vacancy:visible').length;
-                
                 jQuery( "span.job-count" ).text( jobCount );
-                
-                console.log(jQuery('.vacancy:visible').length);
-              }); 
+
+              });
               
             });
-
             
           </script>
         </div>

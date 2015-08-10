@@ -68,3 +68,9 @@ select.form-control {
     @include box-shadow(inset 0 -2px 0 $brand-success);
   }
 }
+
+input#sieve {
+  
+  width: 100%;
+  
+}

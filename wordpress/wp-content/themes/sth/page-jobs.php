@@ -22,7 +22,11 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
         
         <div id="controls">
-
+          <script>
+            jQuery(document).ready(function() {
+                jQuery("div#results").sieve({ itemSelector: "div.vacancy" });
+              }); 
+          </script>
         </div>
         
         <div id="results">
@@ -39,7 +43,23 @@ get_header(); ?>
       
       <div class="col-md-3">
         <div class="well">
-          
+          <script>
+            
+            // disable enter in search field
+            jQuery('input#sieve').keypress(function(e){
+                if ( e.which == 13 ) return false;
+                if ( e.which == 13 ) e.preventDefault();
+            });
+            
+            // watch input field and log number of fields.
+            jQuery("input#sieve").live('change', function(){
+              console.log(jQuery('.vacancy:visible').length);
+            }); 
+            
+
+
+            
+          </script>
         </div>
       </div>
       

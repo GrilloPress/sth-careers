@@ -17,6 +17,82 @@ get_header(); ?>
      </div>
      
     <div class="row">
+      
+            <div class="col-md-3">
+        
+        <form id="nhs-staff-groups">
+          <div class="checkbox">
+            <label>
+              <input id="admin-clerical" type="checkbox" value="" checked>
+              Administrative &amp; Clerical
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <label>
+              <input id="allied-health" type="checkbox" value="" checked>
+              Allied Health Professionals
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <label>
+              <input id="additional-clinical" type="checkbox" value="" checked>
+              Additional Clinical Services
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <label>
+              <input id="additional-professional" type="checkbox" value="" checked>
+              Additional Professional Scientific &amp; Technical
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <label>
+              <input id="estates-ancillary" type="checkbox" value="" checked>
+              Estates &amp; Ancillary
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <label>
+              <input id="healthcare-scientists" type="checkbox" value="" checked>
+              Healthcare Scientists
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <label>
+              <input id="medical-dental" type="checkbox" value="" checked>
+              Medical &amp; Dental
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <label>
+              <input id="nursing-midwifery" type="checkbox" value="" checked>
+              Nursing &amp; Midwifery
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <label>
+              <input id="students" type="checkbox" value="" checked>
+              Students
+            </label>
+          </div>
+
+        </form>
+        
+        
+        
+        <div class="well">
+          
+        </div>
+      </div>
+      
       <main id="main" class="col-md-9" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -37,14 +113,7 @@ get_header(); ?>
           </div>
         </div>
         
-          
-			<?php endwhile; // End of the loop. ?>
-
-		  </main><!-- #main -->
-      
-      <div class="col-md-3">
-        <div class="well">
-          <script>
+        <script>
             
             jQuery(document).ready(function() {
               
@@ -81,8 +150,13 @@ get_header(); ?>
             });
             
           </script>
-        </div>
-      </div>
+        
+          
+			<?php endwhile; // End of the loop. ?>
+
+		  </main><!-- #main -->
+      
+
       
 	  </div><!-- #primary -->
   </div>

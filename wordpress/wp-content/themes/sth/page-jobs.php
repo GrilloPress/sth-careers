@@ -102,6 +102,7 @@ get_header(); ?>
             jQuery(document).ready(function() {
                 jQuery("div#results").sieve({ itemSelector: "div.vacancy" });
               }); 
+           
           </script>
         </div>
         
@@ -114,6 +115,9 @@ get_header(); ?>
         </div>
         
         <script>
+          
+                        
+            
             
             jQuery(document).ready(function() {
               
@@ -123,6 +127,8 @@ get_header(); ?>
                   if ( e.which == 13 ) e.preventDefault();
                 
               });
+              
+              
               
             });
             
@@ -138,6 +144,23 @@ get_header(); ?>
                 jQuery( "span.job-count" ).text( initalCount );
                 onStart = false;
               }
+              
+              jQuery(document).ready(function() {
+  
+   
+                 // This is horrendous. Make a function. Then call it.
+                 jQuery('div#results').find(".vacancy.well:contains('Administrative & Clerical')").addClass("administrative-clerical");
+                 jQuery('div#results').find(".vacancy.well:contains('Allied Health Professionals')").addClass("allied-health");
+                 jQuery('div#results').find(".vacancy.well:contains('Additional Clinical Services')").addClass("additional-clinical");
+                 jQuery('div#results').find(".vacancy.well:contains('Additional Professional Scientific & Technical')").addClass("additional-professional");
+                 jQuery('div#results').find(".vacancy.well:contains('Estates & Ancillary')").addClass("estates-ancillary");
+                 jQuery('div#results').find(".vacancy.well:contains('Healthcare Scientists')").addClass("healthcare-scientists");
+                 jQuery('div#results').find(".vacancy.well:contains('Medical & Dental')").addClass("medical-dental");
+                 jQuery('div#results').find(".vacancy.well:contains('Nursing & Midwifery')").addClass("nursing-midwifery");
+                 jQuery('div#results').find(".vacancy.well:contains('Students')").addClass("students");
+
+
+              });
 
               jQuery(document).on('change keyup keypress', 'input#sieve', function(e){
                 

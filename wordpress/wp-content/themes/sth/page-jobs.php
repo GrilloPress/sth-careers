@@ -18,100 +18,72 @@ get_header(); ?>
      
     <div class="row">
       <div class="col-md-3">
-              
-        <form id="nhs-staff-groups">
-          <div class="radio">
-            <label>
-              <input id="admin-clerical" name="nhs-staff-groups" type="radio" value="administrative-clerical">
-              Administrative &amp; Clerical
-            </label>
-          </div>
+        <aside role="complementary" id="radio-controls">
+          <form id="nhs-staff-groups">
+            <div class="radio">
+              <label>
+                <input id="admin-clerical" name="nhs-staff-groups" type="radio" value="administrative-clerical">
+                Administrative &amp; Clerical
+              </label>
+            </div>
 
-          <div class="radio">
-            <label>
-              <input id="allied-health" name="nhs-staff-groups" type="radio" value="allied-health">
-              Allied Health Professionals
-            </label>
-          </div>
+            <div class="radio">
+              <label>
+                <input id="allied-health" name="nhs-staff-groups" type="radio" value="allied-health">
+                Allied Health Professionals
+              </label>
+            </div>
 
-          <div class="radio">
-            <label>
-              <input id="additional-clinical" name="nhs-staff-groups" type="radio" value="additional-clinical">
-              Additional Clinical Services
-            </label>
-          </div>
+            <div class="radio">
+              <label>
+                <input id="additional-clinical" name="nhs-staff-groups" type="radio" value="additional-clinical">
+                Additional Clinical Services
+              </label>
+            </div>
 
-          <div class="radio">
-            <label>
-              <input id="additional-professional" name="nhs-staff-groups" type="radio" value="additional-professional">
-              Additional Professional Scientific &amp; Technical
-            </label>
-          </div>
+            <div class="radio">
+              <label>
+                <input id="additional-professional" name="nhs-staff-groups" type="radio" value="additional-professional">
+                Additional Professional Scientific &amp; Technical
+              </label>
+            </div>
 
-          <div class="radio">
-            <label>
-              <input id="estates-ancillary" name="nhs-staff-groups" type="radio" value="estates-ancillary">
-              Estates &amp; Ancillary
-            </label>
-          </div>
+            <div class="radio">
+              <label>
+                <input id="estates-ancillary" name="nhs-staff-groups" type="radio" value="estates-ancillary">
+                Estates &amp; Ancillary
+              </label>
+            </div>
 
-          <div class="radio">
-            <label>
-              <input id="healthcare-scientists" name="nhs-staff-groups" type="radio" value="healthcare-scientists">
-              Healthcare Scientists
-            </label>
-          </div>
+            <div class="radio">
+              <label>
+                <input id="healthcare-scientists" name="nhs-staff-groups" type="radio" value="healthcare-scientists">
+                Healthcare Scientists
+              </label>
+            </div>
 
-          <div class="radio">
-            <label>
-              <input id="medical-dental" name="nhs-staff-groups" type="radio" value="medical-dental">
-              Medical &amp; Dental
-            </label>
-          </div>
+            <div class="radio">
+              <label>
+                <input id="medical-dental" name="nhs-staff-groups" type="radio" value="medical-dental">
+                Medical &amp; Dental
+              </label>
+            </div>
 
-          <div class="radio">
-            <label>
-              <input id="nursing-midwifery" name="nhs-staff-groups" type="radio" value="nursing-midwifery">
-              Nursing &amp; Midwifery
-            </label>
-          </div>
+            <div class="radio">
+              <label>
+                <input id="nursing-midwifery" name="nhs-staff-groups" type="radio" value="nursing-midwifery">
+                Nursing &amp; Midwifery
+              </label>
+            </div>
 
-          <div class="radio">
-            <label>
-              <input id="students" name="nhs-staff-groups" type="radio" value="students">
-              Students
-            </label>
-          </div>
-
-        </form>
-        
-        <script>
-          
-          // Watch the radio buttons
-          // If a button is checked
-          // Hide all the job feed
-          // Apart from the ones that correspond
-          // to the checked button
-          jQuery('form#nhs-staff-groups').change(function(){
-
-            jQuery(".vacancy:visible").hide();
-            
-            var inputValue = jQuery("#nhs-staff-groups input[type='radio']:checked").val();
-            var classSearch = "." + inputValue;
-            
-            jQuery('div#results').find(classSearch).show();
-            
-            jobCount = jQuery('.vacancy:visible').length;
-            jQuery( "span.job-count" ).text( jobCount );
-
-            
-          });
-          
-
-        
-        </script>
-        
-        
+            <div class="radio">
+              <label>
+                <input id="students" name="nhs-staff-groups" type="radio" value="students">
+                Students
+              </label>
+            </div>
+          </form>
+        </aside>
         
         <div class="well">
           
@@ -140,9 +112,6 @@ get_header(); ?>
         </div>
         
         <script>
-          
-                        
-            
             
             jQuery(document).ready(function() {
               
@@ -156,6 +125,26 @@ get_header(); ?>
               
               
             });
+          
+          // Watch the radio buttons
+          // If a button is checked
+          // Hide all the job feed
+          // Apart from the ones that correspond
+          // to the checked button
+          jQuery('form#nhs-staff-groups').change(function(){
+
+            jQuery(".vacancy:visible").hide();
+            
+            var inputValue = jQuery("#nhs-staff-groups input[type='radio']:checked").val();
+            var classSearch = "." + inputValue;
+            
+            jQuery('div#results').find(classSearch).show();
+            
+            jobCount = jQuery('.vacancy:visible').length;
+            jQuery( "span.job-count" ).text( jobCount );
+
+            
+          });
             
             // job count function
             jQuery(document).ready(function() {

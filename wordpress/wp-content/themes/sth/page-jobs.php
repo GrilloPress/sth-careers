@@ -17,74 +17,99 @@ get_header(); ?>
      </div>
      
     <div class="row">
-      
-            <div class="col-md-3">
-        
+      <div class="col-md-3">
+              
         <form id="nhs-staff-groups">
-          <div class="checkbox">
+          <div class="radio">
             <label>
-              <input id="admin-clerical" type="checkbox" value="" checked>
+              <input id="admin-clerical" name="nhs-staff-groups" type="radio" value="administrative-clerical">
               Administrative &amp; Clerical
             </label>
           </div>
 
-          <div class="checkbox">
+          <div class="radio">
             <label>
-              <input id="allied-health" type="checkbox" value="" checked>
+              <input id="allied-health" name="nhs-staff-groups" type="radio" value="allied-health">
               Allied Health Professionals
             </label>
           </div>
 
-          <div class="checkbox">
+          <div class="radio">
             <label>
-              <input id="additional-clinical" type="checkbox" value="" checked>
+              <input id="additional-clinical" name="nhs-staff-groups" type="radio" value="additional-clinical">
               Additional Clinical Services
             </label>
           </div>
 
-          <div class="checkbox">
+          <div class="radio">
             <label>
-              <input id="additional-professional" type="checkbox" value="" checked>
+              <input id="additional-professional" name="nhs-staff-groups" type="radio" value="additional-professional">
               Additional Professional Scientific &amp; Technical
             </label>
           </div>
 
-          <div class="checkbox">
+          <div class="radio">
             <label>
-              <input id="estates-ancillary" type="checkbox" value="" checked>
+              <input id="estates-ancillary" name="nhs-staff-groups" type="radio" value="estates-ancillary">
               Estates &amp; Ancillary
             </label>
           </div>
 
-          <div class="checkbox">
+          <div class="radio">
             <label>
-              <input id="healthcare-scientists" type="checkbox" value="" checked>
+              <input id="healthcare-scientists" name="nhs-staff-groups" type="radio" value="healthcare-scientists">
               Healthcare Scientists
             </label>
           </div>
 
-          <div class="checkbox">
+          <div class="radio">
             <label>
-              <input id="medical-dental" type="checkbox" value="" checked>
+              <input id="medical-dental" name="nhs-staff-groups" type="radio" value="medical-dental">
               Medical &amp; Dental
             </label>
           </div>
 
-          <div class="checkbox">
+          <div class="radio">
             <label>
-              <input id="nursing-midwifery" type="checkbox" value="" checked>
+              <input id="nursing-midwifery" name="nhs-staff-groups" type="radio" value="nursing-midwifery">
               Nursing &amp; Midwifery
             </label>
           </div>
 
-          <div class="checkbox">
+          <div class="radio">
             <label>
-              <input id="students" type="checkbox" value="" checked>
+              <input id="students" name="nhs-staff-groups" type="radio" value="students">
               Students
             </label>
           </div>
 
         </form>
+        
+        <script>
+          
+          // Watch the radio buttons
+          // If a button is checked
+          // Hide all the job feed
+          // Apart from the ones that correspond
+          // to the checked button
+          jQuery('form#nhs-staff-groups').change(function(){
+
+            jQuery(".vacancy:visible").hide();
+            
+            var inputValue = jQuery("#nhs-staff-groups input[type='radio']:checked").val();
+            var classSearch = "." + inputValue;
+            
+            jQuery('div#results').find(classSearch).show();
+            
+            jobCount = jQuery('.vacancy:visible').length;
+            jQuery( "span.job-count" ).text( jobCount );
+
+            
+          });
+          
+
+        
+        </script>
         
         
         
@@ -146,7 +171,6 @@ get_header(); ?>
               }
               
               jQuery(document).ready(function() {
-  
    
                  // This is horrendous. Make a function. Then call it.
                  jQuery('div#results').find(".vacancy.well:contains('Administrative & Clerical')").addClass("administrative-clerical");
@@ -158,7 +182,6 @@ get_header(); ?>
                  jQuery('div#results').find(".vacancy.well:contains('Medical & Dental')").addClass("medical-dental");
                  jQuery('div#results').find(".vacancy.well:contains('Nursing & Midwifery')").addClass("nursing-midwifery");
                  jQuery('div#results').find(".vacancy.well:contains('Students')").addClass("students");
-
 
               });
 

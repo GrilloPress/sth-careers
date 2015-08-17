@@ -169,10 +169,6 @@ get_header(); ?>
                   onStart = false;
                 }
 
-
-
-
-
               });
 
             jQuery(document).ready(function() {

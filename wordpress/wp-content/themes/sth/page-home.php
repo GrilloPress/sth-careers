@@ -49,7 +49,7 @@
               
               <div class="col-md-4 col-sm-4">
                 <div class="home-boxes-unit">
-                  <a href="<?php echo get_home_url() . "/nursing-midwifery/nursing-at-sheffield-teaching-hospitals/" ;?>">
+                  <a href="<?php echo get_home_url() . "/nursing-midwifery/" ;?>">
                     <img alt="" src="<?php echo get_template_directory_uri() . "/images/box_images_nurses.jpg" ; ?>" width="100%">
                     <div class="well">
                       <p class="lead">Nursing at Sheffield</p>

@@ -23,6 +23,7 @@
                 <div class="row">
                   <div class="col-md-4 col-sm-4 col-xs-6">
                     <img src="<?php echo get_template_directory_uri() . "/images/andrew_cash_web_small.jpg" ;?>" class="img-responsive">
+                    <p class="text-center"><strong>Sir Andrew Cash OBE</strong></p>
                   </div>
 
                   <div class="col-md-8">

@@ -9079,6 +9079,12 @@ a {
   letter-spacing: .3px;
 }
 
+/* line 29, ../sass/_buttons.scss */
+.btn-long {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
 /* line 4, ../sass/_alerts.scss */
 .alert {
   border: none;
@@ -9262,7 +9268,7 @@ a {
   border-radius: 5px;
   padding: 2px 8px;
   color: black;
-  background-color: #90A4AE;
+  background-color: #adbcc4;
 }
 
 /* line 28, ../sass/_typography.scss */
@@ -9285,4 +9291,20 @@ a {
   color: #006DB8;
   font-weight: 600;
   font-size: 30px;
+}
+
+/* line 57, ../sass/_typography.scss */
+.home-boxes-unit h3 {
+  margin-top: 0px;
+  color: #006DB8;
+  font-weight: 600;
+  font-size: 25px;
+}
+/* line 66, ../sass/_typography.scss */
+.home-boxes-unit p.text {
+  color: #666;
+}
+/* line 70, ../sass/_typography.scss */
+.home-boxes-unit p.text:hover {
+  text-decoration: none;
 }

@@ -22,16 +22,15 @@
                 <h3>Here at Sheffield Teaching Hospitals something something bringing innovative stuff with classic other promises</h3>
                 <div class="row">
                   <div class="col-md-4 col-sm-4 col-xs-6">
-                    <img src="<?php echo get_template_directory_uri() . "/images/andrew_cash_web_small.jpg" ;?>" class="img-responsive">
-                    <p class="text-center"><strong>Sir Andrew Cash OBE</strong></p>
+                    <img src="<?php echo get_template_directory_uri() . "/images/andrew_cash_web_box.jpg" ;?>" class="img-responsive">
                   </div>
 
                   <div class="col-md-8">
-                    <p class="lead">The eight Clinical Commissioning Groups (CCGs) in South Yorkshire and North Derbyshire, along with NHS England (South Yorkshire and Bassetlaw) and Mid Yorkshire CCGs have formed a similar partnership called 'Working Together'.
-                   </p>
-
-                  <a role="button" href="#" class="btn btn-warning">Further information</a>
-
+                    
+                    <p class="lead">"The eight Clinical Commissioning Groups (CCGs) in South Yorkshire and North Derbyshire, along with NHS England (South Yorkshire and Bassetlaw) and Mid Yorkshire CCGs have formed a similar partnership called Working Together" - <strong>Sir Andrew Cash OBE</strong></p>
+                    
+                    <a role="button" href="<?php echo get_home_url() . "/current-vacancies/" ;?>" class="btn btn-long btn-warning">Current Vacancies</a>
+                    <a role="button" href="<?php echo get_home_url() . "/contact-us/" ;?>" class="btn btn-link">Contact us</a>
                   </div>
                 </div>
               </div>
@@ -41,13 +40,14 @@
 
           <section class="home-boxes">
             <div class="row">
+              
               <div class="col-md-4 col-sm-4">
                 <div class="home-boxes-unit">
                   <a href="<?php echo get_home_url() . "/current-vacancies/" ;?>">
                     <img alt="" src="<?php echo get_template_directory_uri() . "/images/nurses-with-computers.jpg" ;?>" width="100%">
                     <div class="well">
-                      <p class="lead">Current Vacancies</p>
-                      <p class="text">Healthcare Scientist, Nurse or Search our latest vacancies and find your next career move at Sheffield Teaching Hospitals</p>
+                      <h3>Current Vacancies</h3>
+                      <p class="text">Healthcare Scientist, Nurse or looking for your first post? Search our latest vacancies and find your next career move at Sheffield Teaching Hospitals</p>
                       <div class="btn btn-warning">Find out more</div>
                     </div>
                   </a>
@@ -59,7 +59,7 @@
                   <a href="<?php echo get_home_url() . "/nursing-midwifery/" ;?>">
                     <img alt="" src="<?php echo get_template_directory_uri() . "/images/box_images_nurses.jpg" ;?>" width="100%">
                     <div class="well">
-                      <p class="lead">Nursing at Sheffield</p>
+                      <h3>Nursing at Sheffield</h3>
                       <p class="text">With over nine of our Chief Nurses having started their careers with us, find out what makes Sheffield Teaching Hospitals a great place for Nursing and Midwifery</p>
                       <div class="btn btn-warning">Find out more</div>
                     </div>
@@ -72,13 +72,14 @@
                   <a href="#">
                     <img alt="" src="<?php echo get_template_directory_uri() . "/images/hilary.jpg" ;?>" width="100%">
                     <div class="well">
-                      <p class="lead">Meet our Staff</p>
+                      <h3>Meet our Staff</h3>
                       <p class="text">Find out more about your future colleagues and why they love to work in Sheffield and are "Proud" to make a difference in the NHS.</p>
                       <div class="btn btn-warning">Find out more</div>
                     </div>
                   </a>
                 </div>
               </div>
+              
             </div>
           </section>
         
@@ -140,7 +141,7 @@
               <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
                   <section class="post_content clearfix">
                     <h3 class="post-header"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-                    <p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php echo get_the_date('F jS, Y', '','', FALSE); ?></time></p>
+                    <p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php echo get_the_date('F jS, Y', '','', FALSE); ?></time> - Staff Profiles</p>
                     <?php the_content(); ?>
                   </section>
 

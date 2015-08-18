@@ -54,15 +54,12 @@
 
 .home-boxes-unit {
   
-  p.lead {
+  h3 {
     
-    margin-bottom: 2px;
-    
-    &:hover {
-      
-      text-decoration: none;
-    }
-    
+    margin-top: 0px;
+    color: $brand-primary;
+    font-weight: 600;
+    font-size: 25px;
     
   }
   

@@ -368,8 +368,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url(/fonts/wp-content/themes/sth/fonts/glyphicons-halflings-regular.eot);
-  src: url(/fonts/wp-content/themes/sth/fonts/glyphicons-halflings-regular.eot?#iefix) format("embedded-opentype"), url(/fonts/wp-content/themes/sth/fonts/glyphicons-halflings-regular.woff2) format("woff2"), url(/fonts/wp-content/themes/sth/fonts/glyphicons-halflings-regular.woff) format("woff"), url(/fonts/wp-content/themes/sth/fonts/glyphicons-halflings-regular.ttf) format("truetype"), url(/fonts/wp-content/themes/sth/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format("svg");
+  src: url(url(/wp-content/themes/sth/fonts/glyphicons-halflings-regular.eot));
+  src: url(url(/wp-content/themes/sth/fonts/glyphicons-halflings-regular.eot?#iefix)) format("embedded-opentype"), url(url(/wp-content/themes/sth/fonts/glyphicons-halflings-regular.woff2)) format("woff2"), url(url(/wp-content/themes/sth/fonts/glyphicons-halflings-regular.woff)) format("woff"), url(url(/wp-content/themes/sth/fonts/glyphicons-halflings-regular.ttf)) format("truetype"), url(url(/wp-content/themes/sth/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular)) format("svg");
 }
 /* line 24, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_glyphicons.scss */
 .glyphicon {
@@ -9042,6 +9042,8 @@ select.form-control:focus {
 /* line 72, ../sass/_forms.scss */
 input#sieve {
   width: 100%;
+  -webkit-box-shadow: inset 0 -1px 0 #006DB8;
+  box-shadow: inset 0 -1px 0 #006DB8;
 }
 
 /* line 1, ../sass/_buttons.scss */
@@ -9253,4 +9255,34 @@ a {
   content: " ";
   padding: 0 5px;
   color: #ccc;
+}
+
+/* line 19, ../sass/_typography.scss */
+.job-counter {
+  border-radius: 5px;
+  padding: 2px 8px;
+  color: black;
+  background-color: #90A4AE;
+}
+
+/* line 28, ../sass/_typography.scss */
+.card {
+  margin-top: 25px;
+}
+/* line 32, ../sass/_typography.scss */
+.card h2 {
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 0px;
+  color: #C6CCCF;
+}
+/* line 43, ../sass/_typography.scss */
+.card h3 {
+  margin-top: 5px;
+  text-transform: uppercase;
+  color: #006DB8;
+  font-weight: 600;
+  font-size: 30px;
 }

@@ -1722,7 +1722,7 @@ body {
   font-size: 15px;
   line-height: 1.846;
   color: #666;
-  background-color: #F9F9F9;
+  background-color: #F4F4F4;
 }
 
 /* line 36, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_scaffolding.scss */
@@ -1778,7 +1778,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.846;
-  background-color: #F9F9F9;
+  background-color: #F4F4F4;
   border: 1px solid #ddd;
   border-radius: 3px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -3521,7 +3521,7 @@ th {
 }
 /* line 62, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_tables.scss */
 .table .table {
-  background-color: #F9F9F9;
+  background-color: #F4F4F4;
 }
 
 /* line 75, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_tables.scss */
@@ -5580,7 +5580,7 @@ tbody.collapse.in {
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus,
   .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #F9F9F9;
+    border-bottom-color: #F4F4F4;
   }
 }
 
@@ -6243,7 +6243,7 @@ tbody.collapse.in {
   padding: 8px 15px;
   margin-bottom: 27px;
   list-style: none;
-  background-color: #F9F9F9;
+  background-color: #F4F4F4;
   border-radius: 3px;
 }
 /* line 13, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_breadcrumbs.scss */
@@ -6619,7 +6619,7 @@ a.badge:hover, a.badge:focus {
   padding: 4px;
   margin-bottom: 27px;
   line-height: 1.846;
-  background-color: #F9F9F9;
+  background-color: #F4F4F4;
   border: 1px solid #ddd;
   border-radius: 3px;
   -webkit-transition: border 0.2s ease-in-out;
@@ -8929,8 +8929,8 @@ button.close {
 }
 
 /* line 70, ../sass/_navbar.scss */
-a.navbar-brand {
-  padding-top: 20.5px;
+#site-header a.navbar-brand {
+  padding-top: 19px;
 }
 
 /* line 3, ../sass/_forms.scss */
@@ -9190,29 +9190,24 @@ a {
   padding-top: 15px;
 }
 
-/* line 26, ../sass/_sections.scss */
-.well {
-  border: 1px solid #efefef;
-}
-
-/* line 34, ../sass/_sections.scss */
+/* line 28, ../sass/_sections.scss */
 #results dl {
   margin-bottom: 0px;
 }
-/* line 40, ../sass/_sections.scss */
+/* line 34, ../sass/_sections.scss */
 #results dt {
   display: inline;
   color: #01467d;
 }
-/* line 47, ../sass/_sections.scss */
+/* line 41, ../sass/_sections.scss */
 #results dd {
   display: inline;
 }
-/* line 53, ../sass/_sections.scss */
+/* line 47, ../sass/_sections.scss */
 #results h2 {
   margin-top: 0px;
 }
-/* line 59, ../sass/_sections.scss */
+/* line 53, ../sass/_sections.scss */
 #results h3 {
   font-size: 16px;
 }
@@ -9248,6 +9243,12 @@ a {
 }
 
 /* line 1, ../sass/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  font-family: Helvetica, Arial;
+}
+
+/* line 8, ../sass/_typography.scss */
 .well-heading {
   background-color: #006DB8;
   color: white;
@@ -9256,14 +9257,14 @@ a {
   padding: 5px 0px 5px 15px;
 }
 
-/* line 11, ../sass/_typography.scss */
+/* line 18, ../sass/_typography.scss */
 #breadcrumbs.breadcrumb > li + li:before {
   content: " ";
   padding: 0 5px;
   color: #ccc;
 }
 
-/* line 19, ../sass/_typography.scss */
+/* line 26, ../sass/_typography.scss */
 .job-counter {
   border-radius: 5px;
   padding: 2px 8px;
@@ -9271,11 +9272,7 @@ a {
   background-color: #adbcc4;
 }
 
-/* line 28, ../sass/_typography.scss */
-.card {
-  margin-top: 25px;
-}
-/* line 32, ../sass/_typography.scss */
+/* line 37, ../sass/_typography.scss */
 .card h2 {
   text-align: center;
   font-size: 24px;
@@ -9284,7 +9281,7 @@ a {
   margin-top: 0px;
   color: #C6CCCF;
 }
-/* line 43, ../sass/_typography.scss */
+/* line 48, ../sass/_typography.scss */
 .card h3 {
   margin-top: 5px;
   text-transform: uppercase;
@@ -9293,18 +9290,18 @@ a {
   font-size: 30px;
 }
 
-/* line 57, ../sass/_typography.scss */
+/* line 62, ../sass/_typography.scss */
 .home-boxes-unit h3 {
   margin-top: 0px;
   color: #006DB8;
   font-weight: 600;
   font-size: 25px;
 }
-/* line 66, ../sass/_typography.scss */
+/* line 71, ../sass/_typography.scss */
 .home-boxes-unit p.text {
   color: #666;
 }
-/* line 70, ../sass/_typography.scss */
+/* line 75, ../sass/_typography.scss */
 .home-boxes-unit p.text:hover {
   text-decoration: none;
 }

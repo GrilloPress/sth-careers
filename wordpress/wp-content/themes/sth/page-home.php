@@ -48,8 +48,8 @@
                     <img alt="" src="<?php echo get_template_directory_uri() . "/images/nurses-with-computers.jpg" ;?>" width="100%">
                     <div class="well">
                       <h3>Current Vacancies</h3>
-                      <p class="text">Healthcare Scientist, Nurse or looking for your first post? Search our latest vacancies and find your next career move at Sheffield Teaching Hospitals</p>
-                      <div class="btn btn-warning">Find out more</div>
+                      <p class="text">Healthcare Scientist, Nurse or looking for your first post? Search our latest vacancies</p>
+                      <div class="btn btn-warning">Current Vacancies</div>
                     </div>
                   </a>
                 </div>
@@ -61,7 +61,7 @@
                     <img alt="" src="<?php echo get_template_directory_uri() . "/images/box_images_nurses.jpg" ;?>" width="100%">
                     <div class="well">
                       <h3>Nursing at Sheffield</h3>
-                      <p class="text">With over nine of our Chief Nurses having started their careers with us, find out what makes Sheffield Teaching Hospitals a great place for Nursing and Midwifery</p>
+                      <p class="text">Find out what makes Sheffield Teaching Hospitals a great place for your career as a Nurse or Midwife</p>
                       <div class="btn btn-warning">Find out more</div>
                     </div>
                   </a>
@@ -74,8 +74,8 @@
                     <img alt="" src="<?php echo get_template_directory_uri() . "/images/hilary.jpg" ;?>" width="100%">
                     <div class="well">
                       <h3>Meet our Staff</h3>
-                      <p class="text">Find out more about your future colleagues and why they love to work in Sheffield and are "Proud" to make a difference in the NHS.</p>
-                      <div class="btn btn-warning">Find out more</div>
+                      <p class="text">Find out more about your future colleagues and why they love to work in Sheffield</p>
+                      <div class="btn btn-warning">Meet our Staff</div>
                     </div>
                   </a>
                 </div>

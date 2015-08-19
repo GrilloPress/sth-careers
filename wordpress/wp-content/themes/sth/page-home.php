@@ -12,6 +12,7 @@
 
 	 <div id="primary" class="container">
       <main id="main" role="main">
+        
         <?php get_template_part( 'partials/content', 'slider' ); ?>
         
         <section class="home-intro">
@@ -21,16 +22,16 @@
                 <h2>Find a new career</h2>
                 <h3>Here at Sheffield Teaching Hospitals something something bringing innovative stuff with classic other promises</h3>
                 <div class="row">
-                  <div class="col-md-4 col-sm-4 col-xs-6">
+                  <div class="col-md-3 col-sm-3 col-xs-6">
                     <img src="<?php echo get_template_directory_uri() . "/images/andrew_cash_web_box.jpg" ;?>" class="img-responsive">
                   </div>
 
                   <div class="col-md-8">
                     
-                    <p class="lead">"The eight Clinical Commissioning Groups (CCGs) in South Yorkshire and North Derbyshire, along with NHS England (South Yorkshire and Bassetlaw) and Mid Yorkshire CCGs have formed a similar partnership called Working Together" - <strong>Sir Andrew Cash OBE</strong></p>
+                    <p>"The eight Clinical Commissioning Groups (CCGs) in South Yorkshire and North Derbyshire, along with NHS England (South Yorkshire and Bassetlaw) and Mid Yorkshire CCGs have formed a similar partnership called Working Together" <br> - <strong>Sir Andrew Cash OBE</strong></p>
                     
                     <a role="button" href="<?php echo get_home_url() . "/current-vacancies/" ;?>" class="btn btn-long btn-warning">Current Vacancies</a>
-                    <a role="button" href="<?php echo get_home_url() . "/contact-us/" ;?>" class="btn btn-link">Contact us</a>
+                    <a role="button" href="<?php echo get_home_url() . "/why-work-here/" ;?>" class="btn btn-link">Find out how we work</a>
                   </div>
                 </div>
               </div>
@@ -90,15 +91,15 @@
                 <h2>Our Values</h2>
                 <h3>Here at Sheffield Teaching Hospitals something something bringing innovative stuff with classic other promises</h3>
                 <div class="row">
-                  <div class="col-md-4 col-sm-4">
-                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/gg-8c9MBrjo?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
+                  <div class="col-md-6 col-sm-6">
+                    <iframe width="100%" height="280" src="https://www.youtube.com/embed/gg-8c9MBrjo?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
                   </div>
 
-                  <div class="col-md-8">
-                    <p class="lead">The eight Clinical Commissioning Groups (CCGs) in South Yorkshire and North Derbyshire, along with NHS England (South Yorkshire and Bassetlaw) and Mid Yorkshire CCGs have formed a similar partnership called 'Working Together'.
+                  <div class="col-md-5">
+                    <p>The eight Clinical Commissioning Groups (CCGs) in South Yorkshire and North Derbyshire, along with NHS England (South Yorkshire and Bassetlaw) and Mid Yorkshire CCGs have formed a similar partnership called 'Working Together'.
                    </p>
 
-                  <a role="button" href="#" class="btn btn-warning">Further information</a>
+                  <a role="button" href="#" class="btn btn-long btn-warning">Further information</a>
 
                   </div>
                 </div>

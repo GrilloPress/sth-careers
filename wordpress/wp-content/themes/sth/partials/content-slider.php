@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-md-12">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide hidden-xs" data-ride="carousel">
       
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
         <img src="<?php echo get_template_directory_uri () . "/images/less-than.png" ; ?>" alt="Previous Slide">

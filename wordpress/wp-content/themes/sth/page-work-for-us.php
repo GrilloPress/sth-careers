@@ -68,11 +68,64 @@ get_header(); ?>
               </div>
             </div>
           </section>  
-          
-          
-          
-          
         </div>
+        
+        <section id="top-benefits" >
+          <div class="row">
+            
+            <div class="col-md-6">
+              <div class="card-benefit">
+                <h3>Specialist Services</h3>
+                <p>As one of the largest NHS Trusts in the Country we provide cutting-edge and specialist services found nowhere else in the country</p>
+                <a href="#">Find out more</a>
+                </div>
+              </div>
+            
+            
+             <div class="col-md-6">
+              <div class="card-benefit">
+                <h3>Multi-site Trust</h3>
+                <p>With two major campuses, the Northern General and Central Campus, you are guarenteed to find variety and a great work location</p>
+                <a href="#">Find out more</a>
+                </div>
+              </div>
+            
+             <div class="col-md-6">
+              <div class="card-benefit">
+                <h3>Training Opportunities</h3>
+                <p>Being a Teaching Hospital we know the value of education and staff development. We offer advanced internal training and chances for top-up degrees</p>
+                <a href="#">Find out more</a>
+              </div>
+            </div>
+            
+             <div class="col-md-6">
+              <div class="card-benefit">
+                <h3>Award Winning Trust</h3>
+                <p>With numerous award winning developments across the Trust, we value and promote innovative thinking and offer great research opportunities</p>
+                <a href="#">Find out more</a>
+              </div>
+            </div>
+            
+             <div class="col-md-6">
+              <div class="card-benefit">
+                <h3>Career Development</h3>
+                <p>With over 90% of our Band 7 Nurses hired from intenral candidates you are assured that we reward skill, passion and excellence</p>
+                <a href="#">Find out more</a>
+              </div>
+            </div>
+            
+             <div class="col-md-6">
+              <div class="card-benefit">
+                <h3>Staff Benefits</h3>
+                <p>Our two dedicated Nurseries, staff events, groups and activites to discounts and vouchers make sure your work experience is highly rewarding </p>
+                <a href="#">Find out more</a>
+              </div>
+            </div>
+          
+          </div>
+        </section>
+        
+        
       </main>
      
      <?php get_footer(); ?>

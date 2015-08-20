@@ -19,55 +19,36 @@ get_header(); ?>
       <main id="main" role="main">
         
         <div class="row">
-          <section id="work-here-block">
-            <div class="col-md-3 col-sm-4 col-xs-4">
-              <div class="work-here-block-unit">
-                <a href="#" title="Learn more about Sheffield Teaching Hospitals">
-                  <img src="<?php echo get_template_directory_uri() . "/images/300-350.png" ;?>" width="100%" alt="About the Trust">
-                </a>
-              </div>
-            </div>
+          
+          <div id="" class="col-md-8">
             
-            <div class="col-md-6 col-sm-8 col-xs-8">
-              <div class="work-here-block-unit">
-                <a href="#" title="Learn more about our vision for our services">
-                  <img src="<?php echo get_template_directory_uri() . "/images/600-350.png" ;?>" width="100%" alt="Our Vision">
-                </a>
-              </div>
-            </div>
+            <?php while ( have_posts() ) : the_post(); ?>
+
+              <?php get_template_part( 'template-parts/content', 'page' ); ?>
+
+            <?php endwhile; // End of the loop. ?>
+          
+          </div>
             
-            <div class="col-md-3 col-sm-4 col-xs-4">
-              <div class="work-here-block-unit">
-                <a href="#" title="Find out about our award-winning services and specialties">
-                  <img src="<?php echo get_template_directory_uri() . "/images/300-350.png" ;?>" width="100%" alt="Services and Specialties">
-                </a>
+            <div class="col-md-4">
+              
+              <img src="<?php echo get_template_directory_uri() . "/images/16000-staff.png" ;?>" width="100%">
+                
+              <img src="<?php echo get_template_directory_uri() . "/images/1million.png" ;?>" width="100%">
+                
+              <img src="<?php echo get_template_directory_uri() . "/images/three-trauma.png" ;?>" width="100%">
+              
+              <div class="well well-nav">
+                <ul class="nav nav-pills nav-stacked">
+                  <li role="presentation"><a href="#">Our Vision</a></li>
+                  <li role="presentation"><a href="#">Services &amp; Specialties</a></li>
+                  <li role="presentation"><a href="#">Living in Sheffield</a></li>
+                  <li role="presentation"><a href="#">Staff Benefits</a></li>
+                </ul>
               </div>
+              
             </div>
-            
-            <div class="col-md-6 col-sm-8 col-xs-8">
-              <div class="work-here-block-unit">
-                <a href="#" title="Learn more about Sheffield and the surrounding area">
-                  <img src="<?php echo get_template_directory_uri() . "/images/600-350.png" ;?>" width="100%" alt="Sheffield">
-                </a>
-              </div>
-            </div>
-            
-            <div class="col-md-3 col-sm-6 col-xs-6">
-              <div class="work-here-block-unit">
-                <a href="#" title="Find out about our staff benefits">
-                  <img src="<?php echo get_template_directory_uri() . "/images/300-350.png" ;?>" width="100%" alt="Staff Benefits">
-                </a>
-              </div>
-            </div>
-            
-            <div class="col-md-3 col-sm-6 col-xs-6">
-              <div class="work-here-block-unit">
-                <a href="#" title="Hear why we are such an innovative Trust and why we lead in health research">
-                  <img src="<?php echo get_template_directory_uri() . "/images/300-350.png" ;?>" width="100%" alt="Research and Innovation">
-                </a>
-              </div>
-            </div>
-          </section>  
+
         </div>
         
         <section id="top-benefits" >
@@ -78,8 +59,8 @@ get_header(); ?>
                 <h3>Specialist Services</h3>
                 <p>As one of the largest NHS Trusts in the Country we provide cutting-edge and specialist services found nowhere else in the country</p>
                 <a href="#">Find out more</a>
-                </div>
               </div>
+            </div>
             
             
              <div class="col-md-6">

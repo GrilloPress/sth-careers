@@ -9212,6 +9212,15 @@ a {
   font-size: 16px;
 }
 
+/* line 63, ../sass/_sections.scss */
+#work-here-block .work-here-block-unit {
+  margin-bottom: 10px;
+}
+/* line 67, ../sass/_sections.scss */
+#work-here-block .work-here-block-unit img {
+  max-height: 264px;
+}
+
 /* line 1, ../sass/_slider.scss */
 #myCarousel .nav a {
   border-radius: 0px;

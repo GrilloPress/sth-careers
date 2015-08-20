@@ -47,7 +47,7 @@ get_header(); ?>
             <div class="col-md-6 col-sm-8">
               <div class="work-here-block-unit">
                 <a href="#">
-                  <img src="<?php echo get_template_directory_uri() . "/images/300-350.png" ;?>" width="100%" alt="About Sheffield">
+                  <img src="<?php echo get_template_directory_uri() . "/images/600-350.png" ;?>" width="100%" alt="Our Vision">
                 </a>
               </div>
             </div>
@@ -74,3 +74,5 @@ get_header(); ?>
           
         </div>
       </main>
+     
+     <?php get_footer(); ?>

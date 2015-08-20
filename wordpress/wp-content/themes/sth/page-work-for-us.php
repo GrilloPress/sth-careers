@@ -20,49 +20,49 @@ get_header(); ?>
         
         <div class="row">
           <section id="work-here-block">
-            <div class="col-md-3 col-sm-4">
+            <div class="col-md-3 col-sm-4 col-xs-4">
               <div class="work-here-block-unit">
-                <a href="#">
+                <a href="#" title="Learn more about Sheffield Teaching Hospitals">
                   <img src="<?php echo get_template_directory_uri() . "/images/300-350.png" ;?>" width="100%" alt="About the Trust">
                 </a>
               </div>
             </div>
             
-            <div class="col-md-6 col-sm-8">
+            <div class="col-md-6 col-sm-8 col-xs-8">
               <div class="work-here-block-unit">
-                <a href="#">
+                <a href="#" title="Learn more about our vision for our services">
                   <img src="<?php echo get_template_directory_uri() . "/images/600-350.png" ;?>" width="100%" alt="Our Vision">
                 </a>
               </div>
             </div>
             
-            <div class="col-md-3 col-sm-4">
+            <div class="col-md-3 col-sm-4 col-xs-4">
               <div class="work-here-block-unit">
-                <a href="#">
+                <a href="#" title="Find out about our award-winning services and specialties">
                   <img src="<?php echo get_template_directory_uri() . "/images/300-350.png" ;?>" width="100%" alt="Services and Specialties">
                 </a>
               </div>
             </div>
             
-            <div class="col-md-6 col-sm-8">
+            <div class="col-md-6 col-sm-8 col-xs-8">
               <div class="work-here-block-unit">
-                <a href="#">
-                  <img src="<?php echo get_template_directory_uri() . "/images/600-350.png" ;?>" width="100%" alt="Our Vision">
+                <a href="#" title="Learn more about Sheffield and the surrounding area">
+                  <img src="<?php echo get_template_directory_uri() . "/images/600-350.png" ;?>" width="100%" alt="Sheffield">
                 </a>
               </div>
             </div>
             
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-3 col-sm-6 col-xs-6">
               <div class="work-here-block-unit">
-                <a href="#">
+                <a href="#" title="Find out about our staff benefits">
                   <img src="<?php echo get_template_directory_uri() . "/images/300-350.png" ;?>" width="100%" alt="Staff Benefits">
                 </a>
               </div>
             </div>
             
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-3 col-sm-6 col-xs-6">
               <div class="work-here-block-unit">
-                <a href="#">
+                <a href="#" title="Hear why we are such an innovative Trust and why we lead in health research">
                   <img src="<?php echo get_template_directory_uri() . "/images/300-350.png" ;?>" width="100%" alt="Research and Innovation">
                 </a>
               </div>

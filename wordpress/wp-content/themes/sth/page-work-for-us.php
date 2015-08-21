@@ -26,7 +26,13 @@ get_header(); ?>
             
             <div class="tab-content">
               <div role="tabpanel" class="tab-pane in fade active" id="home">
-                <img src="http://placehold.it/1200x400/cccccc/ffffff" width="100%">
+                <?php if ( has_post_thumbnail() ){
+                  
+                echo get_the_post_thumbnail() ;
+  
+                } ;?>
+                
+            
                 <?php get_template_part( 'template-parts/content', 'page' ); ?>
               </div>
                <?php endwhile; // End of the loop. ?>
@@ -44,8 +50,15 @@ get_header(); ?>
                foreach($myposts as $post) :?>
 
               <?php $post_slug=$post->post_name; ?>
+              <?php $image = wp_get_attachment_url( get_post_thumbnail_id($post->ID));?>
+              
               <div role="tabpanel" class="tab-pane fade" id="<?php echo $post_slug; ?>">
-              <img src="http://placehold.it/1200x400/cccccc/ffffff" width="100%">
+                
+                <?php if($image): ?>
+                  <img src="<?php echo $image;?>" width="100%">
+                <?php endif ;?>
+                
+
               <article id="post-<?php the_ID(); ?>" <?php post_class('well'); ?> role="article">
                   <section class="post_content clearfix">
                     <h3 class="post-header" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></h3>   

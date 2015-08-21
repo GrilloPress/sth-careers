@@ -41,7 +41,6 @@ get_header(); ?>
               
              
               <?php 
-
                   $args = array(
                     'post_parent' => $parent_id,
                     'post_type'   => 'page', 
@@ -60,20 +59,18 @@ get_header(); ?>
                 <?php if($image): ?>
                   <img src="<?php echo $image;?>" width="100%">
                 <?php endif ;?>
-                
 
-              <article id="post-<?php the_ID(); ?>" <?php post_class('well'); ?> role="article">
-                  <section class="post_content clearfix">
-                    <h3 class="post-header" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></h3>   
-                    <?php $content = $post->post_content; ?>
-                    <?php echo $content; ?>
-                  </section>
-              </article>
+                <article id="post-<?php the_ID(); ?>" <?php post_class('well'); ?> role="article">
+                    <section class="post_content clearfix">
+                      <h1 class="entry-title" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></h1>   
+                      <?php $content = $post->post_content; ?>
+                      <?php echo $content; ?>
+                    </section>
+                </article>
               </div>
 
              <?php endforeach; ?>
-
-            </div>
+           </div>
 
            
           
@@ -90,36 +87,30 @@ get_header(); ?>
                   </li>
                   
                   <?php 
-                  $args = array(
-                    'post_parent' => $parent_id,
-                    'post_type'   => 'page', 
-                    'numberposts' => -1,
-                    'orderby'   => 'title',
-                    'order' => 'ASC',
-                    'post_status' => 'any' 
-                  );
+                    $args = array(
+                      'post_parent' => $parent_id,
+                      'post_type'   => 'page', 
+                      'numberposts' => -1,
+                      'orderby'   => 'title',
+                      'order' => 'ASC',
+                      'post_status' => 'any' 
+                    );
 
-               $myposts = get_posts($args);
-               foreach($myposts as $post) :?>
+                     $myposts = get_posts($args);
+                     foreach($myposts as $post) :?>
                   
-               <?php $post_slug=$post->post_name; ?>
-                  <li role="presentation">
-                    <a href="#<?php echo $post_slug; ?>" aria-controls="<?php echo $post_slug; ?>" role="tab" data-toggle="tab"><?php the_title(); ?></a>
-                  </li>
-                  
-               <?php endforeach; ?>
+                 <?php $post_slug=$post->post_name; ?>
+                    <li role="presentation">
+                      <a href="#<?php echo $post_slug; ?>" aria-controls="<?php echo $post_slug; ?>" role="tab" data-toggle="tab"><?php the_title(); ?></a>
+                    </li>
+                 <?php endforeach; ?>
 
                 </ul>
               </div>
-              
-              
-              
             </div>
+          
+          </div>
 
-        </div>
-
-        
-        
       </main>
      
      <?php get_footer(); ?>

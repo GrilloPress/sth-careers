@@ -3,7 +3,7 @@
  * 
  * Central list of jobs for the STH Careers website
  * 
- * Template Name: 
+ * Template Name: Master Page with Tabbed sidebar
  * @package sth
  */
 

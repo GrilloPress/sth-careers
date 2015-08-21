@@ -8853,6 +8853,12 @@ button.close {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
+/* line 1, ../sass/_images.scss */
+img.wp-post-image {
+  max-width: 100%;
+  height: auto;
+}
+
 /* line 1, ../sass/_footer.scss */
 #main-footer {
   background-color: #C6CCCF;
@@ -8931,6 +8937,11 @@ button.close {
 /* line 70, ../sass/_navbar.scss */
 #site-header a.navbar-brand {
   padding-top: 19px;
+}
+
+/* line 76, ../sass/_navbar.scss */
+.nav-controls {
+  margin-bottom: 15px;
 }
 
 /* line 3, ../sass/_forms.scss */
@@ -9274,6 +9285,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 26, ../sass/_typography.scss */
+#top-benefits h3 {
+  margin-top: 2px;
+  color: #90A4AE;
+}
+
+/* line 33, ../sass/_typography.scss */
 .job-counter {
   border-radius: 5px;
   padding: 2px 8px;
@@ -9281,7 +9298,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #adbcc4;
 }
 
-/* line 37, ../sass/_typography.scss */
+/* line 44, ../sass/_typography.scss */
 .card h2 {
   text-align: center;
   font-size: 24px;
@@ -9290,7 +9307,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0px;
   color: #C6CCCF;
 }
-/* line 48, ../sass/_typography.scss */
+/* line 55, ../sass/_typography.scss */
 .card h3 {
   margin-top: 5px;
   text-transform: uppercase;
@@ -9299,18 +9316,23 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 30px;
 }
 
-/* line 62, ../sass/_typography.scss */
+/* line 67, ../sass/_typography.scss */
+h1.entry-title {
+  margin-top: 2px;
+}
+
+/* line 75, ../sass/_typography.scss */
 .home-boxes-unit h3 {
   margin-top: 0px;
   color: #006DB8;
   font-weight: 600;
   font-size: 25px;
 }
-/* line 71, ../sass/_typography.scss */
+/* line 84, ../sass/_typography.scss */
 .home-boxes-unit p.text {
   color: #666;
 }
-/* line 75, ../sass/_typography.scss */
+/* line 88, ../sass/_typography.scss */
 .home-boxes-unit p.text:hover {
   text-decoration: none;
 }

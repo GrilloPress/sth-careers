@@ -86,7 +86,7 @@ get_header(); ?>
                 <ul class="nav nav-pills nav-stacked" role="tablist">
                   
                   <li role="presentation" class="active">
-                    <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Work for Us</a>
+                    <a href="#home" aria-controls="home" role="tab" data-toggle="tab"><?php echo get_the_title( $parent_id ); ?></a>
                   </li>
                   
                   <?php 

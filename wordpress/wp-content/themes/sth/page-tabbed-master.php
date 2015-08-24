@@ -64,7 +64,8 @@ get_header(); ?>
                     <section class="post_content clearfix">
                       <h1 class="entry-title" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></h1>   
                       <?php $content = $post->post_content; ?>
-                      <?php echo $content; ?>
+                      <?php // echo $content; ?>
+                      <?php echo apply_filters('the_content', $content); ?>
                     </section>
                 </article>
               </div>

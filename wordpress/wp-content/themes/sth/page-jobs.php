@@ -32,7 +32,7 @@ get_header(); ?>
           </script>
         </div>
         
-        <div id="results">
+        <div id="master">
           <div class="row">
             <div class="col-md-3">
 
@@ -106,8 +106,11 @@ get_header(); ?>
             </div>
             
             <div class="col-md-9">
-              <div class="row">
-                <?php sth_job_feed(); ?>
+              <div id="results">
+                <div class="row">
+                  <?php sth_job_feed(); ?>
+                </div>
+
               </div>
             </div>
             

@@ -8944,6 +8944,11 @@ img.wp-post-image {
   margin-bottom: 15px;
 }
 
+/* line 82, ../sass/_navbar.scss */
+.nav-list-spacer {
+  margin-top: 20px;
+}
+
 /* line 3, ../sass/_forms.scss */
 textarea,
 textarea.form-control,

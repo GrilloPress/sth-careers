@@ -186,6 +186,7 @@ get_header(); ?>
                    jQuery('div#results').find(".vacancy.well:contains('Medical & Dental')").addClass("medical-dental");
                    jQuery('div#results').find(".vacancy.well:contains('Nursing & Midwifery')").addClass("nursing-midwifery");
                    jQuery('div#results').find(".vacancy.well:contains('Students')").addClass("students");
+                   jQuery( "div#results a" ).attr('target', '_blank');
 
                 });
 

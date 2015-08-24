@@ -106,6 +106,12 @@ get_header(); ?>
                  <?php endforeach; ?>
 
                 </ul>
+                
+                <ul class="nav nav-pills nav-stacked">
+                  <li role="presentation" class="nav-list-spacer">
+                    <a href="<?php echo get_home_url() . "/current-vacancies/" ;?>" class="list-group-item-success" alt="Find our current vacancies">Current Vacancies</a>
+                  </li>
+                </ul>
               </div>
             </div>
           

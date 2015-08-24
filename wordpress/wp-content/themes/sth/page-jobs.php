@@ -161,6 +161,9 @@ get_header(); ?>
 
               // job count function
               jQuery(document).ready(function() {
+                
+                // TODO - pull all document ready into a function. Add in sieve.
+                // Start spinner modal in container until final stuff is added then remove spinner.
 
                 onStart = true;
 
@@ -190,7 +193,7 @@ get_header(); ?>
 
                 });
 
-            jQuery(document).on('change keyup keypress', 'input#sieve', function(e){
+            jQuery(document).on('change keyup keypress keydown', 'input#sieve', function(e){
 
                   // Handles any changes to the job search and recounts the visible job posts & injects the count in the job count span
                   jobCount = jQuery('.vacancy:visible').length;

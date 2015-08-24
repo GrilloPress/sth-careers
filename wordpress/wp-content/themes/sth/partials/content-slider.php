@@ -49,12 +49,12 @@
       
       </div><!-- End Carousel Inner -->
 
-    	<ul class="nav nav-pills nav-justified">
-       <li class="main-slider-tab" data-target="#myCarousel" data-slide-to="0"><a href="#">About</a></li>
-       <li class="main-slider-tab" data-target="#myCarousel" data-slide-to="1"><a href="#">Projects</a></li>
-       <li class="main-slider-tab" data-target="#myCarousel" data-slide-to="2"><a href="#">Portfolio</a></li>
-       <li class="main-slider-tab" data-target="#myCarousel" data-slide-to="3"><a href="#">Services</a></li>
-      </ul>
+    	<ol class="carousel-indicators">
+       <li class="main-slider-tab active" data-target="#myCarousel" data-slide-to="0"></li>
+       <li class="main-slider-tab" data-target="#myCarousel" data-slide-to="1"></li>
+       <li class="main-slider-tab" data-target="#myCarousel" data-slide-to="2"></li>
+       <li class="main-slider-tab" data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
 
     </div><!-- End Carousel -->
   </div>

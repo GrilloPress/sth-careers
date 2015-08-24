@@ -9237,6 +9237,12 @@ a {
   max-height: 264px;
 }
 
+/* line 79, ../sass/_sections.scss */
+.sidebar-boxes-unit h4 {
+  color: #006DB8;
+  margin-top: 2px;
+}
+
 /* line 1, ../sass/_slider.scss */
 #myCarousel .nav a {
   border-radius: 0px;

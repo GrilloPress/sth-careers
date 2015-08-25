@@ -37,3 +37,7 @@ wordpress/wp-includes
 
 styles/.sass-cache
 styles/.sass-cache/*
+
+# Generic Plugins
+
+wordpress/wp-content/plugins/jetpack

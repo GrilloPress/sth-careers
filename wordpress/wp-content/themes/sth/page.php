@@ -23,7 +23,10 @@ get_header(); ?>
       <main id="main" class="col-md-8" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
-
+        
+        <?php if ( has_post_thumbnail() ){
+                echo get_the_post_thumbnail() ;
+                } ;?>
         
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 

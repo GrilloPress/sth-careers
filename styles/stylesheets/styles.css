@@ -340,8 +340,9 @@ th {
   }
 
   /* line 77, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_print.scss */
-  .btn > .caret,
-  .dropup > .btn > .caret {
+  .btn > .caret, input.pushbutton-wide > .caret,
+  .dropup > .btn > .caret,
+  .dropup > input.pushbutton-wide > .caret {
     border-top-color: #000 !important;
   }
 
@@ -3885,42 +3886,50 @@ input[type="search"] {
   /* line 191, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_forms.scss */
   input[type="date"].input-sm, .input-group-sm > input[type="date"].form-control,
   .input-group-sm > input[type="date"].input-group-addon,
-  .input-group-sm > .input-group-btn > input[type="date"].btn, .input-group-sm input[type="date"],
+  .input-group-sm > .input-group-btn > input[type="date"].btn,
+  .input-group-sm > .input-group-btn > input[type="date"].pushbutton-wide, .input-group-sm input[type="date"],
   input[type="time"].input-sm,
   .input-group-sm > input[type="time"].form-control,
   .input-group-sm > input[type="time"].input-group-addon,
-  .input-group-sm > .input-group-btn > input[type="time"].btn, .input-group-sm
+  .input-group-sm > .input-group-btn > input[type="time"].btn,
+  .input-group-sm > .input-group-btn > input[type="time"].pushbutton-wide, .input-group-sm
   input[type="time"],
   input[type="datetime-local"].input-sm,
   .input-group-sm > input[type="datetime-local"].form-control,
   .input-group-sm > input[type="datetime-local"].input-group-addon,
-  .input-group-sm > .input-group-btn > input[type="datetime-local"].btn, .input-group-sm
+  .input-group-sm > .input-group-btn > input[type="datetime-local"].btn,
+  .input-group-sm > .input-group-btn > input[type="datetime-local"].pushbutton-wide, .input-group-sm
   input[type="datetime-local"],
   input[type="month"].input-sm,
   .input-group-sm > input[type="month"].form-control,
   .input-group-sm > input[type="month"].input-group-addon,
-  .input-group-sm > .input-group-btn > input[type="month"].btn, .input-group-sm
+  .input-group-sm > .input-group-btn > input[type="month"].btn,
+  .input-group-sm > .input-group-btn > input[type="month"].pushbutton-wide, .input-group-sm
   input[type="month"] {
     line-height: 31px;
   }
   /* line 196, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_forms.scss */
   input[type="date"].input-lg, .input-group-lg > input[type="date"].form-control,
   .input-group-lg > input[type="date"].input-group-addon,
-  .input-group-lg > .input-group-btn > input[type="date"].btn, .input-group-lg input[type="date"],
+  .input-group-lg > .input-group-btn > input[type="date"].btn,
+  .input-group-lg > .input-group-btn > input[type="date"].pushbutton-wide, .input-group-lg input[type="date"],
   input[type="time"].input-lg,
   .input-group-lg > input[type="time"].form-control,
   .input-group-lg > input[type="time"].input-group-addon,
-  .input-group-lg > .input-group-btn > input[type="time"].btn, .input-group-lg
+  .input-group-lg > .input-group-btn > input[type="time"].btn,
+  .input-group-lg > .input-group-btn > input[type="time"].pushbutton-wide, .input-group-lg
   input[type="time"],
   input[type="datetime-local"].input-lg,
   .input-group-lg > input[type="datetime-local"].form-control,
   .input-group-lg > input[type="datetime-local"].input-group-addon,
-  .input-group-lg > .input-group-btn > input[type="datetime-local"].btn, .input-group-lg
+  .input-group-lg > .input-group-btn > input[type="datetime-local"].btn,
+  .input-group-lg > .input-group-btn > input[type="datetime-local"].pushbutton-wide, .input-group-lg
   input[type="datetime-local"],
   input[type="month"].input-lg,
   .input-group-lg > input[type="month"].form-control,
   .input-group-lg > input[type="month"].input-group-addon,
-  .input-group-lg > .input-group-btn > input[type="month"].btn, .input-group-lg
+  .input-group-lg > .input-group-btn > input[type="month"].btn,
+  .input-group-lg > .input-group-btn > input[type="month"].pushbutton-wide, .input-group-lg
   input[type="month"] {
     line-height: 48px;
   }
@@ -4015,9 +4024,11 @@ input[type="checkbox"] {
 /* line 309, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_forms.scss */
 .form-control-static.input-lg, .input-group-lg > .form-control-static.form-control,
 .input-group-lg > .form-control-static.input-group-addon,
-.input-group-lg > .input-group-btn > .form-control-static.btn, .form-control-static.input-sm, .input-group-sm > .form-control-static.form-control,
+.input-group-lg > .input-group-btn > .form-control-static.btn,
+.input-group-lg > .input-group-btn > input.form-control-static.pushbutton-wide, .form-control-static.input-sm, .input-group-sm > .form-control-static.form-control,
 .input-group-sm > .form-control-static.input-group-addon,
-.input-group-sm > .input-group-btn > .form-control-static.btn {
+.input-group-sm > .input-group-btn > .form-control-static.btn,
+.input-group-sm > .input-group-btn > input.form-control-static.pushbutton-wide {
   padding-left: 0;
   padding-right: 0;
 }
@@ -4025,7 +4036,8 @@ input[type="checkbox"] {
 /* line 71, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_forms.scss */
 .input-sm, .input-group-sm > .form-control,
 .input-group-sm > .input-group-addon,
-.input-group-sm > .input-group-btn > .btn {
+.input-group-sm > .input-group-btn > .btn,
+.input-group-sm > .input-group-btn > input.pushbutton-wide {
   height: 31px;
   padding: 5px 10px;
   font-size: 13px;
@@ -4082,7 +4094,8 @@ select[multiple].input-sm,
 /* line 71, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_forms.scss */
 .input-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
-.input-group-lg > .input-group-btn > .btn {
+.input-group-lg > .input-group-btn > .btn,
+.input-group-lg > .input-group-btn > input.pushbutton-wide {
   height: 48px;
   padding: 10px 16px;
   font-size: 19px;
@@ -4163,6 +4176,7 @@ select[multiple].input-lg,
 .input-lg + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback,
 .input-group-lg > .input-group-addon + .form-control-feedback,
 .input-group-lg > .input-group-btn > .btn + .form-control-feedback,
+.input-group-lg > .input-group-btn > input.pushbutton-wide + .form-control-feedback,
 .input-group-lg + .form-control-feedback,
 .form-group-lg .form-control + .form-control-feedback {
   width: 48px;
@@ -4174,6 +4188,7 @@ select[multiple].input-lg,
 .input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback,
 .input-group-sm > .input-group-addon + .form-control-feedback,
 .input-group-sm > .input-group-btn > .btn + .form-control-feedback,
+.input-group-sm > .input-group-btn > input.pushbutton-wide + .form-control-feedback,
 .input-group-sm + .form-control-feedback,
 .form-group-sm .form-control + .form-control-feedback {
   width: 31px;
@@ -4412,7 +4427,7 @@ select[multiple].input-lg,
 }
 
 /* line 9, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_buttons.scss */
-.btn {
+.btn, input.pushbutton-wide {
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -4433,25 +4448,25 @@ select[multiple].input-lg,
   user-select: none;
 }
 /* line 26, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_buttons.scss */
-.btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
+.btn:focus, input.pushbutton-wide:focus, .btn.focus, input.focus.pushbutton-wide, .btn:active:focus, input.pushbutton-wide:active:focus, .btn:active.focus, input.pushbutton-wide:active.focus, .btn.active:focus, input.active.pushbutton-wide:focus, .btn.active.focus, input.active.focus.pushbutton-wide {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 /* line 32, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_buttons.scss */
-.btn:hover, .btn:focus, .btn.focus {
+.btn:hover, input.pushbutton-wide:hover, .btn:focus, input.pushbutton-wide:focus, .btn.focus, input.focus.pushbutton-wide {
   color: #666;
   text-decoration: none;
 }
 /* line 39, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_buttons.scss */
-.btn:active, .btn.active {
+.btn:active, input.pushbutton-wide:active, .btn.active, input.active.pushbutton-wide {
   outline: 0;
   background-image: none;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 /* line 46, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_buttons.scss */
-.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+.btn.disabled, input.disabled.pushbutton-wide, .btn[disabled], input[disabled].pushbutton-wide, fieldset[disabled] .btn, fieldset[disabled] input.pushbutton-wide {
   cursor: not-allowed;
   opacity: 0.65;
   filter: alpha(opacity=65);
@@ -4600,46 +4615,46 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 
 /* line 79, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_buttons.scss */
-.btn-info {
+.btn-info, input.pushbutton-wide {
   color: #fff;
   background-color: #01579B;
   border-color: transparent;
 }
 /* line 11, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_buttons.scss */
-.btn-info:focus, .btn-info.focus {
+.btn-info:focus, input.pushbutton-wide:focus, .btn-info.focus, input.focus.pushbutton-wide {
   color: #fff;
   background-color: #013b68;
   border-color: transparent;
 }
 /* line 17, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_buttons.scss */
-.btn-info:hover {
+.btn-info:hover, input.pushbutton-wide:hover {
   color: #fff;
   background-color: #013b68;
   border-color: transparent;
 }
 /* line 22, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_buttons.scss */
-.btn-info:active, .btn-info.active, .open > .btn-info.dropdown-toggle {
+.btn-info:active, input.pushbutton-wide:active, .btn-info.active, input.active.pushbutton-wide, .open > .btn-info.dropdown-toggle, .open > input.dropdown-toggle.pushbutton-wide {
   color: #fff;
   background-color: #013b68;
   border-color: transparent;
 }
 /* line 29, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_buttons.scss */
-.btn-info:active:hover, .btn-info:active:focus, .btn-info:active.focus, .btn-info.active:hover, .btn-info.active:focus, .btn-info.active.focus, .open > .btn-info.dropdown-toggle:hover, .open > .btn-info.dropdown-toggle:focus, .open > .btn-info.dropdown-toggle.focus {
+.btn-info:active:hover, input.pushbutton-wide:active:hover, .btn-info:active:focus, input.pushbutton-wide:active:focus, .btn-info:active.focus, input.pushbutton-wide:active.focus, .btn-info.active:hover, input.active.pushbutton-wide:hover, .btn-info.active:focus, input.active.pushbutton-wide:focus, .btn-info.active.focus, input.active.focus.pushbutton-wide, .open > .btn-info.dropdown-toggle:hover, .open > input.dropdown-toggle.pushbutton-wide:hover, .open > .btn-info.dropdown-toggle:focus, .open > input.dropdown-toggle.pushbutton-wide:focus, .open > .btn-info.dropdown-toggle.focus, .open > input.dropdown-toggle.focus.pushbutton-wide {
   color: #fff;
   background-color: #002745;
   border-color: transparent;
 }
 /* line 37, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_buttons.scss */
-.btn-info:active, .btn-info.active, .open > .btn-info.dropdown-toggle {
+.btn-info:active, input.pushbutton-wide:active, .btn-info.active, input.active.pushbutton-wide, .open > .btn-info.dropdown-toggle, .open > input.dropdown-toggle.pushbutton-wide {
   background-image: none;
 }
 /* line 45, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_buttons.scss */
-.btn-info.disabled, .btn-info.disabled:hover, .btn-info.disabled:focus, .btn-info.disabled.focus, .btn-info.disabled:active, .btn-info.disabled.active, .btn-info[disabled], .btn-info[disabled]:hover, .btn-info[disabled]:focus, .btn-info[disabled].focus, .btn-info[disabled]:active, .btn-info[disabled].active, fieldset[disabled] .btn-info, fieldset[disabled] .btn-info:hover, fieldset[disabled] .btn-info:focus, fieldset[disabled] .btn-info.focus, fieldset[disabled] .btn-info:active, fieldset[disabled] .btn-info.active {
+.btn-info.disabled, input.disabled.pushbutton-wide, .btn-info.disabled:hover, input.disabled.pushbutton-wide:hover, .btn-info.disabled:focus, input.disabled.pushbutton-wide:focus, .btn-info.disabled.focus, input.disabled.focus.pushbutton-wide, .btn-info.disabled:active, input.disabled.pushbutton-wide:active, .btn-info.disabled.active, input.disabled.active.pushbutton-wide, .btn-info[disabled], input[disabled].pushbutton-wide, .btn-info[disabled]:hover, input[disabled].pushbutton-wide:hover, .btn-info[disabled]:focus, input[disabled].pushbutton-wide:focus, .btn-info[disabled].focus, input[disabled].focus.pushbutton-wide, .btn-info[disabled]:active, input[disabled].pushbutton-wide:active, .btn-info[disabled].active, input[disabled].active.pushbutton-wide, fieldset[disabled] .btn-info, fieldset[disabled] input.pushbutton-wide, fieldset[disabled] .btn-info:hover, fieldset[disabled] input.pushbutton-wide:hover, fieldset[disabled] .btn-info:focus, fieldset[disabled] input.pushbutton-wide:focus, fieldset[disabled] .btn-info.focus, fieldset[disabled] input.focus.pushbutton-wide, fieldset[disabled] .btn-info:active, fieldset[disabled] input.pushbutton-wide:active, fieldset[disabled] .btn-info.active, fieldset[disabled] input.active.pushbutton-wide {
   background-color: #01579B;
   border-color: transparent;
 }
 /* line 56, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_buttons.scss */
-.btn-info .badge {
+.btn-info .badge, input.pushbutton-wide .badge {
   color: #01579B;
   background-color: #fff;
 }
@@ -4763,7 +4778,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 
 /* line 135, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_buttons.scss */
-.btn-lg, .btn-group-lg > .btn {
+.btn-lg, .btn-group-lg > .btn, .btn-group-lg > input.pushbutton-wide {
   padding: 10px 16px;
   font-size: 19px;
   line-height: 1.33;
@@ -4771,7 +4786,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 
 /* line 139, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_buttons.scss */
-.btn-sm, .btn-group-sm > .btn {
+.btn-sm, .btn-group-sm > .btn, .btn-group-sm > input.pushbutton-wide {
   padding: 5px 10px;
   font-size: 13px;
   line-height: 1.5;
@@ -4779,7 +4794,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 
 /* line 143, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_buttons.scss */
-.btn-xs, .btn-group-xs > .btn {
+.btn-xs, .btn-group-xs > .btn, .btn-group-xs > input.pushbutton-wide {
   padding: 1px 5px;
   font-size: 13px;
   line-height: 1.5;
@@ -4787,20 +4802,22 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 
 /* line 151, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_buttons.scss */
-.btn-block {
+.btn-block, input.pushbutton-wide {
   display: block;
   width: 100%;
 }
 
 /* line 157, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_buttons.scss */
-.btn-block + .btn-block {
+.btn-block + .btn-block, input.pushbutton-wide + .btn-block, .btn-block + input.pushbutton-wide, input.pushbutton-wide + input.pushbutton-wide {
   margin-top: 5px;
 }
 
 /* line 165, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_buttons.scss */
-input[type="submit"].btn-block,
+input[type="submit"].btn-block, input[type="submit"].pushbutton-wide,
 input[type="reset"].btn-block,
-input[type="button"].btn-block {
+input[type="reset"].pushbutton-wide,
+input[type="button"].btn-block,
+input[type="button"].pushbutton-wide {
   width: 100%;
 }
 
@@ -5028,24 +5045,31 @@ tbody.collapse.in {
   vertical-align: middle;
 }
 /* line 11, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn,
-.btn-group-vertical > .btn {
+.btn-group > .btn, .btn-group > input.pushbutton-wide,
+.btn-group-vertical > .btn,
+.btn-group-vertical > input.pushbutton-wide {
   position: relative;
   float: left;
 }
 /* line 15, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn:hover, .btn-group > .btn:focus, .btn-group > .btn:active, .btn-group > .btn.active,
+.btn-group > .btn:hover, .btn-group > input.pushbutton-wide:hover, .btn-group > .btn:focus, .btn-group > input.pushbutton-wide:focus, .btn-group > .btn:active, .btn-group > input.pushbutton-wide:active, .btn-group > .btn.active, .btn-group > input.active.pushbutton-wide,
 .btn-group-vertical > .btn:hover,
+.btn-group-vertical > input.pushbutton-wide:hover,
 .btn-group-vertical > .btn:focus,
+.btn-group-vertical > input.pushbutton-wide:focus,
 .btn-group-vertical > .btn:active,
-.btn-group-vertical > .btn.active {
+.btn-group-vertical > input.pushbutton-wide:active,
+.btn-group-vertical > .btn.active,
+.btn-group-vertical > input.active.pushbutton-wide {
   z-index: 2;
 }
 
 /* line 26, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group .btn + .btn,
+.btn-group .btn + .btn, .btn-group input.pushbutton-wide + .btn, .btn-group .btn + input.pushbutton-wide, .btn-group input.pushbutton-wide + input.pushbutton-wide,
 .btn-group .btn + .btn-group,
+.btn-group input.pushbutton-wide + .btn-group,
 .btn-group .btn-group + .btn,
+.btn-group .btn-group + input.pushbutton-wide,
 .btn-group .btn-group + .btn-group {
   margin-left: -1px;
 }
@@ -5064,35 +5088,35 @@ tbody.collapse.in {
   clear: both;
 }
 /* line 39, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-toolbar .btn,
+.btn-toolbar .btn, .btn-toolbar input.pushbutton-wide,
 .btn-toolbar .btn-group,
 .btn-toolbar .input-group {
   float: left;
 }
 /* line 44, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-toolbar > .btn,
+.btn-toolbar > .btn, .btn-toolbar > input.pushbutton-wide,
 .btn-toolbar > .btn-group,
 .btn-toolbar > .input-group {
   margin-left: 5px;
 }
 
 /* line 51, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > input.pushbutton-wide:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0;
 }
 
 /* line 56, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn:first-child {
+.btn-group > .btn:first-child, .btn-group > input.pushbutton-wide:first-child {
   margin-left: 0;
 }
 /* line 58, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > input.pushbutton-wide:first-child:not(:last-child):not(.dropdown-toggle) {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
 /* line 63, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn:last-child:not(:first-child),
+.btn-group > .btn:last-child:not(:first-child), .btn-group > input.pushbutton-wide:last-child:not(:first-child),
 .btn-group > .dropdown-toggle:not(:first-child) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
@@ -5104,19 +5128,19 @@ tbody.collapse.in {
 }
 
 /* line 72, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, .btn-group > .btn-group:not(:first-child):not(:last-child) > input.pushbutton-wide {
   border-radius: 0;
 }
 
 /* line 76, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child,
+.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child, .btn-group > .btn-group:first-child:not(:last-child) > input.pushbutton-wide:last-child,
 .btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
 /* line 81, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child {
+.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child, .btn-group > .btn-group:last-child:not(:first-child) > input.pushbutton-wide:first-child {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -5128,13 +5152,13 @@ tbody.collapse.in {
 }
 
 /* line 105, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn + .dropdown-toggle {
+.btn-group > .btn + .dropdown-toggle, .btn-group > input.pushbutton-wide + .dropdown-toggle {
   padding-left: 8px;
   padding-right: 8px;
 }
 
 /* line 109, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn-lg + .dropdown-toggle, .btn-group-lg.btn-group > .btn + .dropdown-toggle {
+.btn-group > .btn-lg + .dropdown-toggle, .btn-group-lg.btn-group > .btn + .dropdown-toggle, .btn-group-lg.btn-group > input.pushbutton-wide + .dropdown-toggle {
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -5151,25 +5175,26 @@ tbody.collapse.in {
 }
 
 /* line 127, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn .caret {
+.btn .caret, input.pushbutton-wide .caret {
   margin-left: 0;
 }
 
 /* line 131, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-lg .caret, .btn-group-lg > .btn .caret {
+.btn-lg .caret, .btn-group-lg > .btn .caret, .btn-group-lg > input.pushbutton-wide .caret {
   border-width: 5px 5px 0;
   border-bottom-width: 0;
 }
 
 /* line 136, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret {
+.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret, .dropup .btn-group-lg > input.pushbutton-wide .caret {
   border-width: 0 5px 5px;
 }
 
 /* line 145, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn,
+.btn-group-vertical > .btn, .btn-group-vertical > input.pushbutton-wide,
 .btn-group-vertical > .btn-group,
-.btn-group-vertical > .btn-group > .btn {
+.btn-group-vertical > .btn-group > .btn,
+.btn-group-vertical > .btn-group > input.pushbutton-wide {
   display: block;
   float: none;
   width: 100%;
@@ -5185,49 +5210,51 @@ tbody.collapse.in {
   clear: both;
 }
 /* line 157, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn-group > .btn {
+.btn-group-vertical > .btn-group > .btn, .btn-group-vertical > .btn-group > input.pushbutton-wide {
   float: none;
 }
 /* line 162, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn + .btn,
+.btn-group-vertical > .btn + .btn, .btn-group-vertical > input.pushbutton-wide + .btn, .btn-group-vertical > .btn + input.pushbutton-wide, .btn-group-vertical > input.pushbutton-wide + input.pushbutton-wide,
 .btn-group-vertical > .btn + .btn-group,
+.btn-group-vertical > input.pushbutton-wide + .btn-group,
 .btn-group-vertical > .btn-group + .btn,
+.btn-group-vertical > .btn-group + input.pushbutton-wide,
 .btn-group-vertical > .btn-group + .btn-group {
   margin-top: -1px;
   margin-left: 0;
 }
 
 /* line 172, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn:not(:first-child):not(:last-child) {
+.btn-group-vertical > .btn:not(:first-child):not(:last-child), .btn-group-vertical > input.pushbutton-wide:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
 /* line 175, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn:first-child:not(:last-child) {
+.btn-group-vertical > .btn:first-child:not(:last-child), .btn-group-vertical > input.pushbutton-wide:first-child:not(:last-child) {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 /* line 179, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn:last-child:not(:first-child) {
+.btn-group-vertical > .btn:last-child:not(:first-child), .btn-group-vertical > input.pushbutton-wide:last-child:not(:first-child) {
   border-bottom-left-radius: 3px;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
 
 /* line 184, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn {
+.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > input.pushbutton-wide {
   border-radius: 0;
 }
 
 /* line 188, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child,
+.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > input.pushbutton-wide:last-child,
 .btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
 /* line 193, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child {
+.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > input.pushbutton-wide:first-child {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
@@ -5240,14 +5267,14 @@ tbody.collapse.in {
   border-collapse: separate;
 }
 /* line 206, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-justified > .btn,
+.btn-group-justified > .btn, .btn-group-justified > input.pushbutton-wide,
 .btn-group-justified > .btn-group {
   float: none;
   display: table-cell;
   width: 1%;
 }
 /* line 212, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-justified > .btn-group .btn {
+.btn-group-justified > .btn-group .btn, .btn-group-justified > .btn-group input.pushbutton-wide {
   width: 100%;
 }
 /* line 216, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_button-groups.scss */
@@ -5256,10 +5283,13 @@ tbody.collapse.in {
 }
 
 /* line 237, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_button-groups.scss */
-[data-toggle="buttons"] > .btn input[type="radio"],
+[data-toggle="buttons"] > .btn input[type="radio"], [data-toggle="buttons"] > input.pushbutton-wide input[type="radio"],
 [data-toggle="buttons"] > .btn input[type="checkbox"],
+[data-toggle="buttons"] > input.pushbutton-wide input[type="checkbox"],
 [data-toggle="buttons"] > .btn-group > .btn input[type="radio"],
-[data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"] {
+[data-toggle="buttons"] > .btn-group > input.pushbutton-wide input[type="radio"],
+[data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"],
+[data-toggle="buttons"] > .btn-group > input.pushbutton-wide input[type="checkbox"] {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
@@ -5322,7 +5352,8 @@ tbody.collapse.in {
 /* line 85, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_input-groups.scss */
 .input-group-addon.input-sm,
 .input-group-sm > .input-group-addon,
-.input-group-sm > .input-group-btn > .input-group-addon.btn {
+.input-group-sm > .input-group-btn > .input-group-addon.btn,
+.input-group-sm > .input-group-btn > input.input-group-addon.pushbutton-wide {
   padding: 5px 10px;
   font-size: 13px;
   border-radius: 3px;
@@ -5330,7 +5361,8 @@ tbody.collapse.in {
 /* line 90, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_input-groups.scss */
 .input-group-addon.input-lg,
 .input-group-lg > .input-group-addon,
-.input-group-lg > .input-group-btn > .input-group-addon.btn {
+.input-group-lg > .input-group-btn > .input-group-addon.btn,
+.input-group-lg > .input-group-btn > input.input-group-addon.pushbutton-wide {
   padding: 10px 16px;
   font-size: 19px;
   border-radius: 3px;
@@ -5345,10 +5377,14 @@ tbody.collapse.in {
 .input-group .form-control:first-child,
 .input-group-addon:first-child,
 .input-group-btn:first-child > .btn,
+.input-group-btn:first-child > input.pushbutton-wide,
 .input-group-btn:first-child > .btn-group > .btn,
+.input-group-btn:first-child > .btn-group > input.pushbutton-wide,
 .input-group-btn:first-child > .dropdown-toggle,
 .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
-.input-group-btn:last-child > .btn-group:not(:last-child) > .btn {
+.input-group-btn:last-child > input.pushbutton-wide:not(:last-child):not(.dropdown-toggle),
+.input-group-btn:last-child > .btn-group:not(:last-child) > .btn,
+.input-group-btn:last-child > .btn-group:not(:last-child) > input.pushbutton-wide {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
@@ -5362,10 +5398,14 @@ tbody.collapse.in {
 .input-group .form-control:last-child,
 .input-group-addon:last-child,
 .input-group-btn:last-child > .btn,
+.input-group-btn:last-child > input.pushbutton-wide,
 .input-group-btn:last-child > .btn-group > .btn,
+.input-group-btn:last-child > .btn-group > input.pushbutton-wide,
 .input-group-btn:last-child > .dropdown-toggle,
 .input-group-btn:first-child > .btn:not(:first-child),
-.input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
+.input-group-btn:first-child > input.pushbutton-wide:not(:first-child),
+.input-group-btn:first-child > .btn-group:not(:first-child) > .btn,
+.input-group-btn:first-child > .btn-group:not(:first-child) > input.pushbutton-wide {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -5382,24 +5422,24 @@ tbody.collapse.in {
   white-space: nowrap;
 }
 /* line 140, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_input-groups.scss */
-.input-group-btn > .btn {
+.input-group-btn > .btn, .input-group-btn > input.pushbutton-wide {
   position: relative;
 }
 /* line 142, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_input-groups.scss */
-.input-group-btn > .btn + .btn {
+.input-group-btn > .btn + .btn, .input-group-btn > input.pushbutton-wide + .btn, .input-group-btn > .btn + input.pushbutton-wide, .input-group-btn > input.pushbutton-wide + input.pushbutton-wide {
   margin-left: -1px;
 }
 /* line 146, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_input-groups.scss */
-.input-group-btn > .btn:hover, .input-group-btn > .btn:focus, .input-group-btn > .btn:active {
+.input-group-btn > .btn:hover, .input-group-btn > input.pushbutton-wide:hover, .input-group-btn > .btn:focus, .input-group-btn > input.pushbutton-wide:focus, .input-group-btn > .btn:active, .input-group-btn > input.pushbutton-wide:active {
   z-index: 2;
 }
 /* line 155, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_input-groups.scss */
-.input-group-btn:first-child > .btn,
+.input-group-btn:first-child > .btn, .input-group-btn:first-child > input.pushbutton-wide,
 .input-group-btn:first-child > .btn-group {
   margin-right: -1px;
 }
 /* line 161, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_input-groups.scss */
-.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .btn, .input-group-btn:last-child > input.pushbutton-wide,
 .input-group-btn:last-child > .btn-group {
   z-index: 2;
   margin-left: -1px;
@@ -5988,12 +6028,12 @@ tbody.collapse.in {
   margin-bottom: -3.5px;
 }
 /* line 346, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn {
+.navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn, .btn-group-sm > input.navbar-btn.pushbutton-wide {
   margin-top: 1.5px;
   margin-bottom: 1.5px;
 }
 /* line 349, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn {
+.navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn, .btn-group-xs > input.navbar-btn.pushbutton-wide {
   margin-top: 6px;
   margin-bottom: 6px;
 }
@@ -6444,7 +6484,7 @@ tbody.collapse.in {
   display: none;
 }
 /* line 25, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_labels.scss */
-.btn .label {
+.btn .label, input.pushbutton-wide .label {
   position: relative;
   top: -1px;
 }
@@ -6530,12 +6570,12 @@ a.label:hover, a.label:focus {
   display: none;
 }
 /* line 27, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_badges.scss */
-.btn .badge {
+.btn .badge, input.pushbutton-wide .badge {
   position: relative;
   top: -1px;
 }
 /* line 32, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_badges.scss */
-.btn-xs .badge, .btn-group-xs > .btn .badge, .btn-group-xs > .btn .badge {
+.btn-xs .badge, .btn-group-xs > .btn .badge, .btn-group-xs > input.pushbutton-wide .badge, .btn-group-xs > .btn .badge, .btn-group-xs > input.pushbutton-wide .badge {
   top: 0;
   padding: 1px 5px;
 }
@@ -7809,16 +7849,16 @@ button.close {
   clear: both;
 }
 /* line 110, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_modals.scss */
-.modal-footer .btn + .btn {
+.modal-footer .btn + .btn, .modal-footer input.pushbutton-wide + .btn, .modal-footer .btn + input.pushbutton-wide, .modal-footer input.pushbutton-wide + input.pushbutton-wide {
   margin-left: 5px;
   margin-bottom: 0;
 }
 /* line 115, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_modals.scss */
-.modal-footer .btn-group .btn + .btn {
+.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group input.pushbutton-wide + .btn, .modal-footer .btn-group .btn + input.pushbutton-wide, .modal-footer .btn-group input.pushbutton-wide + input.pushbutton-wide {
   margin-left: -1px;
 }
 /* line 119, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_modals.scss */
-.modal-footer .btn-block + .btn-block {
+.modal-footer .btn-block + .btn-block, .modal-footer input.pushbutton-wide + .btn-block, .modal-footer .btn-block + input.pushbutton-wide, .modal-footer input.pushbutton-wide + input.pushbutton-wide {
   margin-left: 0;
 }
 
@@ -8370,7 +8410,7 @@ button.close {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 /* line 228, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_carousel.scss */
-.carousel-caption .btn {
+.carousel-caption .btn, .carousel-caption input.pushbutton-wide {
   text-shadow: none;
 }
 
@@ -9090,7 +9130,7 @@ a {
 }
 
 /* line 22, ../sass/_buttons.scss */
-.btn {
+.btn, input.pushbutton-wide {
   border-radius: 0px;
   letter-spacing: .3px;
 }
@@ -9364,4 +9404,79 @@ h1.entry-title {
 .alignright {
   float: right;
   padding: 10px 0 0 10px;
+}
+
+/* line 1, ../sass/_jetpack.scss */
+.contact-form .clear-form {
+  clear: both;
+}
+
+/* line 5, ../sass/_jetpack.scss */
+.contact-form input[type='text'], .contact-form input[type='email'] {
+  width: 100%;
+  margin-bottom: 13px;
+}
+
+/* line 9, ../sass/_jetpack.scss */
+.contact-form select {
+  margin-bottom: 13px;
+}
+
+/* line 13, ../sass/_jetpack.scss */
+.contact-form textarea {
+  height: 200px;
+  width: 100%;
+  float: none;
+  margin-bottom: 13px;
+}
+
+/* line 17, ../sass/_jetpack.scss */
+.contact-form input[type='radio'], .contact-form input[type='checkbox'] {
+  float: none;
+  margin-bottom: 13px;
+}
+
+/* line 21, ../sass/_jetpack.scss */
+.contact-form label {
+  margin-bottom: 3px;
+  float: none;
+  font-weight: bold;
+  display: block;
+}
+
+/* line 25, ../sass/_jetpack.scss */
+.contact-form label.checkbox, .contact-form label.radio {
+  margin-bottom: 3px;
+  float: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* line 29, ../sass/_jetpack.scss */
+.contact-form label span {
+  color: #AAA;
+  margin-left: 4px;
+  font-weight: normal;
+}
+
+/* line 33, ../sass/_jetpack.scss */
+.form-errors .form-error-message {
+  color: red;
+}
+
+/* line 37, ../sass/_jetpack.scss */
+.textwidget .contact-form input[type='text'], .textwidget .contact-form input[type='email'], .textwidget .contact-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* line 41, ../sass/_jetpack.scss */
+#jetpack-check-feedback-spam {
+  margin: 1px 8px 0px 0px;
+}
+
+/* line 45, ../sass/_jetpack.scss */
+.jetpack-check-feedback-spam-spinner {
+  display: inline-block;
+  margin-top: 7px;
 }

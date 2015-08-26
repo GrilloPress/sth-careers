@@ -9326,28 +9326,19 @@ p.lead {
 }
 
 /* line 15, ../sass/_typography.scss */
-.well-heading {
-  background-color: #006DB8;
-  color: white;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 5px 0px 5px 15px;
-}
-
-/* line 25, ../sass/_typography.scss */
 #breadcrumbs.breadcrumb > li + li:before {
   content: " ";
   padding: 0 5px;
   color: #ccc;
 }
 
-/* line 33, ../sass/_typography.scss */
+/* line 23, ../sass/_typography.scss */
 #top-benefits h3 {
   margin-top: 2px;
   color: #90A4AE;
 }
 
-/* line 40, ../sass/_typography.scss */
+/* line 30, ../sass/_typography.scss */
 .job-counter {
   border-radius: 5px;
   padding: 2px 8px;
@@ -9355,7 +9346,7 @@ p.lead {
   background-color: #adbcc4;
 }
 
-/* line 51, ../sass/_typography.scss */
+/* line 41, ../sass/_typography.scss */
 .card h2 {
   text-align: center;
   font-size: 24px;
@@ -9364,7 +9355,7 @@ p.lead {
   margin-top: 0px;
   color: #C6CCCF;
 }
-/* line 62, ../sass/_typography.scss */
+/* line 52, ../sass/_typography.scss */
 .card h3 {
   margin-top: 5px;
   text-transform: uppercase;
@@ -9373,25 +9364,28 @@ p.lead {
   font-size: 30px;
 }
 
-/* line 74, ../sass/_typography.scss */
+/* line 64, ../sass/_typography.scss */
 h1.entry-title {
   margin-top: 2px;
+  font-size: 30px;
 }
 
-/* line 82, ../sass/_typography.scss */
+/* line 73, ../sass/_typography.scss */
 .home-boxes-unit h3 {
   margin-top: 0px;
   color: #006DB8;
   font-weight: 600;
   font-size: 25px;
 }
-/* line 91, ../sass/_typography.scss */
+/* line 82, ../sass/_typography.scss */
 .home-boxes-unit p.text {
   color: #666;
 }
-/* line 95, ../sass/_typography.scss */
-.home-boxes-unit p.text:hover {
-  text-decoration: none;
+
+/* line 1, ../sass/_video.scss */
+.embed-well {
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 /* line 1, ../sass/_wordpress.scss */

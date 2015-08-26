@@ -38,8 +38,8 @@ get_header(); ?>
 
           <?php get_sidebar(); ?>
 
-
-        <?php get_template_part( 'partials/content', 'sidebox' ); ?>
+          <?php get_template_part( 'partials/content', 'sidebox' ); ?>
+        
       </aside>
       
 	  </div><!-- #primary -->

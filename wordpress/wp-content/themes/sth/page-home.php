@@ -23,12 +23,12 @@
                 <h3>Here at Sheffield Teaching Hospitals something something bringing innovative stuff with classic other promises</h3>
                 <div class="row">
                   <div class="col-md-3 col-sm-3 col-xs-6">
-                    <img src="<?php echo get_template_directory_uri() . "/images/andrew_cash_web_box.jpg" ;?>" class="img-responsive">
+                    <img src="<?php echo get_template_directory_uri() . "/images/andrew-cash-side.jpg" ;?>" class="img-responsive">
                   </div>
 
                   <div class="col-md-8">
                     
-                    <p>"The eight Clinical Commissioning Groups (CCGs) in South Yorkshire and North Derbyshire, along with NHS England (South Yorkshire and Bassetlaw) and Mid Yorkshire CCGs have formed a similar partnership called Working Together" <br> - <strong>Sir Andrew Cash OBE</strong></p>
+                    <p>"The eight Clinical Commissioning Groups (CCGs) in South Yorkshire and North Derbyshire, along with NHS England (South Yorkshire and Bassetlaw) and Mid Yorkshire CCGs have formed a similar partnership called Working Together"</p>
                     
                     <a role="button" href="<?php echo get_home_url() . "/current-vacancies/" ;?>" class="btn btn-long btn-warning">Current Vacancies</a>
                     <a role="button" href="<?php echo get_home_url() . "/why-work-here/" ;?>" class="btn btn-link">Find out how we work</a>

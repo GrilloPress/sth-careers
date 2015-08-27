@@ -9386,6 +9386,7 @@ h1.entry-title {
 .embed-well {
   margin-left: -20px;
   margin-right: -20px;
+  margin-bottom: 20px;
 }
 
 /* line 1, ../sass/_wordpress.scss */

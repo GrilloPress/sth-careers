@@ -217,7 +217,6 @@ if( !function_exists( "sth_theme_js" ) ) {
 }
 add_action( 'wp_enqueue_scripts', 'sth_theme_js' );
 
-
 /**
  * Remove Jetpack Form CSS
  */

@@ -8899,6 +8899,12 @@ img.wp-post-image {
   height: auto;
 }
 
+/* line 8, ../sass/_images.scss */
+.full-width {
+  width: 100%;
+  height: auto;
+}
+
 /* line 1, ../sass/_footer.scss */
 #main-footer {
   background-color: #C6CCCF;
@@ -9283,6 +9289,14 @@ a {
   margin-top: 2px;
 }
 
+/* line 88, ../sass/_sections.scss */
+.card-staff {
+  padding: 0px 5px 0 0;
+  border: 1px solid #cbd4d9;
+  background-color: white;
+  margin-bottom: 15px;
+}
+
 /* line 1, ../sass/_slider.scss */
 #myCarousel .nav a {
   border-radius: 0px;
@@ -9399,6 +9413,18 @@ h1.entry-title {
 .alignright {
   float: right;
   padding: 10px 0 0 10px;
+}
+
+/* line 15, ../sass/_wordpress.scss */
+.wp-caption {
+  padding: 0;
+  margin: 5px;
+  background-color: #F4F4F4;
+}
+
+/* line 23, ../sass/_wordpress.scss */
+.wp-caption-text {
+  padding: 5px;
 }
 
 /* line 1, ../sass/_jetpack.scss */

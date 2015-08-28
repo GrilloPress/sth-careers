@@ -8,14 +8,20 @@
 get_header(); ?>
 
 	<div id="primary" class="container">
+    
+     <div class="row">
+      <div class="col-md-8">
+        <?php sth_breadcrumbs(); ?>
+      </div>
+
+    
     <div class="row">
       <main id="main" class="col-md-8" role="main">
 
         <?php while ( have_posts() ) : the_post(); ?>
 
           <?php get_template_part( 'template-parts/content', 'single' ); ?>
-
-          <?php the_post_navigation(); ?>
+          <?php get_template_part( 'partials/post', 'navigation' ); ?>
 
         <?php endwhile; // End of the loop. ?>
 

@@ -143,7 +143,7 @@
              <div class="col-md-6">
               <div class="well card-benefit">
                 <h3>Career Development</h3>
-                <p>With over 90% of our Band 7 Nurses hired from intenral candidates you are assured that we reward skill, passion and excellence</p>
+                <p>With over 90% of our Band 7 Nurses hired from internal candidates you are assured that we reward skill, passion and excellence</p>
               </div>
             </div>
             

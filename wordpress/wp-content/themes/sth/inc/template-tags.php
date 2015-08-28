@@ -19,19 +19,20 @@ function the_posts_navigation() {
 		return;
 	}
 	?>
-	<nav class="navigation posts-navigation" role="navigation">
-		<h2 class="screen-reader-text"><?php esc_html_e( 'Posts navigation', 'sth' ); ?></h2>
-		<div class="nav-links">
+  <nav class="navigation posts-navigation" role="navigation">
+	  <ul class="pager">
+		  <div class="nav-links">
 
-			<?php if ( get_next_posts_link() ) : ?>
-			<div class="nav-previous"><?php next_posts_link( esc_html__( 'Older posts', 'sth' ) ); ?></div>
-			<?php endif; ?>
+        <?php if ( get_next_posts_link() ) : ?>
+        <li class="previous"><?php next_posts_link( esc_html__( 'Older posts', 'sth' ) ); ?></li>
+        <?php endif; ?>
 
-			<?php if ( get_previous_posts_link() ) : ?>
-			<div class="nav-next"><?php previous_posts_link( esc_html__( 'Newer posts', 'sth' ) ); ?></div>
-			<?php endif; ?>
+        <?php if ( get_previous_posts_link() ) : ?>
+        <li class="next"><?php previous_posts_link( esc_html__( 'Newer posts', 'sth' ) ); ?></li>
+        <?php endif; ?>
 
-		</div><!-- .nav-links -->
+		  </div><!-- .nav-links -->#
+	  </ul>
 	</nav><!-- .navigation -->
 	<?php
 }
@@ -53,13 +54,14 @@ function the_post_navigation() {
 	}
 	?>
 	<nav class="navigation post-navigation" role="navigation">
-		<h2 class="screen-reader-text"><?php esc_html_e( 'Post navigation', 'sth' ); ?></h2>
+	 <ul class="pager">
 		<div class="nav-links">
 			<?php
-				previous_post_link( '<div class="nav-previous">%link</div>', '%title' );
-				next_post_link( '<div class="nav-next">%link</div>', '%title' );
+				previous_post_link( '<li class="previous">%link</li>', '%title' );
+				next_post_link( '<li class="next">%link</li>', '%title' );
 			?>
 		</div><!-- .nav-links -->
+	 </ul>
 	</nav><!-- .navigation -->
 	<?php
 }
@@ -107,7 +109,7 @@ function sth_entry_footer() {
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( esc_html__( ', ', 'sth' ) );
 		if ( $categories_list && sth_categorized_blog() ) {
-			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'sth' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'sth' ) . '</span>' , $categories_list ); // WPCS: XSS OK.
 		}
 
 		/* translators: used between list items, there is a space after the comma */

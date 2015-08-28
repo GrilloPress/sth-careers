@@ -1,7 +1,8 @@
 <?php 
 /*
  * Partial that on posts injects previous and next bootstrap links
- * 
+ *
+ * Use by placing in through --> get_template_part( 'partials/post', 'navigation' );
  */
 ?>
 

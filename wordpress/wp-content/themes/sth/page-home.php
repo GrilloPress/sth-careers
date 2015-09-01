@@ -44,7 +44,7 @@
               
               <div class="col-md-4 col-sm-4">
                 <div class="home-boxes-unit">
-                  <a href="<?php echo get_home_url() . "/current-vacancies/" ;?>">
+                  <a href="<?php echo get_home_url() . "/current-vacancies/" ;?>" title="Find the latest vacancies at Sheffield Teaching Hospitals">
                     <img alt="" src="<?php echo get_template_directory_uri() . "/images/nurses-with-computers.jpg" ;?>" width="100%">
                     <div class="well">
                       <h3>Current Vacancies</h3>
@@ -57,7 +57,7 @@
               
               <div class="col-md-4 col-sm-4">
                 <div class="home-boxes-unit">
-                  <a href="<?php echo get_home_url() . "/nursing-midwifery/" ;?>">
+                  <a href="<?php echo get_home_url() . "/nursing-midwifery/" ;?>" title="Find out what makes Sheffield Teaching Hospitals a great place for your career as a Nurse or Midwife">
                     <img alt="" src="<?php echo get_template_directory_uri() . "/images/box_images_nurses.jpg" ;?>" width="100%">
                     <div class="well">
                       <h3>Nursing at Sheffield</h3>
@@ -70,7 +70,7 @@
               
               <div class="col-md-4 col-sm-4">
                 <div class="home-boxes-unit">
-                  <a href="#">
+                  <a href="<?php echo get_home_url() . "/category/meet-the-staff/" ;?>" title="Meet our Staff and hear why they love working at Sheffield Teaching Hospitals">
                     <img alt="" src="<?php echo get_template_directory_uri() . "/images/hilary.jpg" ;?>" width="100%">
                     <div class="well">
                       <h3>Meet our Staff</h3>

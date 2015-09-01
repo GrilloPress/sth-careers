@@ -13,7 +13,7 @@
     
     <div class="col-md-12 col-sm-6 col-xs-12">
       <div class="sidebar-boxes-unit">
-        <a href="<?php echo get_home_url() . "/current-vacancies/" ;?>" title="Meet our Staff and hear why they love working at Sheffield Teaching Hospitals">
+        <a href="<?php echo get_home_url() . "/category/meet-the-staff/" ;?>" title="Meet our Staff and hear why they love working at Sheffield Teaching Hospitals">
           <img alt="Meet our Staff like Chief Nurse Professor Hilary Chapman" src="<?php echo get_template_directory_uri() . "/images/hilary.jpg" ; ?>" width="100%">
           <div class="well">
             <h4>Meet our Staff</h4>

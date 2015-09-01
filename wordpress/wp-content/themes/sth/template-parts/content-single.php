@@ -12,7 +12,19 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 		<div class="entry-meta">
-			<?php sth_posted_on(); ?>
+			<?php // sth_posted_on(); 
+      
+      $job_title = get_post_meta(get_the_ID(), 'job_title', true);      
+
+      ?>
+      
+      <?php if ( !empty ($job_title)){
+   
+           echo "<p class='lead'>" . $job_title . "</p>";
+   
+      }
+      ?>
+      
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 

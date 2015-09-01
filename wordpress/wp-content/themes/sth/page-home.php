@@ -158,39 +158,19 @@
         </section>
           
           <div class="row">
-            
+
             <div class="col-md-6 col-sm-6">
               <?php
                global $post;
-               $args = array('posts_per_page' => 5);
+               $args = array('posts_per_page' => 5,
+                             'category_name' => 'meet-the-staff');
                $myposts = get_posts($args);
                foreach($myposts as $post) :
                ?>
 
               <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
                   <section class="post_content clearfix">
-                    <h3 class="post-header"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-                    <p class="meta"><time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php echo get_the_date('F jS, Y', '','', FALSE); ?></time> - News &amp; Events </p>
-                    <?php the_content(); ?>
-                  </section>
-
-              </article>
-              <hr>
-
-             <?php endforeach; ?>
-            </div>
-            
-            <div class="col-md-6 col-sm-6">
-              <?php
-               global $post;
-               $args = array('posts_per_page' => 5);
-               $myposts = get_posts($args);
-               foreach($myposts as $post) :
-               ?>
-
-              <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
-                  <section class="post_content clearfix">
-                    <h3 class="post-header"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+                    <h4 class="post-header"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
                     <p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php echo get_the_date('F jS, Y', '','', FALSE); ?></time> - Staff Profiles</p>
                     <?php the_content(); ?>
                   </section>
@@ -200,6 +180,12 @@
 
              <?php endforeach; ?>
             </div>
+            
+            <div class="col-md-6 col-sm-6">
+              <a class="twitter-timeline" href="https://twitter.com/SheffieldHosp" data-widget-id="638713957470072834">Tweets by @SheffieldHosp</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+            
           </div>
         
         

@@ -25,12 +25,19 @@ get_header(); ?>
 
 
 				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one a search?', 'sth' ); ?></p>
-
-					<?php get_search_form(); ?>
-
+					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try a search?', 'sth' ); ?></p>
+          
+          <?php get_template_part( 'partials/404', 'search' ); ?>
+   
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
+        
+        <section class="404-page-list well">
+          <h2>Sitemap</h2>
+          <ul class="list-unstyled">
+             <?php wp_list_pages('sort_column=menu_order&title_li='); ?>
+          </ul>
+        </section>
         
         
 

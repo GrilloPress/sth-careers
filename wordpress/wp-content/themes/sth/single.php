@@ -25,7 +25,7 @@ get_header(); ?>
 
         <?php endwhile; // End of the loop. ?>
 
-        </main><!-- #main .container -->
+        </main>
       
       <aside class="col-md-4">
         <?php get_sidebar(); ?>

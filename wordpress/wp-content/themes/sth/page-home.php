@@ -160,25 +160,44 @@
           <div class="row">
 
             <div class="col-md-6 col-sm-6">
-              <?php
+              
+                <?php
                global $post;
-               $args = array('posts_per_page' => 5,
+               $args = array('posts_per_page' => 4,
                              'category_name' => 'meet-the-staff');
                $myposts = get_posts($args);
                foreach($myposts as $post) :
                ?>
-
-              <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
-                  <section class="post_content clearfix">
-                    <h4 class="post-header"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
-                    <p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php echo get_the_date('F jS, Y', '','', FALSE); ?></time> - Staff Profiles</p>
-                    <?php the_content(); ?>
-                  </section>
-
-              </article>
-              <hr>
+              <div class="card-staff staff-profile-card">
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+                      <img src="http://placehold.it/350x350?text=staff%profiles" width="100%">
+                    </a>
+                    
+                    <?php if ( has_post_thumbnail() ) :?>
+                     <?php // the_post_thumbnail('full', array('class' => 'full-width')); ?>
+                  <?php endif ;?>
+                    
+                  </div>
+                
+                  <div class="col-md-8">
+                    <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
+                      <section class="post_content clearfix">
+                        
+                        <h4 class="post-header"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
+                        <p class="lead"><?php echo get_post_meta(get_the_ID(), 'job_title', true); ?></p>
+                        <?php the_content(); ?>
+                        
+                      </section>
+                    </article>
+                  </div>
+                </div>
+              </div>
+              
 
              <?php endforeach; ?>
+             
             </div>
             
             <div class="col-md-6 col-sm-6">

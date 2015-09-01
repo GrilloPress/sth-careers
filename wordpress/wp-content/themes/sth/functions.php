@@ -86,6 +86,9 @@ function sth_setup() {
 endif; // sth_setup
 add_action( 'after_setup_theme', 'sth_setup' );
 
+
+add_image_size( 'category-thumb', 300, 300 ); //300 pixels wide (and unlimited height)
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *

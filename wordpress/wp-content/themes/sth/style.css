@@ -9297,6 +9297,15 @@ a {
   margin-bottom: 15px;
 }
 
+/* line 97, ../sass/_sections.scss */
+.well-staff {
+  height: 149px;
+}
+/* line 101, ../sass/_sections.scss */
+.well-staff h3 {
+  margin-top: 5px;
+}
+
 /* line 1, ../sass/_slider.scss */
 #myCarousel .nav a {
   border-radius: 0px;
@@ -9425,6 +9434,17 @@ h1.entry-title {
 /* line 23, ../sass/_wordpress.scss */
 .wp-caption-text {
   padding: 5px;
+}
+
+/* line 29, ../sass/_wordpress.scss */
+.widget ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+/* line 36, ../sass/_wordpress.scss */
+.widget h3 {
+  margin-top: 2px;
 }
 
 /* line 1, ../sass/_jetpack.scss */

@@ -113,8 +113,8 @@ function sth_widgets_init() {
 		'description'   => '',
 		'before_widget' => '<div id="%1$s" class="widget %2$s well">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
 	) );
 }
 add_action( 'widgets_init', 'sth_widgets_init' );

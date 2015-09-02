@@ -9292,9 +9292,18 @@ a {
 /* line 88, ../sass/_sections.scss */
 .card-staff {
   padding: 0px 5px 0 0;
-  border: 1px solid #cbd4d9;
+  border: none;
   background-color: white;
   margin-bottom: 15px;
+}
+
+/* line 97, ../sass/_sections.scss */
+.well-staff {
+  height: 149px;
+}
+/* line 101, ../sass/_sections.scss */
+.well-staff h3 {
+  margin-top: 5px;
 }
 
 /* line 1, ../sass/_slider.scss */
@@ -9425,6 +9434,17 @@ h1.entry-title {
 /* line 23, ../sass/_wordpress.scss */
 .wp-caption-text {
   padding: 5px;
+}
+
+/* line 29, ../sass/_wordpress.scss */
+.widget ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+/* line 36, ../sass/_wordpress.scss */
+.widget h3 {
+  margin-top: 2px;
 }
 
 /* line 1, ../sass/_jetpack.scss */

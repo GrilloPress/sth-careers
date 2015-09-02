@@ -175,9 +175,9 @@
                       <img src="http://placehold.it/350x350?text=staff%profiles" width="100%">
                     </a>
                     
-                    <?php if ( has_post_thumbnail() ) :?>
-                     <?php // the_post_thumbnail('full', array('class' => 'full-width')); ?>
-                  <?php endif ;?>
+                    <?php // if ( has_post_thumbnail() ) :?>
+                     <?php // the_post_thumbnail('category_thumb'); ?>
+                  <?php // endif ;?>
                     
                   </div>
                 

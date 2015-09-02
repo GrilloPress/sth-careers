@@ -9330,7 +9330,7 @@ a {
 /* line 1, ../sass/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
-  font-family: Helvetica, Arial;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 /* line 8, ../sass/_typography.scss */

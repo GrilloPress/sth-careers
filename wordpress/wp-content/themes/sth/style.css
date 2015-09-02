@@ -9292,7 +9292,7 @@ a {
 /* line 88, ../sass/_sections.scss */
 .card-staff {
   padding: 0px 5px 0 0;
-  border: 1px solid #cbd4d9;
+  border: none;
   background-color: white;
   margin-bottom: 15px;
 }
@@ -9330,7 +9330,7 @@ a {
 /* line 1, ../sass/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
-  font-family: Helvetica, Arial;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 /* line 8, ../sass/_typography.scss */

@@ -158,6 +158,10 @@
         </section>
           
           <div class="row">
+            
+            <div class="col-md-12">
+              <h2></h2>
+            </div>
 
             <div class="col-md-6 col-sm-6">
               
@@ -172,13 +176,10 @@
                 <div class="row">
                   <div class="col-md-4">
                     <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-                      <img src="http://placehold.it/350x350?text=staff%profiles" width="100%">
+                      <?php if ( has_post_thumbnail() ) :?>
+                        <?php the_post_thumbnail('category_thumb'); ?>
+                      <?php endif ;?>
                     </a>
-                    
-                    <?php // if ( has_post_thumbnail() ) :?>
-                     <?php // the_post_thumbnail('category_thumb'); ?>
-                  <?php // endif ;?>
-                    
                   </div>
                 
                   <div class="col-md-8">
@@ -187,8 +188,6 @@
                         
                         <h4 class="post-header"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
                         <p class="lead"><?php echo get_post_meta(get_the_ID(), 'job_title', true); ?></p>
-                        <?php the_content(); ?>
-                        
                       </section>
                     </article>
                   </div>

@@ -21,5 +21,16 @@
         </a>
       </div>      
     </div>
+    
+    <div class="col-md-12 col-sm-6 col-xs-12">
+      <div class="sidebar-boxes-unit">
+        <a href="<?php echo get_home_url() . "/why-work-here/" ;?>" title="Learn about our core values and why we are PROUD to make a difference">
+          <img alt="Meet our Staff like Chief Nurse Professor Hilary Chapman" src="<?php echo get_template_directory_uri() . "/images/infographic.png" ; ?>" width="100%">
+          <div class="well">
+            <h4>Our Core Values</h4>
+          </div>
+        </a>
+      </div>      
+    </div>
   </div>          
 </section>

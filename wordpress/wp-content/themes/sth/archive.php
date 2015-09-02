@@ -48,6 +48,7 @@ get_header(); ?>
 		</main><!-- #main -->
       
       <aside class="col-md-4">
+        <?php get_template_part( 'partials/content', 'sidebox' ); ?>
         <?php get_sidebar(); ?>
       </aside>
       

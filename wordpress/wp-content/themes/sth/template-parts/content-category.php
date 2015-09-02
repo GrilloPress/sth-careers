@@ -22,7 +22,7 @@
 
               <div class="entry-content">
                 
-                <p class="lead"><?php echo get_post_meta(get_the_ID(), 'job_title', true); ?></p>
+                
                 
                 <?php the_excerpt(); ?>
                 <?php

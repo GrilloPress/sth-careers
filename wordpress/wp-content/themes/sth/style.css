@@ -9455,19 +9455,25 @@ h1.entry-title {
   margin: 5px;
   background-color: #F4F4F4;
 }
+@media screen and (max-width: 450px) {
+  /* line 15, ../sass/_wordpress.scss */
+  .wp-caption {
+    float: none;
+  }
+}
 
-/* line 23, ../sass/_wordpress.scss */
+/* line 27, ../sass/_wordpress.scss */
 .wp-caption-text {
   padding: 5px;
 }
 
-/* line 29, ../sass/_wordpress.scss */
+/* line 33, ../sass/_wordpress.scss */
 .widget ul {
   list-style-type: none;
   padding-left: 0px;
 }
 
-/* line 36, ../sass/_wordpress.scss */
+/* line 40, ../sass/_wordpress.scss */
 .widget h4 {
   margin-top: 2px;
 }

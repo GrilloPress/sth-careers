@@ -18,6 +18,12 @@
   margin: 5px;
   background-color: $body-bg;
   
+  @media screen and (max-width: 450px) {
+    
+    float: none;
+    margin-left: -5px;
+  }
+  
 }
 
 .wp-caption-text {

@@ -8905,6 +8905,12 @@ img.wp-post-image {
   height: auto;
 }
 
+/* line 15, ../sass/_images.scss */
+a img:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=60);
+}
+
 /* line 1, ../sass/_footer.scss */
 #main-footer {
   background-color: #C6CCCF;

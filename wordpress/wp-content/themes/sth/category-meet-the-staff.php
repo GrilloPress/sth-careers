@@ -12,8 +12,10 @@ get_header(); ?>
 
   <div class="row">
     <div class="col-md-12">
-      <h1 class="feature-heading">Meet our Staff</h1>
-      <p class="feature-lead">Find out more about our amazing staff and why they are proud to work at Sheffield Teaching Hospitals</p>
+      <header>
+        <h1 class="feature-heading">Meet our Staff</h1>
+        <p class="feature-lead">Find out more about our amazing staff and why they are proud to work at Sheffield Teaching Hospitals</p>
+      </header>
     </div>
   </div>
   

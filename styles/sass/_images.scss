@@ -11,3 +11,11 @@ img.wp-post-image {
   height: auto;
   
 }
+
+a img:hover {
+  
+  opacity: 0.5;
+  // For IE8 and earlier
+  filter: alpha(opacity=60);
+  
+}

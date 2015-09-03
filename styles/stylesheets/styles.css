@@ -9405,6 +9405,16 @@ h1.entry-title {
   color: #666;
 }
 
+/* line 90, ../sass/_typography.scss */
+.feature {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 60px;
+  font-weight: 300;
+  color: black;
+}
+
 /* line 1, ../sass/_video.scss */
 .embed-well {
   margin-left: -20px;
@@ -9443,7 +9453,7 @@ h1.entry-title {
 }
 
 /* line 36, ../sass/_wordpress.scss */
-.widget h3 {
+.widget h4 {
   margin-top: 2px;
 }
 

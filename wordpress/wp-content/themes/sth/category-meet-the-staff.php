@@ -11,8 +11,8 @@ get_header(); ?>
 <div id="primary" class="container">
 
   <div class="row">
-    <div class="col-md-8">
-      <?php sth_breadcrumbs(); ?>
+    <div class="col-md-12">
+      <h1 class="feature">Meet our Staff</h1>
     </div>
   </div>
   
@@ -47,45 +47,6 @@ get_header(); ?>
       
     </main>
   </div>
-  
-  <?php // Get all of the services
-                $args = array(
-                  'post_type' => 'services',
-                  'orderby'   => 'title',
-		              'order'     => 'ASC',
-                  'posts_per_page' => -1
-                );
-                $i = 0;
-                echo '<div class="row">';
-                $services = new WP_Query( $args );
-                if( $services->have_posts() ){
-                  while( $services->have_posts() ) {
-                    $services->the_post();
-                    ?>
-
-                      <?php  if($i % 4 == 0) {echo '</div><div class="row">';} ?>
-                      
-                      <section class="col-sm-6 col-md-3">
-                        <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
-                        <?php if ( has_post_thumbnail()) : ?>
-                         <?php the_post_thumbnail('full', array('class' => 'img-responsive hidden-xs')); ?>
-                        <?php else : ?>
-                          <img src="<?php echo content_url('/themes/wp-mimp/images/had.jpg'); ?>" width="100%" class="img-responsive hidden-xs">
-                        <?php endif; ?>
-                        <div class="well well-preview">
-                          <h3><?php the_title() ?></h3>
-                          <p>Service</p>
-                        </div>
-                       </a>
-                      </section>
-            
-                    <?php $i++; ?>
-
-                    <?php
-                  }
-                }
-              ?>
-  
 </div>
 
 <?php get_footer(); ?>

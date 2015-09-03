@@ -9406,13 +9406,22 @@ h1.entry-title {
 }
 
 /* line 90, ../sass/_typography.scss */
-.feature {
+.feature-heading {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   text-align: center;
-  margin-bottom: 50px;
   font-size: 60px;
   font-weight: 300;
   color: black;
+}
+
+/* line 100, ../sass/_typography.scss */
+.feature-lead {
+  font-weight: 300;
+  line-height: 1.4;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 20px;
 }
 
 /* line 1, ../sass/_video.scss */

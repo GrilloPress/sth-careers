@@ -87,13 +87,23 @@ h1.entry-title {
   
 }
 
-.feature {
+.feature-heading {
   
   font-family: $font-family-base;
   text-align: center;
-  margin-bottom: 50px;
   font-size: 60px;
   font-weight: 300;
   color: black;
+  
+}
+
+.feature-lead {
+  
+  font-weight: 300;
+  line-height: 1.4;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 20px;
   
 }

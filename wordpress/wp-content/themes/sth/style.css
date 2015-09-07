@@ -9437,45 +9437,51 @@ h1.entry-title {
   margin-bottom: 20px;
 }
 
-/* line 1, ../sass/_wordpress.scss */
+/* line 4, ../sass/_wordpress.scss */
 .alignleft {
   float: left;
   padding: 10px 10px 0 0;
 }
 
-/* line 8, ../sass/_wordpress.scss */
+/* line 11, ../sass/_wordpress.scss */
 .alignright {
   float: right;
   padding: 10px 0 0 10px;
 }
 
-/* line 15, ../sass/_wordpress.scss */
+/* line 23, ../sass/_wordpress.scss */
 .wp-caption {
   padding: 0;
   margin: 5px;
   background-color: #F4F4F4;
 }
 @media screen and (max-width: 450px) {
-  /* line 15, ../sass/_wordpress.scss */
+  /* line 23, ../sass/_wordpress.scss */
   .wp-caption {
     float: none;
+    margin-left: -5px;
   }
 }
 
-/* line 27, ../sass/_wordpress.scss */
+/* line 37, ../sass/_wordpress.scss */
 .wp-caption-text {
   padding: 5px;
 }
 
-/* line 33, ../sass/_wordpress.scss */
+/* line 48, ../sass/_wordpress.scss */
 .widget ul {
   list-style-type: none;
   padding-left: 0px;
 }
 
-/* line 40, ../sass/_wordpress.scss */
+/* line 55, ../sass/_wordpress.scss */
 .widget h4 {
   margin-top: 2px;
+}
+
+/* line 64, ../sass/_wordpress.scss */
+body.category.category-meet-the-staff #main {
+  min-height: 1000px;
 }
 
 /* line 1, ../sass/_jetpack.scss */

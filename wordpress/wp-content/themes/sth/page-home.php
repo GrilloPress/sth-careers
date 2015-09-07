@@ -13,7 +13,14 @@
 	 <div id="primary" class="container">
       <main id="main" role="main">
         
-        <?php get_template_part( 'partials/content', 'slider' ); ?>
+        <?php // get_template_part( 'partials/content', 'slider' ); ?>
+        
+        <div class="jumbotron" style="background-image:url('<?php echo get_template_directory_uri() . "/images/large_montage_dark.jpg" ;?>');">
+          <h1>Join the Team</h1>
+          <p>This is a second line!</p>
+          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> 
+          <a class="btn btn-secondary btn-lg" href="#" role="button">Meet our Staff</a>
+        </div>
         
         <section class="home-intro">
           <div class="row">

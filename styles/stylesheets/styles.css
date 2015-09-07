@@ -9153,6 +9153,16 @@ a {
   padding-right: 60px;
 }
 
+/* line 36, ../sass/_buttons.scss */
+.btn-secondary {
+  color: white;
+  border: 1px solid;
+}
+/* line 41, ../sass/_buttons.scss */
+.btn-secondary:hover {
+  color: #efefef;
+}
+
 /* line 4, ../sass/_alerts.scss */
 .alert {
   border: none;
@@ -9428,6 +9438,19 @@ h1.entry-title {
   text-align: center;
   font-size: 25px;
   margin-top: 20px;
+}
+
+/* line 5, ../sass/_banners.scss */
+.jumbotron {
+  border-radius: 0px;
+}
+/* line 9, ../sass/_banners.scss */
+.jumbotron h1 {
+  color: white;
+}
+/* line 15, ../sass/_banners.scss */
+.jumbotron p {
+  color: white;
 }
 
 /* line 1, ../sass/_video.scss */

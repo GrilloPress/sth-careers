@@ -32,3 +32,16 @@ a {
   padding-right: 60px;
   
 }
+
+.btn-secondary {
+  
+  color: white;
+  border: 1px solid;
+  
+  &:hover {
+    
+    color: #efefef;
+    
+  }
+  
+}

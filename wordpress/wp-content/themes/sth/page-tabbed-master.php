@@ -87,6 +87,7 @@ get_header(); ?>
                     <a href="#home" aria-controls="home" role="tab" data-toggle="tab"><?php echo get_the_title( $parent_id ); ?></a>
                   </li>
                   
+                  
                   <?php 
                     $args = array(
                       'post_parent' => $parent_id,
@@ -105,6 +106,12 @@ get_header(); ?>
                       <a href="#<?php echo $post_slug; ?>" aria-controls="<?php echo $post_slug; ?>" role="tab" data-toggle="tab"><?php the_title(); ?></a>
                     </li>
                  <?php endforeach; ?>
+                  
+                  <?php if (is_page( 'nursing-midwifery' )) :?>
+                  <li role="presentation">
+                    <a href="<?php echo get_home_url() . "/newly-qualified-nurses-midwives/" ;?>" role="tab">Newly Qualified Nurses &amp; Midwives</a>
+                  </li>
+                  <?php endif ;?>
 
                 </ul>
                 

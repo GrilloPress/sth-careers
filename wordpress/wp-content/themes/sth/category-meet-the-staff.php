@@ -25,22 +25,22 @@ get_header(); ?>
       <?php if ( have_posts() ) : ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
-
-                      
-                      <section class="col-sm-4 col-md-4 fade-in" style="display: none;">
-                        <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
-                        <?php if ( has_post_thumbnail()) : ?>
-                         <?php the_post_thumbnail('full', array('class' => 'full-width')); ?>
-                        <?php else : ?>
-                          
-                        <?php endif; ?>
-                        <div class="well well-staff">
-                          <h3><?php the_title() ?></h3>
-                          <p class="lead"><?php echo get_post_meta(get_the_ID(), 'job_title', true); ?></p>
-                        </div>
-                       </a>
-                      </section>
+      
+      <section class="col-sm-4 col-md-4 fade-in" style="display: none;">
+        <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
+          
+          <?php if ( has_post_thumbnail()) : ?>
+            <?php the_post_thumbnail('full', array('class' => 'full-width')); ?>
+          <?php else : ?>
+            <?php // we need an alternative image here ?>
+          <?php endif; ?>
+          
+          <div class="well well-staff">
+            <h3><?php the_title() ?></h3>
+            <p class="lead"><?php echo get_post_meta(get_the_ID(), 'job_title', true); ?></p>
+          </div>
+        </a>
+      </section>
 
 			<?php endwhile; ?>
 

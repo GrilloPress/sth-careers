@@ -27,7 +27,7 @@
             <div class="col-md-12">
               <div class="well card">
                 <h2>Find a new career</h2>
-                <h3>Here at Sheffield Teaching Hospitals something something bringing innovative stuff with classic other promises</h3>
+                <h3>Here at Sheffield Teaching Hospitals we value learning and development</h3>
                 <div class="row">
                   <div class="col-md-3 col-sm-3 col-xs-6">
                     <img src="<?php echo get_template_directory_uri() . "/images/andrew-cash-side.jpg" ;?>" class="img-responsive">
@@ -35,7 +35,7 @@
 
                   <div class="col-md-8">
                     
-                    <p>"The eight Clinical Commissioning Groups (CCGs) in South Yorkshire and North Derbyshire, along with NHS England (South Yorkshire and Bassetlaw) and Mid Yorkshire CCGs have formed a similar partnership called Working Together"</p>
+                    <p>Whether you are just starting your career, or looking for a new challenge, we can guarentee that you'll find your next move at Sheffield Teaching Hospitals</p>
                     
                     <a role="button" href="<?php echo get_home_url() . "/current-vacancies/" ;?>" class="btn btn-long btn-warning">Current Vacancies</a>
                     <a role="button" href="<?php echo get_home_url() . "/why-work-here/" ;?>" class="btn btn-link">Find out how we work</a>
@@ -96,17 +96,17 @@
             <div class="col-md-12">
               <div class="well card">
                 <h2>Our Values</h2>
-                <h3>Here at Sheffield Teaching Hospitals something something bringing innovative stuff with classic other promises</h3>
+                <h3>Here at Sheffield Teaching Hospitals innovation is at the heart of everything we do</h3>
                 <div class="row">
                   <div class="col-md-6 col-sm-6">
                     <iframe width="100%" height="280" src="https://www.youtube.com/embed/gg-8c9MBrjo?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
                   </div>
 
                   <div class="col-md-5">
-                    <p>The eight Clinical Commissioning Groups (CCGs) in South Yorkshire and North Derbyshire, along with NHS England (South Yorkshire and Bassetlaw) and Mid Yorkshire CCGs have formed a similar partnership called 'Working Together'.
-                   </p>
-
-                  <a role="button" href="#" class="btn btn-long btn-warning">Further information</a>
+                    
+                    <p>As a Teaching Hospital, we understand the importance of research and innovation which is why we are PROUD to make a difference to our local community</p>
+                    <p></p>
+                    <a role="button" href="<?php echo get_home_url() . "/why-work-here/" ;?>" class="btn btn-long btn-warning">Find out more</a>
 
                   </div>
                 </div>
@@ -192,7 +192,7 @@
                   <div class="col-md-8">
                     <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
                       <section class="post_content clearfix">
-                        
+                        <p class="category-sub">Staff Profile</p>
                         <h4 class="post-header"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
                         <p class="lead"><?php echo get_post_meta(get_the_ID(), 'job_title', true); ?></p>
                       </section>

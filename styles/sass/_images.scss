@@ -1,9 +1,17 @@
+// @template: numerous
+//
+// WordPress utility class to ensure images don't go beyond their container
+
 img.wp-post-image {
   
   max-width: 100%;
   height: auto;
   
 }
+
+// @template: numerous
+//
+// Utility class to create full width images
 
 .full-width {
   
@@ -12,10 +20,24 @@ img.wp-post-image {
   
 }
 
+// @template: numerous
+//
+// When users hover over a linked image it should indicate it is a link
+
 a img:hover {
   
   opacity: 0.5;
   // For IE8 and earlier
   filter: alpha(opacity=60);
+  
+}
+
+// @template: page-home.php
+//
+// Ensure featured images category_thumb are 100% width
+
+img.attachment-category_thumb {
+  
+  width: 100%;
   
 }

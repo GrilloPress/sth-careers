@@ -100,9 +100,9 @@ $padding-xs-horizontal:     5px;
 $line-height-large:         1.33;
 $line-height-small:         1.5;
 
-$border-radius-base:        3px;
-$border-radius-large:       3px;
-$border-radius-small:       3px;
+$border-radius-base:        0;
+$border-radius-large:       0;
+$border-radius-small:       0;
 
 //** Global color for active items (e.g., navs or dropdowns).
 $component-active-color:    #fff;
@@ -473,9 +473,9 @@ $pager-disabled-color:                 $pagination-disabled-color;
 //##
 
 $jumbotron-padding:              30px;
-$jumbotron-color:                inherit;
+$jumbotron-color:                white;
 $jumbotron-bg:                   #f9f9f9;
-$jumbotron-heading-color:        $headings-color;
+$jumbotron-heading-color:        white;
 $jumbotron-font-size:            ceil(($font-size-base * 1.5));
 
 

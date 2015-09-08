@@ -109,6 +109,8 @@ get_header(); ?>
               <div id="results">
                 <div class="row">
                   <?php sth_job_feed(); ?>
+                  
+                                  
                 </div>
 
               </div>

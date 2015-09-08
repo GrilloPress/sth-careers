@@ -19,7 +19,7 @@
           <h1>Be part of something</h1>
           <p>Make a difference at Sheffield Teaching Hospitals NHS Foundation Trust</p>
           <a class="btn btn-primary btn-lg" href="<?php echo get_home_url() . "/why-work-here/" ;?>" role="button">Learn more</a> 
-          <a class="btn btn-secondary btn-lg" href="<?php echo get_home_url() . "/meet-our-staff/" ;?>" role="button">Meet our Staff</a>
+          <a class="btn btn-secondary btn-lg" href="<?php echo get_home_url() . "/category/meet-the-staff/" ;?>" role="button">Meet our Staff</a>
         </div>
         
         <section class="home-intro">

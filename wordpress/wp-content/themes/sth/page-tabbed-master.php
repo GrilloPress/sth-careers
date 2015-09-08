@@ -86,7 +86,7 @@ get_header(); ?>
                   <li role="presentation" class="active">
                     <a href="#home" aria-controls="home" role="tab" data-toggle="tab"><?php echo get_the_title( $parent_id ); ?></a>
                   </li>
-                  
+
                   
                   <?php 
                     $args = array(
@@ -101,19 +101,22 @@ get_header(); ?>
                      $myposts = get_posts($args);
                      foreach($myposts as $post) :?>
                   
-                 <?php $post_slug=$post->post_name; ?>
+                   <?php $post_slug=$post->post_name; ?>
                     <li role="presentation">
                       <a href="#<?php echo $post_slug; ?>" aria-controls="<?php echo $post_slug; ?>" role="tab" data-toggle="tab"><?php the_title(); ?></a>
                     </li>
-                 <?php endforeach; ?>
-                  
-                  <?php if (is_page( 'nursing-midwifery' )) :?>
-                  <li role="presentation">
+                  <?php endforeach; ?>
+                </ul>
+                
+                
+                <?php if (is_page( 'nursing-midwifery' )) :?>
+                <ul class="nav nav-pills nav-stacked">
+                  <li role="presentation" class="nav-list-spacer">
                     <a href="<?php echo get_home_url() . "/newly-qualified-nurses-midwives/" ;?>" role="tab">Newly Qualified Nurses &amp; Midwives</a>
                   </li>
-                  <?php endif ;?>
-
-                </ul>
+                 </ul>
+                <?php endif ;?>
+               
                 
                 <ul class="nav nav-pills nav-stacked">
                   <li role="presentation" class="nav-list-spacer">

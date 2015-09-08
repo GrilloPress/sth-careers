@@ -16,10 +16,10 @@
         <?php // get_template_part( 'partials/content', 'slider' ); ?>
         
         <div class="jumbotron" style="background-image:url('<?php echo get_template_directory_uri() . "/images/large_montage_dark.jpg" ;?>');">
-          <h1>Join the Team</h1>
-          <p>This is a second line!</p>
-          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> 
-          <a class="btn btn-secondary btn-lg" href="#" role="button">Meet our Staff</a>
+          <h1>Be part of something</h1>
+          <p>Make a difference at Sheffield Teaching Hospitals NHS Foundation Trust</p>
+          <a class="btn btn-primary btn-lg" href="<?php echo get_home_url() . "/why-work-here/" ;?>" role="button">Learn more</a> 
+          <a class="btn btn-secondary btn-lg" href="<?php echo get_home_url() . "/meet-our-staff/" ;?>" role="button">Meet our Staff</a>
         </div>
         
         <section class="home-intro">

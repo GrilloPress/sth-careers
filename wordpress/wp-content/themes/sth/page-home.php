@@ -96,7 +96,7 @@
             <div class="col-md-12">
               <div class="well card">
                 <h2>Our Values</h2>
-                <h3>Here at Sheffield Teaching Hospitals innovation is at the heart of everything we do</h3>
+                <h3>Innovation and compassion is at the heart of everything we do at Sheffield Teaching Hospitals</h3>
                 <div class="row">
                   <div class="col-md-6 col-sm-6">
                     <iframe width="100%" height="280" src="https://www.youtube.com/embed/gg-8c9MBrjo?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>

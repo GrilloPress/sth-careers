@@ -6,7 +6,7 @@
  */
 ?>
   
-    <article id="post-<?php the_ID(); ?>" <?php post_class("card-staff"); ?>>
+    <article id="post-<?php the_ID(); ?>" <?php post_class("well"); ?>>
       <div class="row">
 
           <?php if ( has_post_thumbnail() ) :?>

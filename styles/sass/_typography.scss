@@ -120,3 +120,14 @@ h1.entry-title {
   margin-bottom: -12px;
   
 }
+
+// @template: numerous
+//
+// Blockquotes inside articles with the well class
+// are made a pale blue to make the quote standout
+
+article.well blockquote {
+  
+  background-color: #C9E6F9;
+  
+}

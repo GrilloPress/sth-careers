@@ -9453,6 +9453,11 @@ h1.entry-title {
   margin-bottom: -12px;
 }
 
+/* line 129, ../sass/_typography.scss */
+article.well blockquote {
+  background-color: #C9E6F9;
+}
+
 /* line 5, ../sass/_banners.scss */
 .jumbotron {
   border-radius: 0px;

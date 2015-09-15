@@ -9458,6 +9458,15 @@ article.well blockquote {
   background-color: #C9E6F9;
 }
 
+/* line 139, ../sass/_typography.scss */
+.h-branding {
+  background-color: #006DB8;
+  color: white;
+  padding: 5px;
+  margin-top: 55px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
 /* line 5, ../sass/_banners.scss */
 .jumbotron {
   border-radius: 0px;

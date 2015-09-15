@@ -131,3 +131,17 @@ article.well blockquote {
   background-color: #C9E6F9;
   
 }
+
+// @template: numerous
+//
+// A heading class that uses the brand colour for background with white text
+
+.h-branding {
+  
+  background-color: $brand-primary;
+  color: white;
+  padding: 5px;
+  margin-top: 35px;
+  font-family: $font-family-sans-serif;
+  
+}

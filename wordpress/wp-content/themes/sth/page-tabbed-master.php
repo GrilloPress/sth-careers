@@ -11,7 +11,7 @@ get_header(); ?>
 
 	 <div id="primary" class="container">
      <div class="row">
-      <div class="col-md-8">
+      <div class="col-md-12">
         <?php sth_breadcrumbs(); ?>
       </div>
      </div>

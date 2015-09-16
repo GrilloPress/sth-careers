@@ -13,17 +13,18 @@ get_header(); ?>
      <div class="row">
       <div class="col-md-12">
         <?php sth_breadcrumbs(); ?>
+        <?php $parent_id = get_the_ID(); //this sets the parent id that feeds into the get_post queries?>
       </div>
      </div>
     
       <main id="main" role="main">
         
         <div class="row">
-          
+
           <div id="" class="col-md-8">
             <?php while ( have_posts() ) : the_post(); ?>
             
-            <?php $parent_id = get_the_ID(); //this sets the parent id that feeds into the get_post queries?>
+            <?php // $parent_id = get_the_ID(); //this sets the parent id that feeds into the get_post queries?>
              
             
             <div class="tab-content">
@@ -76,8 +77,8 @@ get_header(); ?>
            
           
           </div>
-            
-            <div class="col-md-4">
+          
+          <div class="col-md-4">
               
               <div class="nav-controls">
                  <!-- Nav tabs -->
@@ -125,6 +126,8 @@ get_header(); ?>
                 </ul>
               </div>
             </div>
+            
+
           
           </div>
 

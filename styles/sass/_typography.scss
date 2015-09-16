@@ -135,13 +135,18 @@ article.well blockquote {
 // @template: numerous
 //
 // A heading class that uses the brand colour for background with white text
+// Within a well, it provides the look of another well by using the background colour
+// to createa seperation. It is therefore best used to create the look of multiple wells
+// in a template page
 
 .h-branding {
   
   background-color: $brand-primary;
   color: white;
-  padding: 5px;
-  margin-top: 35px;
+  padding: 10px;
   font-family: $font-family-sans-serif;
+  margin-left: -21px;
+  margin-right: -21px;
+  border-top: 10px solid $body-bg;
   
 }

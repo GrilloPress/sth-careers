@@ -42,12 +42,12 @@
 <body <?php body_class(); ?>>
   
   <header role="banner">
-      <div id="site-header" class="hidden-xs hidden-sm">
+      <div id="site-header">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <a class="navbar-brand" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
-              <img class="pull-right" src="<?php echo get_template_directory_uri() . "/images/logo.gif"; ?>">
+              <a class="navbar-brand hidden-xs" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
+              <img class="pull-right img-responsive" src="<?php echo get_template_directory_uri() . "/images/logo.gif"; ?>">
             </div>
           </div>
         </div>

@@ -9006,6 +9006,54 @@ img.attachment-category_thumb {
   margin-top: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  /* line 95, ../sass/_navbar.scss */
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+    -o-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+  }
+
+  /* line 102, ../sass/_navbar.scss */
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  /* line 106, ../sass/_navbar.scss */
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  /* line 110, ../sass/_navbar.scss */
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%;
+  }
+
+  /* line 115, ../sass/_navbar.scss */
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%;
+  }
+
+  /* line 120, ../sass/_navbar.scss */
+  .row-offcanvas-right.active {
+    right: 50%;
+  }
+
+  /* line 124, ../sass/_navbar.scss */
+  .row-offcanvas-left.active {
+    left: 50%;
+  }
+
+  /* line 128, ../sass/_navbar.scss */
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%;
+  }
+}
 /* line 3, ../sass/_forms.scss */
 textarea,
 textarea.form-control,
@@ -9462,7 +9510,7 @@ article.well blockquote {
 .h-branding {
   background-color: #006DB8;
   color: white;
-  padding: 10px;
+  padding: 10px 20px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   margin-left: -21px;
   margin-right: -21px;

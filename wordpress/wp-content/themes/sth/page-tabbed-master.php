@@ -24,9 +24,6 @@ get_header(); ?>
           <div id="" class="col-md-8">
             <?php while ( have_posts() ) : the_post(); ?>
             
-            <?php // $parent_id = get_the_ID(); //this sets the parent id that feeds into the get_post queries?>
-             
-            
             <div class="tab-content">
               <div role="tabpanel" class="tab-pane in fade active" id="home">
                 <?php if ( has_post_thumbnail() ){
@@ -78,7 +75,7 @@ get_header(); ?>
           
           </div>
           
-          <div class="col-md-4">
+          <div class="col-xs-12 col-md-4">
               
               <div class="nav-controls">
                  <!-- Nav tabs -->
@@ -127,7 +124,12 @@ get_header(); ?>
               </div>
             </div>
             
-
+            <script>
+              
+              jQuery('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+                 jQuery('html, body').animate({scrollTop:0});
+              })         
+            </script>
           
           </div>
 

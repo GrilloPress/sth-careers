@@ -43,7 +43,7 @@ get_header(); ?>
                     'post_parent' => $parent_id,
                     'post_type'   => 'page', 
                     'numberposts' => -1,
-                    'post_status' => 'any',
+                    'post_status' => 'published',
                   );
 
                $myposts = get_posts($args);

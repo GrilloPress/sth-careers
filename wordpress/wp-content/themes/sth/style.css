@@ -9006,54 +9006,6 @@ img.attachment-category_thumb {
   margin-top: 20px;
 }
 
-@media screen and (max-width: 767px) {
-  /* line 95, ../sass/_navbar.scss */
-  .row-offcanvas {
-    position: relative;
-    -webkit-transition: all .25s ease-out;
-    -o-transition: all .25s ease-out;
-    transition: all .25s ease-out;
-  }
-
-  /* line 102, ../sass/_navbar.scss */
-  .row-offcanvas-right {
-    right: 0;
-  }
-
-  /* line 106, ../sass/_navbar.scss */
-  .row-offcanvas-left {
-    left: 0;
-  }
-
-  /* line 110, ../sass/_navbar.scss */
-  .row-offcanvas-right
-  .sidebar-offcanvas {
-    right: -50%;
-  }
-
-  /* line 115, ../sass/_navbar.scss */
-  .row-offcanvas-left
-  .sidebar-offcanvas {
-    left: -50%;
-  }
-
-  /* line 120, ../sass/_navbar.scss */
-  .row-offcanvas-right.active {
-    right: 50%;
-  }
-
-  /* line 124, ../sass/_navbar.scss */
-  .row-offcanvas-left.active {
-    left: 50%;
-  }
-
-  /* line 128, ../sass/_navbar.scss */
-  .sidebar-offcanvas {
-    position: absolute;
-    top: 0;
-    width: 50%;
-  }
-}
 /* line 3, ../sass/_forms.scss */
 textarea,
 textarea.form-control,
@@ -9375,6 +9327,11 @@ a {
   margin-top: 5px;
 }
 
+/* line 113, ../sass/_sections.scss */
+.panel {
+  box-shadow: none;
+}
+
 /* line 1, ../sass/_slider.scss */
 #myCarousel .nav a {
   border-radius: 0px;
@@ -9541,37 +9498,45 @@ article.well blockquote {
   padding: 10px 0 0 10px;
 }
 
-/* line 27, ../sass/_wordpress.scss */
+@media screen and (max-width: 400px) {
+  /* line 20, ../sass/_wordpress.scss */
+  .alignright, .alignleft {
+    float: none;
+    margin-left: -5px;
+  }
+}
+
+/* line 37, ../sass/_wordpress.scss */
 .wp-caption {
   padding: 0;
   margin: 5px;
   background-color: #F4F4F4;
 }
 @media screen and (max-width: 450px) {
-  /* line 27, ../sass/_wordpress.scss */
+  /* line 37, ../sass/_wordpress.scss */
   .wp-caption {
     float: none;
     margin-left: -5px;
   }
 }
 
-/* line 41, ../sass/_wordpress.scss */
+/* line 51, ../sass/_wordpress.scss */
 .wp-caption-text {
   padding: 5px;
 }
 
-/* line 54, ../sass/_wordpress.scss */
+/* line 64, ../sass/_wordpress.scss */
 .widget ul {
   list-style-type: none;
   padding-left: 0px;
 }
 
-/* line 61, ../sass/_wordpress.scss */
+/* line 71, ../sass/_wordpress.scss */
 .widget h4 {
   margin-top: 2px;
 }
 
-/* line 72, ../sass/_wordpress.scss */
+/* line 82, ../sass/_wordpress.scss */
 body.category.category-meet-the-staff #main {
   min-height: 1000px;
 }

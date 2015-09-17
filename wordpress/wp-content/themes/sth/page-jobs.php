@@ -34,75 +34,86 @@ get_header(); ?>
         
         <div id="master">
           <div class="row">
+            
             <div class="col-md-3">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h5 class="panel-title">
+                    <a class="" role="button" data-toggle="collapse" href="#staffGroupsControls" aria-expanded="true" aria-controls="collapseExample">
+                      Staff Groups <span class="caret"></span>
+                    </a>
+                  </h5>
+                </div>
+                
+                <div class="panel-body collapse in" id="staffGroupsControls" aria-expanded="true">
+                  <aside role="complementary" id="radio-controls">
+                    <form id="nhs-staff-groups">
+                      <div class="radio">
+                        <label>
+                          <input id="admin-clerical" name="nhs-staff-groups" type="radio" value="administrative-clerical">
+                          Administrative &amp; Clerical
+                        </label>
+                      </div>
 
-              <aside role="complementary" id="radio-controls">
-                <form id="nhs-staff-groups">
-                  <div class="radio">
-                    <label>
-                      <input id="admin-clerical" name="nhs-staff-groups" type="radio" value="administrative-clerical">
-                      Administrative &amp; Clerical
-                    </label>
-                  </div>
+                      <div class="radio">
+                        <label>
+                          <input id="allied-health" name="nhs-staff-groups" type="radio" value="allied-health">
+                          Allied Health Professionals
+                        </label>
+                      </div>
 
-                  <div class="radio">
-                    <label>
-                      <input id="allied-health" name="nhs-staff-groups" type="radio" value="allied-health">
-                      Allied Health Professionals
-                    </label>
-                  </div>
+                      <div class="radio">
+                        <label>
+                          <input id="additional-clinical" name="nhs-staff-groups" type="radio" value="additional-clinical">
+                          Additional Clinical Services
+                        </label>
+                      </div>
 
-                  <div class="radio">
-                    <label>
-                      <input id="additional-clinical" name="nhs-staff-groups" type="radio" value="additional-clinical">
-                      Additional Clinical Services
-                    </label>
-                  </div>
+                      <div class="radio">
+                        <label>
+                          <input id="additional-professional" name="nhs-staff-groups" type="radio" value="additional-professional">
+                          Additional Professional Scientific &amp; Technical
+                        </label>
+                      </div>
 
-                  <div class="radio">
-                    <label>
-                      <input id="additional-professional" name="nhs-staff-groups" type="radio" value="additional-professional">
-                      Additional Professional Scientific &amp; Technical
-                    </label>
-                  </div>
+                      <div class="radio">
+                        <label>
+                          <input id="estates-ancillary" name="nhs-staff-groups" type="radio" value="estates-ancillary">
+                          Estates &amp; Ancillary
+                        </label>
+                      </div>
 
-                  <div class="radio">
-                    <label>
-                      <input id="estates-ancillary" name="nhs-staff-groups" type="radio" value="estates-ancillary">
-                      Estates &amp; Ancillary
-                    </label>
-                  </div>
+                      <div class="radio">
+                        <label>
+                          <input id="healthcare-scientists" name="nhs-staff-groups" type="radio" value="healthcare-scientists">
+                          Healthcare Scientists
+                        </label>
+                      </div>
 
-                  <div class="radio">
-                    <label>
-                      <input id="healthcare-scientists" name="nhs-staff-groups" type="radio" value="healthcare-scientists">
-                      Healthcare Scientists
-                    </label>
-                  </div>
+                      <div class="radio">
+                        <label>
+                          <input id="medical-dental" name="nhs-staff-groups" type="radio" value="medical-dental">
+                          Medical &amp; Dental
+                        </label>
+                      </div>
 
-                  <div class="radio">
-                    <label>
-                      <input id="medical-dental" name="nhs-staff-groups" type="radio" value="medical-dental">
-                      Medical &amp; Dental
-                    </label>
-                  </div>
+                      <div class="radio">
+                        <label>
+                          <input id="nursing-midwifery" name="nhs-staff-groups" type="radio" value="nursing-midwifery">
+                          Nursing &amp; Midwifery
+                        </label>
+                      </div>
 
-                  <div class="radio">
-                    <label>
-                      <input id="nursing-midwifery" name="nhs-staff-groups" type="radio" value="nursing-midwifery">
-                      Nursing &amp; Midwifery
-                    </label>
-                  </div>
-
-                  <div class="radio">
-                    <label>
-                      <input id="students" name="nhs-staff-groups" type="radio" value="students">
-                      Students
-                    </label>
-                  </div>
-                </form>
-              </aside>
-
+                      <div class="radio">
+                        <label>
+                          <input id="students" name="nhs-staff-groups" type="radio" value="students">
+                          Students
+                        </label>
+                      </div>
+                    </form>
+                  </aside>
+                </div>
+              </div>
             </div>
             
             <div class="col-md-9">

@@ -17,6 +17,16 @@
   
 }
 
+.alignright, .alignleft {
+  
+  @media screen and (max-width: 400px) {
+    
+    float: none;
+    margin-left: -5px;
+  }
+  
+}
+
 // @template: numerous
 //
 // Overwrite native WordPress caption to remove padding and add

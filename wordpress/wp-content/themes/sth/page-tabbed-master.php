@@ -77,7 +77,7 @@ get_header(); ?>
           
           <div class="col-xs-12 col-md-4">
               
-              <div class="nav-controls">
+              <div class="nav-controls" id="tabbed-nav">
                  <!-- Nav tabs -->
                 <ul class="nav nav-pills nav-stacked" role="tablist">
                   

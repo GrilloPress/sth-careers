@@ -35,137 +35,141 @@ get_header(); ?>
           <div class="row">
             
             <div class="col-md-3">
-              <div id="job-form-controls">
-                              <div class="panel panel-primary">
-                <div class="panel-heading">
-                  <h5 class="panel-title">
-                    <a class="" role="button" data-toggle="collapse" href="#staffGroupsControls" aria-expanded="true" aria-controls="collapseExample">
-                      Staff Groups <span class="caret"></span>
-                    </a>
-                  </h5>
-                </div>
+              <div class="row">
+                <div id="job-form-controls">
                 
-                <div class="panel-body collapse in" id="staffGroupsControls" aria-expanded="true">
-                  <aside role="complementary" id="radio-controls">
-                    <form id="nhs-staff-groups">
-                      <div class="radio">
-                        <label>
-                          <input id="admin-clerical" name="nhs-staff-groups" type="radio" value="administrative-clerical">
-                          Administrative &amp; Clerical
-                        </label>
+                  <div class="col-md-12 col-sm-6 col-xs-12">
+                    <div class="panel panel-primary">
+                      <div class="panel-heading">
+                        <h5 class="panel-title">
+                          <a class="" role="button" data-toggle="collapse" href="#staffGroupsControls" aria-expanded="true" aria-controls="collapseExample">
+                            Staff Groups <span class="caret"></span>
+                          </a>
+                        </h5>
                       </div>
 
-                      <div class="radio">
-                        <label>
-                          <input id="allied-health" name="nhs-staff-groups" type="radio" value="allied-health">
-                          Allied Health Professionals
-                        </label>
+                      <div class="panel-body collapse in" id="staffGroupsControls" aria-expanded="true">
+                        <aside role="complementary" id="radio-controls">
+                          <form id="nhs-staff-groups">
+                            <div class="radio">
+                              <label>
+                                <input id="admin-clerical" name="nhs-staff-groups" type="radio" value="administrative-clerical">
+                                Administrative &amp; Clerical
+                              </label>
+                            </div>
+
+                            <div class="radio">
+                              <label>
+                                <input id="allied-health" name="nhs-staff-groups" type="radio" value="allied-health">
+                                Allied Health Professionals
+                              </label>
+                            </div>
+
+                            <div class="radio">
+                              <label>
+                                <input id="additional-clinical" name="nhs-staff-groups" type="radio" value="additional-clinical">
+                                Additional Clinical Services
+                              </label>
+                            </div>
+
+                            <div class="radio">
+                              <label>
+                                <input id="additional-professional" name="nhs-staff-groups" type="radio" value="additional-professional">
+                                Additional Professional Scientific &amp; Technical
+                              </label>
+                            </div>
+
+                            <div class="radio">
+                              <label>
+                                <input id="estates-ancillary" name="nhs-staff-groups" type="radio" value="estates-ancillary">
+                                Estates &amp; Ancillary
+                              </label>
+                            </div>
+
+                            <div class="radio">
+                              <label>
+                                <input id="healthcare-scientists" name="nhs-staff-groups" type="radio" value="healthcare-scientists">
+                                Healthcare Scientists
+                              </label>
+                            </div>
+
+                            <div class="radio">
+                              <label>
+                                <input id="medical-dental" name="nhs-staff-groups" type="radio" value="medical-dental">
+                                Medical &amp; Dental
+                              </label>
+                            </div>
+
+                            <div class="radio">
+                              <label>
+                                <input id="nursing-midwifery" name="nhs-staff-groups" type="radio" value="nursing-midwifery">
+                                Nursing &amp; Midwifery
+                              </label>
+                            </div>
+
+                            <div class="radio">
+                              <label>
+                                <input id="students" name="nhs-staff-groups" type="radio" value="students">
+                                Students
+                              </label>
+                            </div>
+                          </form>
+                        </aside>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-12 col-sm-6 col-xs-12">
+                    <div class="panel panel-primary">
+                      <div class="panel-heading">
+                        <h5 class="panel-title">
+                          <a class="" role="button" data-toggle="collapse" href="#jobtypeControls" aria-expanded="true" aria-controls="collapseExample">
+                            Job Type <span class="caret"></span>
+                          </a>
+                        </h5>
                       </div>
 
-                      <div class="radio">
-                        <label>
-                          <input id="additional-clinical" name="nhs-staff-groups" type="radio" value="additional-clinical">
-                          Additional Clinical Services
-                        </label>
+
+                      <div class="panel-body collapse in" id="jobtypeControls" aria-expanded="true">
+                        <aside role="complementary" id="radio-controls-job-type">
+                          <form id="nhs-job-type">
+                            <div class="radio">
+                               <label>
+                                 <input id="permanent" name="nhs-job-type" type="radio" value="permanent">
+                                 Permanent
+                               </label>
+                             </div>
+
+                             <div class="radio">
+                               <label>
+                                 <input id="fixed-term" name="nhs-job-type" type="radio" value="fixed-term">
+                                 Fixed Term
+                               </label>
+                             </div>
+
+                             <div class="radio">
+                               <label>
+                                 <input id="apprenticeship" name="nhs-job-type" type="radio" value="apprenticeship">
+                                 Apprenticeship
+                               </label>
+                             </div>
+
+                             <div class="radio">
+                               <label>
+                                 <input id="voluntary" name="nhs-job-type" type="radio" value="voluntary">
+                                 Voluntary
+                               </label>
+                             </div>
+
+                          </form>
+                        </aside>
                       </div>
-
-                      <div class="radio">
-                        <label>
-                          <input id="additional-professional" name="nhs-staff-groups" type="radio" value="additional-professional">
-                          Additional Professional Scientific &amp; Technical
-                        </label>
-                      </div>
-
-                      <div class="radio">
-                        <label>
-                          <input id="estates-ancillary" name="nhs-staff-groups" type="radio" value="estates-ancillary">
-                          Estates &amp; Ancillary
-                        </label>
-                      </div>
-
-                      <div class="radio">
-                        <label>
-                          <input id="healthcare-scientists" name="nhs-staff-groups" type="radio" value="healthcare-scientists">
-                          Healthcare Scientists
-                        </label>
-                      </div>
-
-                      <div class="radio">
-                        <label>
-                          <input id="medical-dental" name="nhs-staff-groups" type="radio" value="medical-dental">
-                          Medical &amp; Dental
-                        </label>
-                      </div>
-
-                      <div class="radio">
-                        <label>
-                          <input id="nursing-midwifery" name="nhs-staff-groups" type="radio" value="nursing-midwifery">
-                          Nursing &amp; Midwifery
-                        </label>
-                      </div>
-
-                      <div class="radio">
-                        <label>
-                          <input id="students" name="nhs-staff-groups" type="radio" value="students">
-                          Students
-                        </label>
-                      </div>
-                    </form>
-                  </aside>
-                </div>
-              </div>
-              
-              
-              <div class="panel panel-primary">
-                <div class="panel-heading">
-                  <h5 class="panel-title">
-                    <a class="" role="button" data-toggle="collapse" href="#jobtypeControls" aria-expanded="true" aria-controls="collapseExample">
-                      Job Type <span class="caret"></span>
-                    </a>
-                  </h5>
-                </div>
-              
-              
-                <div class="panel-body collapse in" id="jobtypeControls" aria-expanded="true">
-                  <aside role="complementary" id="radio-controls-job-type">
-                    <form id="nhs-job-type">
-                      <div class="radio">
-                         <label>
-                           <input id="permanent" name="nhs-job-type" type="radio" value="permanent">
-                           Permanent
-                         </label>
-                       </div>
-
-                       <div class="radio">
-                         <label>
-                           <input id="fixed-term" name="nhs-job-type" type="radio" value="fixed-term">
-                           Fixed Term
-                         </label>
-                       </div>
-
-                       <div class="radio">
-                         <label>
-                           <input id="apprenticeship" name="nhs-job-type" type="radio" value="apprenticeship">
-                           Apprenticeship
-                         </label>
-                       </div>
-
-                       <div class="radio">
-                         <label>
-                           <input id="voluntary" name="nhs-job-type" type="radio" value="voluntary">
-                           Voluntary
-                         </label>
-                       </div>
-
-                    </form>
-                  </aside>
-                </div>
-              </div>
-
-                
-                
-                
-                
+                    </div>
+                  </div>
+                  
+                  
+                  
+                </div>                
               </div>
             </div>
             
@@ -204,31 +208,42 @@ get_header(); ?>
                 });
 
               });
-
-            // Watch the radio buttons
-            // If a button is checked
-            // Hide all the job feed
-            // Apart from the ones that correspond
-            // to the checked button
-            jQuery('form#nhs-staff-groups').change(function(){
-
-              jQuery(".vacancy:visible").hide();
-
-              var inputValue = jQuery("#nhs-staff-groups input[type='radio']:checked").val();
-              var classSearch = "." + inputValue;
-
-              jQuery('div#results').find(classSearch).show();
-
-              jobCount = jQuery('.vacancy:visible').length;
-              jQuery( "span.job-count" ).text( jobCount );
+          
+          
+          jQuery('#job-form-controls').change(function(){
+            
+            jQuery(".vacancy").show();
+            
+            var staffGroupValue = jQuery("#nhs-staff-groups input[type='radio']:checked").val();
+            if (staffGroupValue){
               
-              jQuery('html, body').animate({
-                  scrollTop: jQuery("#results").offset().top - 50
-              }, 1000);
-
-
-            });
-
+              var staffGroupSearch = "." + staffGroupValue;
+              jQuery('div.vacancy:visible').not(staffGroupSearch).hide();
+              
+            }
+            
+            var jobTypeValue = jQuery("#nhs-job-type input[type='radio']:checked").val();
+            if (jobTypeValue){
+              
+              var jobTypeSearch = "." + jobTypeValue;
+              jQuery('div.vacancy:visible').not(jobTypeSearch).hide();
+              
+            }
+            
+            // After the results are sorted, it counts them and updated the job count element
+            jobCount = jQuery('.vacancy:visible').length;
+            jQuery( "span.job-count" ).text( jobCount );
+              
+            // After the results are sorted, it finishes by scrolling the browser to the top of the results id
+            
+            jQuery('html, body').animate({
+                scrollTop: jQuery("#results").offset().top - 50
+            }, 1000);
+            
+          });
+          
+          
+          
               // job count function
               jQuery(document).ready(function() {
                 
@@ -259,6 +274,9 @@ get_header(); ?>
                    jQuery('div#results').find(".vacancy.well:contains('Medical & Dental')").addClass("medical-dental");
                    jQuery('div#results').find(".vacancy.well:contains('Nursing & Midwifery')").addClass("nursing-midwifery");
                    jQuery('div#results').find(".vacancy.well:contains('Students')").addClass("students");
+                   jQuery('div#results').find(".vacancy.well:contains('Permanent')").addClass("permanent");
+                   jQuery('div#results').find(".vacancy.well:contains('Fixed Term')").addClass("fixed-term");
+                   jQuery('div#results').find(".vacancy.well:contains('Apprenticeship')").addClass("apprenticeship");
                    jQuery( "div#results a" ).attr('target', '_blank');
 
                 });

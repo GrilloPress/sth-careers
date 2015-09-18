@@ -26,7 +26,7 @@ get_header(); ?>
         <div id="controls">
           <script>
             jQuery(document).ready(function() {
-                jQuery("div#results").sieve({ itemSelector: "div.vacancy" });
+                jQuery("div#results").sieve({ itemSelector: "div.vacancy:visible" });
               }); 
           </script>
         </div>

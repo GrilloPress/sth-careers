@@ -28,7 +28,6 @@ get_header(); ?>
             jQuery(document).ready(function() {
                 jQuery("div#results").sieve({ itemSelector: "div.vacancy" });
               }); 
-           
           </script>
         </div>
         
@@ -36,7 +35,8 @@ get_header(); ?>
           <div class="row">
             
             <div class="col-md-3">
-              <div class="panel panel-primary">
+              <div id="job-form-controls">
+                              <div class="panel panel-primary">
                 <div class="panel-heading">
                   <h5 class="panel-title">
                     <a class="" role="button" data-toggle="collapse" href="#staffGroupsControls" aria-expanded="true" aria-controls="collapseExample">
@@ -113,6 +113,59 @@ get_header(); ?>
                     </form>
                   </aside>
                 </div>
+              </div>
+              
+              
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h5 class="panel-title">
+                    <a class="" role="button" data-toggle="collapse" href="#jobtypeControls" aria-expanded="true" aria-controls="collapseExample">
+                      Job Type <span class="caret"></span>
+                    </a>
+                  </h5>
+                </div>
+              
+              
+                <div class="panel-body collapse in" id="jobtypeControls" aria-expanded="true">
+                  <aside role="complementary" id="radio-controls-job-type">
+                    <form id="nhs-job-type">
+                      <div class="radio">
+                         <label>
+                           <input id="permanent" name="nhs-job-type" type="radio" value="permanent">
+                           Permanent
+                         </label>
+                       </div>
+
+                       <div class="radio">
+                         <label>
+                           <input id="fixed-term" name="nhs-job-type" type="radio" value="fixed-term">
+                           Fixed Term
+                         </label>
+                       </div>
+
+                       <div class="radio">
+                         <label>
+                           <input id="apprenticeship" name="nhs-job-type" type="radio" value="apprenticeship">
+                           Apprenticeship
+                         </label>
+                       </div>
+
+                       <div class="radio">
+                         <label>
+                           <input id="voluntary" name="nhs-job-type" type="radio" value="voluntary">
+                           Voluntary
+                         </label>
+                       </div>
+
+                    </form>
+                  </aside>
+                </div>
+              </div>
+
+                
+                
+                
+                
               </div>
             </div>
             

@@ -235,10 +235,14 @@ get_header(); ?>
             jQuery( "span.job-count" ).text( jobCount );
               
             // After the results are sorted, it finishes by scrolling the browser to the top of the results id
+            if ( jQuery( window ).width() < 992 ){
+              
+              jQuery('html, body').animate({
+                  scrollTop: jQuery("#results").offset().top - 50
+              }, 1000);
+              
+            }
             
-            jQuery('html, body').animate({
-                scrollTop: jQuery("#results").offset().top - 50
-            }, 1000);
             
           });
           

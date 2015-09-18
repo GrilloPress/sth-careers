@@ -168,6 +168,10 @@ get_header(); ?>
 
               jobCount = jQuery('.vacancy:visible').length;
               jQuery( "span.job-count" ).text( jobCount );
+              
+              jQuery('html, body').animate({
+                  scrollTop: jQuery("#results").offset().top - 50
+              }, 1000);
 
 
             });

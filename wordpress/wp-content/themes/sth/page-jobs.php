@@ -221,21 +221,10 @@ get_header(); ?>
   </div>
 
         <script>
-            
-            jQuery(document).ready(function() {
-
-               // disable enter in search field
-             //   jQuery('input.form-control').keypress(function(e){
-             //       if ( e.which == 13 ) return false;
-             //       if ( e.which == 13 ) e.preventDefault();
-
-             //   });
-
-              });
           
           
           // jQuery('#master').change(function(){
-          jQuery(document).on('change keyup keypress keydown', '#master', function(e){
+          jQuery(document).on('change keyup keypress', '#master', function(e){
             
             if ( e.which == 13 ) return false;
             if ( e.which == 13 ) e.preventDefault();
@@ -291,53 +280,39 @@ get_header(); ?>
             
             
           });
-          
-          
-          
-              // job count function
-              jQuery(document).ready(function() {
-                
-                // TODO - pull all document ready into a function. Add in sieve.
-                // Start spinner modal in container until final stuff is added then remove spinner.
 
-                onStart = true;
 
-                if (onStart){
+            jQuery(document).ready(function() {
+              
+              // TODO - pull all document ready into a function. Add in sieve.
+              // Start spinner modal in container until final stuff is added then remove spinner.
+
+              onStart = true;
+              
+              if (onStart){
 
                   // On page load this counts the available job posts and injects the count in the job count span
                   initalCount = jQuery('.vacancy:visible').length;
                   jQuery( "span.job-count" ).text( initalCount );
                   onStart = false;
                 }
+              
+              // This is horrendous. Make a function. Then call it.
+              jQuery('div#results').find(".vacancy.well:contains('Administrative & Clerical')").addClass("administrative-clerical");
+              jQuery('div#results').find(".vacancy.well:contains('Allied Health Professionals')").addClass("allied-health");
+              jQuery('div#results').find(".vacancy.well:contains('Additional Clinical Services')").addClass("additional-clinical");
+              jQuery('div#results').find(".vacancy.well:contains('Additional Professional Scientific & Technical')").addClass("additional-professional");
+              jQuery('div#results').find(".vacancy.well:contains('Estates & Ancillary')").addClass("estates-ancillary");
+              jQuery('div#results').find(".vacancy.well:contains('Healthcare Scientists')").addClass("healthcare-scientists");
+              jQuery('div#results').find(".vacancy.well:contains('Medical & Dental')").addClass("medical-dental");
+              jQuery('div#results').find(".vacancy.well:contains('Nursing & Midwifery')").addClass("nursing-midwifery");
+              jQuery('div#results').find(".vacancy.well:contains('Students')").addClass("students");
+              jQuery('div#results').find(".vacancy.well:contains('Permanent')").addClass("permanent");
+              jQuery('div#results').find(".vacancy.well:contains('Fixed Term')").addClass("fixed-term");
+              jQuery('div#results').find(".vacancy.well:contains('Apprenticeship')").addClass("apprenticeship");
+              jQuery( "div#results a" ).attr('target', '_blank');
 
               });
-
-            jQuery(document).ready(function() {
-
-                   // This is horrendous. Make a function. Then call it.
-                   jQuery('div#results').find(".vacancy.well:contains('Administrative & Clerical')").addClass("administrative-clerical");
-                   jQuery('div#results').find(".vacancy.well:contains('Allied Health Professionals')").addClass("allied-health");
-                   jQuery('div#results').find(".vacancy.well:contains('Additional Clinical Services')").addClass("additional-clinical");
-                   jQuery('div#results').find(".vacancy.well:contains('Additional Professional Scientific & Technical')").addClass("additional-professional");
-                   jQuery('div#results').find(".vacancy.well:contains('Estates & Ancillary')").addClass("estates-ancillary");
-                   jQuery('div#results').find(".vacancy.well:contains('Healthcare Scientists')").addClass("healthcare-scientists");
-                   jQuery('div#results').find(".vacancy.well:contains('Medical & Dental')").addClass("medical-dental");
-                   jQuery('div#results').find(".vacancy.well:contains('Nursing & Midwifery')").addClass("nursing-midwifery");
-                   jQuery('div#results').find(".vacancy.well:contains('Students')").addClass("students");
-                   jQuery('div#results').find(".vacancy.well:contains('Permanent')").addClass("permanent");
-                   jQuery('div#results').find(".vacancy.well:contains('Fixed Term')").addClass("fixed-term");
-                   jQuery('div#results').find(".vacancy.well:contains('Apprenticeship')").addClass("apprenticeship");
-                   jQuery( "div#results a" ).attr('target', '_blank');
-
-                });
-
-            jQuery(document).on('change keyup keypress keydown', 'input#sieve', function(e){
-
-                  // Handles any changes to the job search and recounts the visible job posts & injects the count in the job count span
-                  jobCount = jQuery('.vacancy:visible').length;
-                  jQuery( "span.job-count" ).text( jobCount );
-
-                });
             
           </script>
 

@@ -9413,25 +9413,30 @@ p.lead {
   font-size: 30px;
 }
 
-/* line 64, ../sass/_typography.scss */
+/* line 69, ../sass/_typography.scss */
 h1.entry-title {
-  margin-top: 2px;
+  margin-top: -21px;
+  margin-left: -20px;
   font-size: 30px;
+  margin-right: -20px;
+  background-color: #006DB8;
+  padding: 20px;
+  color: white;
 }
 
-/* line 73, ../sass/_typography.scss */
+/* line 83, ../sass/_typography.scss */
 .home-boxes-unit h3 {
   margin-top: 0px;
   color: #006DB8;
   font-weight: 600;
   font-size: 25px;
 }
-/* line 82, ../sass/_typography.scss */
+/* line 92, ../sass/_typography.scss */
 .home-boxes-unit p.text {
   color: #4d4d4d;
 }
 
-/* line 90, ../sass/_typography.scss */
+/* line 100, ../sass/_typography.scss */
 .feature-heading {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   text-align: center;
@@ -9440,7 +9445,7 @@ h1.entry-title {
   color: black;
 }
 
-/* line 100, ../sass/_typography.scss */
+/* line 110, ../sass/_typography.scss */
 .feature-lead {
   font-weight: 300;
   line-height: 1.4;
@@ -9450,7 +9455,7 @@ h1.entry-title {
   margin-top: 20px;
 }
 
-/* line 115, ../sass/_typography.scss */
+/* line 125, ../sass/_typography.scss */
 .category-sub {
   text-transform: uppercase;
   color: #C6CCCF;
@@ -9458,12 +9463,12 @@ h1.entry-title {
   margin-bottom: -12px;
 }
 
-/* line 129, ../sass/_typography.scss */
+/* line 139, ../sass/_typography.scss */
 article.well blockquote {
   background-color: #C9E6F9;
 }
 
-/* line 142, ../sass/_typography.scss */
+/* line 152, ../sass/_typography.scss */
 .h-branding {
   background-color: #006DB8;
   color: white;
@@ -9503,40 +9508,42 @@ article.well blockquote {
   .alignright, .alignleft {
     float: none;
     margin-left: -5px;
+    width: 100%;
+    height: auto;
   }
 }
 
-/* line 37, ../sass/_wordpress.scss */
+/* line 40, ../sass/_wordpress.scss */
 .wp-caption {
   padding: 0;
   margin: 5px;
   background-color: #F4F4F4;
 }
 @media screen and (max-width: 450px) {
-  /* line 37, ../sass/_wordpress.scss */
+  /* line 40, ../sass/_wordpress.scss */
   .wp-caption {
     float: none;
     margin-left: -5px;
   }
 }
 
-/* line 51, ../sass/_wordpress.scss */
+/* line 54, ../sass/_wordpress.scss */
 .wp-caption-text {
   padding: 5px;
 }
 
-/* line 64, ../sass/_wordpress.scss */
+/* line 67, ../sass/_wordpress.scss */
 .widget ul {
   list-style-type: none;
   padding-left: 0px;
 }
 
-/* line 71, ../sass/_wordpress.scss */
+/* line 74, ../sass/_wordpress.scss */
 .widget h4 {
   margin-top: 2px;
 }
 
-/* line 82, ../sass/_wordpress.scss */
+/* line 85, ../sass/_wordpress.scss */
 body.category.category-meet-the-staff #main {
   min-height: 1000px;
 }

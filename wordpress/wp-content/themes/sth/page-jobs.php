@@ -25,9 +25,9 @@ get_header(); ?>
         
         <div id="controls">
           <script>
-            jQuery(document).ready(function() {
-                jQuery("div#results").sieve({ itemSelector: "div.vacancy:visible" });
-              }); 
+           // jQuery(document).ready(function() {
+           //     jQuery("div#results").sieve({ itemSelector: "div.vacancy" });
+           //   }); 
           </script>
         </div>
         
@@ -174,11 +174,35 @@ get_header(); ?>
             </div>
             
             <div class="col-md-9">
+              
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h5 class="panel-title">
+                    <a class="" role="button" data-toggle="collapse" href="#searchForm" aria-expanded="true" aria-controls="collapseExample">
+                      Search Vacancies <span class="caret"></span>
+                    </a>
+                  </h5>
+                </div>
+
+                <div class="panel-body collapse in" id="searchForm" aria-expanded="true">
+                  <form id="job-search">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search Vacancies">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Search</button>
+                      </span>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              
+              
               <div id="results">
+                
+                <p><span class='job-counter'><span class='job-count'></span> Jobs Returned </span></p>
+                
                 <div class="row">
                   <?php sth_job_feed(); ?>
-                  
-                                  
                 </div>
 
               </div>
@@ -199,9 +223,9 @@ get_header(); ?>
         <script>
             
             jQuery(document).ready(function() {
-              
-                // disable enter in search field
-                jQuery('input#sieve').keypress(function(e){
+
+               // disable enter in search field
+                jQuery('input.form-control').keypress(function(e){
                     if ( e.which == 13 ) return false;
                     if ( e.which == 13 ) e.preventDefault();
 
@@ -210,7 +234,7 @@ get_header(); ?>
               });
           
           
-          jQuery('#job-form-controls').change(function(){
+          jQuery('#master').change(function(){
             
             jQuery(".vacancy").show();
             
@@ -227,6 +251,24 @@ get_header(); ?>
               
               var jobTypeSearch = "." + jobTypeValue;
               jQuery('div.vacancy:visible').not(jobTypeSearch).hide();
+              
+            }
+            
+            var jobSearchValue = jQuery("#job-search input[type='text']").val();
+            if (jobSearchValue){
+
+              // Loop through the comment list
+              jQuery("div.vacancy:visible").each(function(){
+
+                  // If the list item does not contain the text phrase fade it out
+                  if (jQuery(this).text().search(new RegExp(jobSearchValue, "i")) < 0) {
+                      jQuery(this).hide();
+
+                  // Show the list item if the phrase matches and increase the count by 1
+                  } else {
+                      jQuery(this).show();
+                  }
+              });
               
             }
             

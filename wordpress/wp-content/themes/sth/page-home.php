@@ -1,4 +1,4 @@
-<?php
+ <?php
 /*
  * 
  * Homepage for the STH Careers website

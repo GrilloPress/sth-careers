@@ -23,14 +23,6 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
         
-        <div id="controls">
-          <script>
-           // jQuery(document).ready(function() {
-           //     jQuery("div#results").sieve({ itemSelector: "div.vacancy" });
-           //   }); 
-          </script>
-        </div>
-        
         <div id="master">
           <div class="row">
             
@@ -39,6 +31,20 @@ get_header(); ?>
                 <div id="job-form-controls">
                 
                   <div class="col-md-12 col-sm-6 col-xs-12">
+                    <div class="panel panel-primary visible-xs">
+                      <div class="panel-heading">
+                        <h5 class="panel-title">
+                           Join the team!
+                        </h5>
+                      </div>
+
+                      <div class="panel-body">
+                        <p class="lead">Healthcare Scientist, Nurse or looking for your first post? Search our latest vacancies below</p>
+                        <p>Use the filters below and our search box to find the right role for you</p>
+                        <p>Alternatively, feel free to <a href="#results">jump straight to the posts available</a></p>
+                      </div>
+                    </div>
+                    
                     <div class="panel panel-primary">
                       <div class="panel-heading">
                         <h5 class="panel-title">
@@ -222,7 +228,6 @@ get_header(); ?>
 
         <script>
           
-          
           // jQuery('#master').change(function(){
           jQuery(document).on('change keyup keypress', '#master', function(e){
             
@@ -280,7 +285,6 @@ get_header(); ?>
             
             
           });
-
 
             jQuery(document).ready(function() {
               

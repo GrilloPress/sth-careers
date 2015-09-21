@@ -225,16 +225,20 @@ get_header(); ?>
             jQuery(document).ready(function() {
 
                // disable enter in search field
-                jQuery('input.form-control').keypress(function(e){
-                    if ( e.which == 13 ) return false;
-                    if ( e.which == 13 ) e.preventDefault();
+             //   jQuery('input.form-control').keypress(function(e){
+             //       if ( e.which == 13 ) return false;
+             //       if ( e.which == 13 ) e.preventDefault();
 
-                });
+             //   });
 
               });
           
           
-          jQuery('#master').change(function(){
+          // jQuery('#master').change(function(){
+          jQuery(document).on('change keyup keypress keydown', '#master', function(e){
+            
+            if ( e.which == 13 ) return false;
+            if ( e.which == 13 ) e.preventDefault();
             
             jQuery(".vacancy").show();
             

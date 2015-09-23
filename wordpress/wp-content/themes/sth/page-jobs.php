@@ -173,6 +173,23 @@ get_header(); ?>
                     </div>
                   </div>
                   
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="panel panel-primary">
+                      <div class="panel-heading">
+                        <h5 class="panel-title">
+                          <a class="" role="button" data-toggle="collapse" href="#popularSearches" aria-expanded="true" aria-controls="collapseExample">
+                            Popular Searches <span class="caret"></span>
+                          </a>
+                        </h5>
+                      </div>
+
+
+                      <div class="panel-body collapse in" id="popularSearches" aria-expanded="true">
+                      <a role="role" href="<?php echo the_permalink() . "?referrer=staff%20nurse" ;?>">Staff Nurses</a>
+                      </div>
+                    </div>
+                  </div>
+                  
                   
                   
                 </div>                
@@ -228,6 +245,21 @@ get_header(); ?>
 
         <script>
           
+          var getUrlParameter = function getUrlParameter(sParam) {
+              var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+                  sURLVariables = sPageURL.split('&'),
+                  sParameterName,
+                  i;
+
+              for (i = 0; i < sURLVariables.length; i++) {
+                  sParameterName = sURLVariables[i].split('=');
+
+                  if (sParameterName[0] === sParam) {
+                      return sParameterName[1] === undefined ? true : sParameterName[1];
+                  }
+              }
+          };
+          
           jQuery(document).ready(function() {
               
               // TODO - pull all document ready into a function. Add in sieve.
@@ -259,6 +291,31 @@ get_header(); ?>
               jQuery( "div#results a" ).attr('target', '_blank');
 
               });
+          
+          if (getUrlParameter("referrer")){
+            
+            var referralSearchTerm = getUrlParameter("referrer");
+            // Loop through the comment list
+              jQuery("div.vacancy:visible").each(function(){
+
+                  // If the list item does not contain the text phrase fade it out
+                  if (jQuery(this).text().search(new RegExp(referralSearchTerm, "i")) < 0) {
+                      jQuery(this).hide();
+
+                  // Show the list item if the phrase matches and increase the count by 1
+                  } else {
+                      jQuery(this).show();
+                  }
+                
+                
+              });
+            
+            // Scroll to results once filtered
+            jQuery('html, body').animate({
+                  scrollTop: jQuery("#results").offset().top - 50
+              });
+            
+          };
           
           
           // jQuery('#master').change(function(){

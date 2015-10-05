@@ -1719,7 +1719,7 @@ html {
 
 /* line 27, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_scaffolding.scss */
 body {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Segoe UI, Lucida Grande, Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 1.846;
   color: #4d4d4d;
@@ -7497,7 +7497,7 @@ button.list-group-item-danger.active:focus {
 /* line 6, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_panels.scss */
 .panel-default > .panel-heading {
   color: #212121;
-  background-color: #f5f5f5;
+  background-color: #c2c2c2;
   border-color: #ddd;
 }
 /* line 11, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_panels.scss */
@@ -7506,7 +7506,7 @@ button.list-group-item-danger.active:focus {
 }
 /* line 14, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_panels.scss */
 .panel-default > .panel-heading .badge {
-  color: #f5f5f5;
+  color: #c2c2c2;
   background-color: #212121;
 }
 /* line 20, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_panels.scss */
@@ -7900,7 +7900,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Segoe UI, Lucida Grande, Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -8038,7 +8038,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Segoe UI, Lucida Grande, Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -9438,7 +9438,7 @@ h1.entry-title {
 
 /* line 100, ../sass/_typography.scss */
 .feature-heading {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Segoe UI, Lucida Grande, Helvetica, Arial, sans-serif;
   text-align: center;
   font-size: 60px;
   font-weight: 300;
@@ -9473,7 +9473,6 @@ article.well blockquote {
   background-color: #006DB8;
   color: white;
   padding: 10px 20px;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   margin-left: -21px;
   margin-right: -21px;
   border-top: 10px solid #F4F4F4;

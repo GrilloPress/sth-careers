@@ -59,6 +59,13 @@ get_header(); ?>
                           <form id="nhs-staff-groups">
                             <div class="radio">
                               <label>
+                                <input id="all-staff-groups" name="nhs-staff-groups" type="radio" value="">
+                                All Staff Groups
+                              </label>
+                            </div>
+                            
+                            <div class="radio">
+                              <label>
                                 <input id="admin-clerical" name="nhs-staff-groups" type="radio" value="administrative-clerical">
                                 Administrative &amp; Clerical
                               </label>

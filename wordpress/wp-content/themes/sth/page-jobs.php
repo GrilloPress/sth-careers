@@ -148,6 +148,13 @@ get_header(); ?>
                           <form id="nhs-job-type">
                             <div class="radio">
                                <label>
+                                 <input id="all-types" name="nhs-job-type" type="radio" value="">
+                                 All
+                               </label>
+                             </div>
+                            
+                            <div class="radio">
+                               <label>
                                  <input id="permanent" name="nhs-job-type" type="radio" value="permanent">
                                  Permanent
                                </label>

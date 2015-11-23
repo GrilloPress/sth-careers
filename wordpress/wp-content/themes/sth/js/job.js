@@ -37,7 +37,7 @@ jQuery(document).ready(function() {
   jQuery('div#results').find(".vacancy.well:contains('Nursing & Midwifery')").addClass("nursing-midwifery");
   jQuery('div#results').find(".vacancy.well:contains('Students')").addClass("students");
   jQuery('div#results').find(".vacancy.well:contains('Permanent')").addClass("permanent");
-  jQuery('div#results').find(".vacancy.well:contains('Fixed Term')").addClass("fixed-term");
+  jQuery('div#results').find(".vacancy.well:contains('Fixed term')").addClass("fixed-term");
   jQuery('div#results').find(".vacancy.well:contains('Apprenticeship')").addClass("apprenticeship");
   jQuery( "div#results a" ).attr('target', '_blank');
   

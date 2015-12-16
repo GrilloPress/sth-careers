@@ -14,7 +14,7 @@ function sth_job_feed() {
   
             require 'simple_html_dom.php'; // includes the library
             
-            $website = "http://www.jobs.nhs.uk/extsearch?client_id=121486&resonly=1&max_result=100";
+            $website = "http://www.jobs.nhs.uk/extsearch?client_id=121486,130334&resonly=1&max_result=100";
             $html = file_get_html($website); //gets the webpage and puts it inside the $html variabable
             
             

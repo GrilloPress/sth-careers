@@ -38,6 +38,7 @@ jQuery(document).ready(function() {
   jQuery('div#results').find(".vacancy.well:contains('Students')").addClass("students");
   jQuery('div#results').find(".vacancy.well:contains('Permanent')").addClass("permanent");
   jQuery('div#results').find(".vacancy.well:contains('Fixed term')").addClass("fixed-term");
+  jQuery('div#results').find(".vacancy.well:contains('Voluntary')").addClass("voluntary");
   jQuery('div#results').find(".vacancy.well:contains('Apprenticeship')").addClass("apprenticeship");
   jQuery( "div#results a" ).attr('target', '_blank');
   
